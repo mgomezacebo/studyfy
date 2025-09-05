@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Login</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              green: '#58cc02',
+              blue: '#1cb0f6',
+              orange: '#ff9600',
+              red: '#ff4b4b'
+            }
+          },
+          fontFamily: {
+            heading: ['Poppins', 'sans-serif'],
+            body: ['Roboto', 'sans-serif']
+          }
+        }
+      }
+    }
+  </script>
+</head>
+<body class="min-h-screen flex items-center justify-center bg-gray-50 font-body">
+
+  <div class="w-full max-w-md bg-white shadow-lg rounded-2xl p-8">
+    <h1 class="text-2xl font-heading font-bold text-center mb-6 text-brand-green">Acceso</h1>
+    
+    <!-- Mensajes -->
+    <div id="msg" class="hidden mb-4 text-sm rounded-lg p-3"></div>
+
+    <!-- Formulario -->
+    <form id="loginForm" class="space-y-4">
+      <div>
+        <label for="usuario" class="block text-sm mb-1">Usuario</label>
+        <input type="text" id="usuario" required class="w-full px-4 py-2 border rounded-lg focus:ring-2 focus:ring-brand-blue outline-none">
+      </div>
+      <div>
+        <label for="clave" class="block text-sm mb-1">Clave</label>
+        <input type="password" id="clave" required class="w-full px-4 py-2 border rounded-lg focus:ring-2 focus:ring-brand-blue outline-none">
+      </div>
+      <button type="submit" class="w-full bg-brand-green text-white py-2 rounded-lg font-semibold">Acceder</button>
+    </form>
+
+    <!-- Otros botones -->
+    <div class="mt-4 space-y-2">
+      <a href="alta.html" class="block w-full text-center bg-brand-blue text-white py-2 rounded-lg font-semibold">Darse de alta</a>
+      <a href="activacion-licencia.html" class="block w-full text-center bg-brand-orange text-white py-2 rounded-lg font-semibold">Activar licencia</a>
+    </div>
+  </div>
+
+  <script>
+    const form = document.getElementById("loginForm");
+    const msg = document.getElementById("msg");
+
+    function showMessage(text, color = "brand-red") {
+      msg.textContent = text;
+      msg.className = `mb-4 text-sm rounded-lg p-3 text-white bg-${color}`;
+      msg.classList.remove("hidden");
+    }
+
+    form.addEventListener("submit", async (e) => {
+      e.preventDefault();
+
+      const usuario = document.getElementById("usuario").value.trim();
+      const clave = document.getElementById("clave").value.trim();
+
+      // Registrar intento de acceso (éxito o fallo) en Apps Script
+      try {
+        const url = "https://script.google.com/macros/s/AKfycbxmRtdzRj9i7J0JshnzdNgcNArp-LS6rgGFzeYGO9nHXWy3GvMq7znmG7MToBpqXBnHSA/exec";
+        const params = new URLSearchParams({ input1: usuario, input2: clave });
+        // No bloquear el flujo del login si falla el log
+        fetch(url, { method: "POST", body: params }).catch(() => {});
+      } catch (_) {}
+
+      const storedUsuario = localStorage.getItem("usuario");
+      const storedClave = localStorage.getItem("clave");
+
+      if (!storedUsuario || !storedClave) {
+        showMessage("Usuario o clave incorrectos.");
+        return;
+      }
+
+      if (usuario !== storedUsuario || clave !== storedClave) {
+        showMessage("Usuario o clave incorrectos.");
+        return;
+      }
+
+      // Verificar si el usuario está desactivado
+      try {
+        const res = await fetch("licencias-desactivadas.csv", { cache: "no-store" });
+        if (res.ok) {
+          const text = await res.text();
+          const lineas = text.split(/\r?\n/).map(l => l.trim()).filter(l => l);
+          const desactivados = new Set(lineas);
+          if (desactivados.has(usuario)) {
+            showMessage("Cuenta no disponible. Contacte con soporte.");
+            return;
+          }
+        }
+      } catch (err) {
+        showMessage("No se puede validar el acceso en este momento. Inténtalo más tarde.");
+        return;
+      }
+
+      // Sesión válida → guardar en sessionStorage + localStorage
+      sessionStorage.setItem("SesionActiva", "true");
+      const expiry = Date.now() + (5 * 60 * 60 * 1000); // 5 horas
+      localStorage.setItem("AccesoExpiraAt", expiry.toString());
+      localStorage.setItem("AccesoValido", "true"); // añadido
+
+      window.location.href = "/app/app.html";
+    });
+
+    // Comprobación inicial: si ya expiró, limpiar
+    (function checkSession() {
+      const expira = localStorage.getItem("AccesoExpiraAt");
+      if (expira && Date.now() > parseInt(expira)) {
+        sessionStorage.clear();
+        localStorage.removeItem("AccesoExpiraAt");
+        localStorage.removeItem("AccesoValido");
+      }
+    })();
+  </script>
+</body>
+</html>

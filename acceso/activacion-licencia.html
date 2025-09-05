@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <title>Activación de licencia</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- Tipografías -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet" />
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              green: '#58cc02',
+              blue: '#1cb0f6',
+              orange: '#ff9600',
+              red: '#ff4b4b'
+            }
+          },
+          fontFamily: {
+            heading: ['Poppins', 'ui-sans-serif', 'system-ui'],
+            body: ['Roboto', 'ui-sans-serif', 'system-ui']
+          },
+          boxShadow: { soft: '0 10px 25px rgba(0,0,0,0.08)' }
+        }
+      }
+    }
+  </script>
+  <style>
+    body { font-family: Roboto, ui-sans-serif, system-ui, -apple-system; }
+    h1, .font-heading { font-family: Poppins, ui-sans-serif, system-ui, -apple-system; }
+  </style>
+</head>
+<body class="min-h-screen flex items-center justify-center bg-gray-50">
+
+  <div class="w-full max-w-md bg-white shadow-lg rounded-2xl p-8">
+    <h1 class="text-2xl font-heading font-bold text-center mb-6 text-brand-green">Activar licencia</h1>
+
+    <!-- Mensajes -->
+    <div id="msg" class="hidden mb-4 text-sm rounded-lg p-3 text-white"></div>
+
+    <!-- Paso 1: verificación -->
+    <form id="formStep1" class="space-y-4" autocomplete="off" novalidate>
+      <div>
+        <label for="usuario" class="block text-sm mb-1">Usuario</label>
+        <input type="text" id="usuario" required
+               class="w-full px-4 py-2 border rounded-lg focus:ring-2 focus:ring-brand-blue outline-none"
+               placeholder="Tu usuario">
+      </div>
+      <div>
+        <label for="licencia" class="block text-sm mb-1">Número de licencia</label>
+        <input type="text" id="licencia" required
+               class="w-full px-4 py-2 border rounded-lg focus:ring-2 focus:ring-brand-blue outline-none"
+               placeholder="Ej.: 12345678">
+        <p class="mt-1 text-xs text-gray-500">Sin espacios. Coincidencia exacta.</p>
+      </div>
+      <button type="submit"
+              class="w-full bg-brand-orange text-white py-2 rounded-lg font-semibold">
+        Activar
+      </button>
+    </form>
+
+    <!-- Paso 2: crear clave (oculto hasta verificar) -->
+    <form id="formStep2" class="space-y-4 hidden mt-2" autocomplete="off" novalidate>
+      <div class="pt-2 border-t">
+        <p class="text-sm text-gray-600 mb-2">Licencia verificada. Crea una clave para este dispositivo.</p>
+      </div>
+      <div>
+        <label for="clave" class="block text-sm mb-1">Clave</label>
+        <input type="password" id="clave" required
+               class="w-full px-4 py-2 border rounded-lg focus:ring-2 focus:ring-brand-blue outline-none"
+               placeholder="Mínimo 8 caracteres">
+      </div>
+      <div>
+        <label for="clave2" class="block text-sm mb-1">Repite la clave</label>
+        <input type="password" id="clave2" required
+               class="w-full px-4 py-2 border rounded-lg focus:ring-2 focus:ring-brand-blue outline-none"
+               placeholder="Debe coincidir con la anterior">
+      </div>
+      <button type="submit"
+              class="w-full bg-brand-green text-white py-2 rounded-lg font-semibold">
+        Guardar y continuar
+      </button>
+    </form>
+
+    <!-- Acciones secundarias -->
+    <div class="mt-4 space-y-2">
+      <a href="login.html" class="block w-full text-center bg-brand-blue text-white py-2 rounded-lg font-semibold">
+        Volver al inicio de sesión
+      </a>
+    </div>
+  </div>
+
+  <script>
+    const LIST_URL = 'licencias-activas.csv';  // misma carpeta
+    const CASE_SENSITIVE_USER = false;         // true si quieres sensible a mayúsculas
+    const DEBUG = false;                       // pon en true para ver logs en consola
+
+    const msg = document.getElementById('msg');
+    const formStep1 = document.getElementById('formStep1');
+    const formStep2 = document.getElementById('formStep2');
+
+    function showMsg(text, type = 'error') {
+      msg.textContent = text;
+      msg.classList.remove('hidden', 'bg-brand-green', 'bg-brand-red');
+      msg.classList.add(type === 'ok' ? 'bg-brand-green' : 'bg-brand-red');
+    }
+    function clearMsg() { msg.classList.add('hidden'); msg.textContent = ''; }
+
+    // Utilidades de normalización
+    const stripBOM = s => s.replace(/^\uFEFF/, '');
+    const unquote  = s => s.replace(/^\"(.*)\"$/, '$1');
+    const norm     = s => unquote(stripBOM(s)).trim().normalize('NFKC');
+
+    // Usuario: comparación configurable
+    function sameUser(a, b) {
+      return CASE_SENSITIVE_USER ? a === b : a.toLowerCase() === b.toLowerCase();
+    }
+
+    // Licencia: solo A–Z/0–9, en mayúscula
+    const normLic = s => norm(s).toUpperCase().replace(/[^A-Z0-9]/g, '');
+    // Heurística para “parece licencia”: >=4 chars y al menos 50% dígitos
+    function looksLikeLicense(s) {
+      const an = normLic(s);
+      if (an.length < 4) return false;
+      const d = (an.match(/[0-9]/g) || []).length;
+      return d >= Math.ceil(an.length * 0.5);
+    }
+
+    // Split tolerante a , o ; respetando comillas
+    function smartSplit(line) {
+      return line.split(/[;,](?=(?:[^"]*"[^"]*")*[^"]*$)/).map(norm).filter(Boolean);
+    }
+
+    // Dada una lista de partes, intenta devolver [licenciaNorm, usuarioNorm]
+    function detectPair(parts) {
+      if (parts.length < 2) return null;
+
+      // Caso frecuente 2 columnas (usuario,licencia) o (licencia,usuario)
+      if (parts.length === 2) {
+        const [a, b] = parts;
+        const aLic = looksLikeLicense(a);
+        const bLic = looksLikeLicense(b);
+
+        if (aLic && !bLic) return [normLic(a), norm(b)];
+        if (bLic && !aLic) return [normLic(b), norm(a)];
+
+        // Ambiguo: asumimos que la licencia es la 2ª (compatible con tu archivo actual)
+        return [normLic(b), norm(a)];
+      }
+
+      // >2 columnas: toma como licencia el último campo que “parece licencia”
+      for (let i = parts.length - 1; i >= 0; i--) {
+        if (looksLikeLicense(parts[i])) {
+          const lic = normLic(parts[i]);
+          const user = parts.filter((_, idx) => idx !== i).join(','); // une el resto como usuario
+          return [lic, norm(user)];
+        }
+      }
+
+      return null;
+    }
+
+    // Parser general
+    function parsePairs(text) {
+      const lines = stripBOM(text).replace(/\r\n?/g, '\n').split('\n');
+      const pairs = [];
+      for (let raw of lines) {
+        let line = raw.trim();
+        if (!line) continue;
+        if (line.toLowerCase().startsWith('sep=')) continue; // línea especial de Excel
+        if (line.startsWith('#')) continue;                  // comentarios
+
+        const parts = smartSplit(line);
+
+        // Omitir cabeceras tipo "licencia,usuario" o "usuario,licencia"
+        if (parts.length >= 2) {
+          const joined = parts.slice(0,2).join(',').toLowerCase();
+          if (/(licenc.*usuario|usuario.*licenc)/.test(joined)) continue;
+        }
+
+        const pair = detectPair(parts);
+        if (pair) pairs.push(pair);
+      }
+      return pairs;
+    }
+
+    // Paso 1: Verificar usuario + licencia
+    formStep1.addEventListener('submit', async (e) => {
+      e.preventDefault();
+      clearMsg();
+
+      const usuarioInput  = norm(document.getElementById('usuario').value);
+      const licenciaInput = normLic(document.getElementById('licencia').value);
+
+      if (!usuarioInput)  { showMsg('Indica un usuario.'); return; }
+      if (!licenciaInput) { showMsg('Indica un número de licencia.'); return; }
+
+      try {
+        const res = await fetch(LIST_URL, { cache: 'no-store' });
+        if (!res.ok) throw new Error('fetch-failed');
+
+        const text  = await res.text();
+        const pairs = parsePairs(text);
+
+        if (DEBUG) console.log('Pares detectados:', pairs);
+
+        let match = false;
+        for (const [licFile, usrFile] of pairs) {
+          if (licFile === licenciaInput && sameUser(usrFile, usuarioInput)) {
+            match = true;
+            break;
+          }
+        }
+
+        if (!match) { showMsg('Licencia o usuario incorrectos.'); return; }
+
+        // Mostrar paso 2
+        formStep1.classList.add('hidden');
+        formStep2.classList.remove('hidden');
+        showMsg('Licencia verificada. Crea tu clave para este dispositivo.', 'ok');
+
+      } catch (err) {
+        if (DEBUG) console.error(err);
+        showMsg('No se puede validar la licencia en este momento. Inténtalo más tarde.');
+      }
+    });
+
+    // Paso 2: Crear clave y guardar en el dispositivo
+    formStep2.addEventListener('submit', (e) => {
+      e.preventDefault();
+      clearMsg();
+
+      const usuario = norm(document.getElementById('usuario').value);
+      const clave   = document.getElementById('clave').value;
+      const clave2  = document.getElementById('clave2').value;
+
+      if (!clave || clave.length < 5) { showMsg('La clave debe tener al menos 5 caracteres.'); return; }
+      if (clave !== clave2) { showMsg('Las claves no coinciden.'); return; }
+
+      try {
+        localStorage.setItem('usuario', usuario);
+        localStorage.setItem('clave', clave);
+
+        // Limpiar sesión/caducidades previas
+        sessionStorage.clear();
+        localStorage.removeItem('AccesoExpiraAt');
+        localStorage.removeItem('AccesoValido');
+
+        showMsg('Datos guardados. Redirigiendo al inicio de sesión…', 'ok');
+        setTimeout(() => { window.location.href = 'login.html'; }, 800);
+      } catch (err) {
+        showMsg('No se pudo completar la activación en este dispositivo.');
+      }
+    });
+  </script>
+</body>
+</html>
+
+

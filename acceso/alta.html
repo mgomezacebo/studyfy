@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <title>Alta de usuario</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- Tipografías opcionales (si las usas en tu guía) -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet" />
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              green: '#58cc02',
+              blue: '#1cb0f6',
+              orange: '#ff9600',
+              red: '#ff4b4b'
+            }
+          },
+          fontFamily: {
+            heading: ['Poppins', 'ui-sans-serif', 'system-ui'],
+            body: ['Roboto', 'ui-sans-serif', 'system-ui']
+          }
+        }
+      }
+    }
+  </script>
+</head>
+<body class="min-h-screen flex items-center justify-center bg-gray-50 font-body">
+
+  <div class="w-full max-w-md bg-white shadow-lg rounded-2xl p-8">
+    <h1 class="text-2xl font-heading font-bold text-center mb-6 text-brand-green">Crear cuenta</h1>
+
+    <!-- Mensajes -->
+    <div id="msg" class="hidden mb-4 text-sm rounded-lg p-3 text-white"></div>
+
+    <!-- Formulario de alta -->
+    <form id="altaForm" class="space-y-4" autocomplete="off" novalidate>
+      <div>
+        <label for="usuario" class="block text-sm mb-1">Nombre de usuario</label>
+        <input type="text" id="usuario" required
+               class="w-full px-4 py-2 border rounded-lg focus:ring-2 focus:ring-brand-blue outline-none"
+               placeholder="Tu usuario">
+        <p class="mt-1 text-xs text-gray-500">Evita espacios al comienzo/fin. Se distingue entre mayúsculas y minúsculas.</p>
+      </div>
+
+      <div>
+        <label for="clave" class="block text-sm mb-1">Clave</label>
+        <input type="password" id="clave" required
+               class="w-full px-4 py-2 border rounded-lg focus:ring-2 focus:ring-brand-blue outline-none"
+               placeholder="Mínimo 8 caracteres">
+      </div>
+
+      <div>
+        <label for="clave2" class="block text-sm mb-1">Repite la clave</label>
+        <input type="password" id="clave2" required
+               class="w-full px-4 py-2 border rounded-lg focus:ring-2 focus:ring-brand-blue outline-none"
+               placeholder="Debe coincidir con la anterior">
+      </div>
+
+      <button type="submit"
+              class="w-full bg-brand-green text-white py-2 rounded-lg font-semibold">
+        Crear cuenta
+      </button>
+    </form>
+
+    <!-- Acciones secundarias -->
+    <div class="mt-4 space-y-2">
+      <a href="login.html" class="block w-full text-center bg-brand-blue text-white py-2 rounded-lg font-semibold">
+        Volver a iniciar sesión
+      </a>
+      <a href="activacion.html" class="block w-full text-center bg-brand-orange text-white py-2 rounded-lg font-semibold">
+        Activar licencia
+      </a>
+    </div>
+  </div>
+
+  <script>
+    const form = document.getElementById('altaForm');
+    const msg = document.getElementById('msg');
+
+    function showMsg(text, type = 'error') {
+      // type: 'error' | 'ok'
+      msg.textContent = text;
+      msg.classList.remove('hidden');
+      msg.classList.remove('bg-brand-green', 'bg-brand-red');
+      msg.classList.add(type === 'ok' ? 'bg-brand-green' : 'bg-brand-red');
+    }
+
+    function clearMsg() {
+      msg.classList.add('hidden');
+      msg.textContent = '';
+    }
+
+    form.addEventListener('submit', (e) => {
+      e.preventDefault();
+      clearMsg();
+
+      const usuario = document.getElementById('usuario').value.trim();
+      const clave = document.getElementById('clave').value;
+      const clave2 = document.getElementById('clave2').value;
+
+      // Validaciones básicas
+      if (!usuario) {
+        showMsg('Indica un nombre de usuario.');
+        return;
+      }
+      if (/\s{2,}/.test(usuario)) {
+        showMsg('El usuario no debe contener espacios consecutivos.');
+        return;
+      }
+      if (!clave || clave.length < 8) {
+        showMsg('La clave debe tener al menos 8 caracteres.');
+        return;
+      }
+      if (clave !== clave2) {
+        showMsg('Las claves no coinciden.');
+        return;
+      }
+
+      try {
+        // Guardar credenciales locales para este dispositivo
+        localStorage.setItem('usuario', usuario);
+        localStorage.setItem('clave', clave);
+
+        // Limpiar cualquier sesión previa/caducidad
+        sessionStorage.clear();
+        localStorage.removeItem('AccesoExpiraAt');
+        localStorage.removeItem('AccesoValido');
+
+        showMsg('Cuenta creada correctamente. Redirigiendo al inicio de sesión…', 'ok');
+
+        // Redirigir a login para acceder
+        setTimeout(() => {
+          window.location.href = 'login.html';
+        }, 700);
+      } catch (err) {
+        showMsg('No se pudo completar el alta en este dispositivo.');
+      }
+    });
+  </script>
+</body>
+</html>
