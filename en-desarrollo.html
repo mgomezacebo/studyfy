@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Studyfy - En Desarrollo</title>
+    <meta name="description" content="DuoStudy - Plataforma de estudio con IA. Página actualmente en desarrollo.">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="logos/icono.png">
+
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Fuentes personalizadas -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+
+    <!-- Configuración de Tailwind: Colores y fuentes personalizados -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'duo-green': '#58cc02',
+                        'duo-orange': '#ff9600',
+                        'duo-blue': '#1cb0f6',
+                        'duo-purple': '#ce82ff',
+                        'duo-red': '#ff4b4b',
+                        'duo-yellow': '#ffc800',
+                        'duo-text-dark': '#4b4b4b',
+                        'duo-text-white': '#ffffff',
+                        'duo-text-green': '#58cc02'
+                    },
+                    fontFamily: {
+                        'poppins': ['Poppins', 'sans-serif'],
+                        'roboto': ['Roboto', 'sans-serif']
+                    }
+                }
+            }
+        }
+    </script>
+
+    <!-- Estilos personalizados y animaciones -->
+    <style>
+        /* Animación de aparición suave */
+        .fade-in {
+            animation: fadeIn 1s ease-in-out forwards;
+        }
+
+        /* Animación de escala suave */
+        .scale-in {
+            animation: scaleIn 1.2s ease-out forwards;
+        }
+
+        /* Delay de animación personalizada */
+        .delay-300 { animation-delay: 0.3s; }
+        .delay-600 { animation-delay: 0.6s; }
+
+        /* Definición de keyframes */
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        @keyframes scaleIn {
+            from { transform: scale(0.8); opacity: 0; }
+            to { transform: scale(1); opacity: 1; }
+        }
+
+        /* Efecto al pasar el mouse (hover) */
+        .hover-lift {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .hover-lift:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+        }
+    </style>
+</head>
+
+<!-- Ahora el fondo es BLANCO puro -->
+<body class="font-roboto bg-white min-h-screen">
+    <!-- Contenedor principal centrado -->
+    <div class="min-h-screen flex items-center justify-center p-4">
+        <div class="text-center max-w-2xl mx-auto">
+
+            <!-- Logo animado -->
+            <div class="mb-8 scale-in">
+                <img src="../logos/sin-fondo.png" alt="Studyfy Logo" class="w-64 h-64 mx-auto hover-lift">
+            </div>
+
+            <!-- Texto de desarrollo -->
+            <div class="mb-8 fade-in delay-300">
+                <h1 class="font-poppins font-bold text-4xl md:text-5xl text-duo-text-green mb-4">
+                    Página en Desarrollo
+                </h1>
+                <p class="font-roboto text-xl text-duo-text-dark max-w-lg mx-auto">
+                    Estamos trabajando para traerte la mejor experiencia de estudio con IA. ¡Vuelve pronto!
+                </p>
+            </div>
+
+            <!-- Botón para regresar -->
+            <div class="fade-in delay-600">
+                <a href="../index.html" class="inline-block bg-duo-orange hover:bg-orange-500 text-white font-poppins font-semibold px-8 py-4 rounded-full text-lg transition-all duration-300 hover-lift shadow-lg">
+                    Volver al Inicio
+                </a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

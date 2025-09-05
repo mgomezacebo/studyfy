@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Centro de Ayuda - Studyfy</title>
+    <link rel="icon" type="image/png" href="logos/icono.png">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'duo-green': '#58cc02',
+                        'duo-orange': '#ff9600',
+                        'duo-blue': '#1cb0f6',
+                        'duo-purple': '#ce82ff',
+                        'duo-red': '#ff4b4b',
+                        'duo-yellow': '#ffc800',
+                        'duo-text-dark': '#4b4b4b',
+                        'duo-text-green': '#58cc02'
+                    },
+                    fontFamily: {
+                        'poppins': ['Poppins', 'sans-serif'],
+                        'roboto': ['Roboto', 'sans-serif']
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .support-card {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        
+        .support-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+        }
+        
+        .faq-item {
+            transition: all 0.3s ease;
+        }
+        
+        .faq-content {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease;
+        }
+        
+        .faq-content.open {
+            max-height: 200px;
+        }
+    </style>
+</head>
+<body class="font-roboto bg-gray-50">
+    <!-- Header -->
+    <header class="bg-white shadow-lg border-b border-gray-100">
+        <div class="max-w-7xl mx-auto px-4 py-4">
+            <div class="flex items-center justify-between h-20">
+                <div class="flex items-center space-x-3 group">
+                    <img src="logos/sin-fondo.png" alt="Studyfy Logo" class="w-12 h-12 transition-transform duration-300 group-hover:scale-110">
+                    <h1 class="font-poppins font-bold text-3xl text-duo-text-green group-hover:text-green-600 transition-colors duration-300">Studyfy</h1>
+                </div>
+                <nav class="hidden md:flex items-center space-x-1">
+                    <a href="index.html" class="text-duo-text-dark hover:text-duo-text-green hover:bg-gray-50 px-6 py-3 rounded-full transition-all duration-300 transform hover:scale-105">Inicio</a>
+                    <a href="colegios.html" class="text-duo-text-dark hover:text-duo-text-green hover:bg-gray-50 px-6 py-3 rounded-full transition-all duration-300 transform hover:scale-105">Para Colegios</a>
+                    <a href="help.html" class="text-duo-text-green font-semibold bg-green-50 px-6 py-3 rounded-full hover:bg-green-100 hover:text-green-700 transition-all duration-300 transform hover:scale-105">Ayuda</a>
+                    <a href="app/app.html" class="bg-gradient-to-r from-duo-green to-green-600 text-white px-8 py-3 rounded-full font-semibold hover:from-green-600 hover:to-green-700 transition-all duration-300 transform hover:scale-105 hover:shadow-lg shadow-md">Acceder</a>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="bg-gradient-to-r from-duo-green to-duo-blue text-white py-16">
+        <div class="max-w-4xl mx-auto px-4 text-center">
+            <h1 class="font-poppins font-bold text-4xl md:text-5xl mb-4">
+                Centro de Ayuda
+            </h1>
+            <p class="text-xl opacity-90">
+                Estamos aquí para ayudarte. Elige la opción que mejor se adapte a tus necesidades.
+            </p>
+        </div>
+    </section>
+
+    <!-- Support Options -->
+    <section class="py-20 bg-white">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Chat Support -->
+                <div class="support-card bg-white p-6 rounded-2xl shadow-lg border border-gray-100 text-center">
+                    <div class="w-16 h-16 bg-duo-green rounded-full flex items-center justify-center mx-auto mb-4">
+                        <span class="text-3xl">💬</span>
+                    </div>
+                    <h3 class="font-poppins font-semibold text-xl text-duo-text-dark mb-3">
+                        Chat en Vivo
+                    </h3>
+                    <p class="text-gray-600 mb-4">
+                        Habla directamente con nuestro equipo de soporte
+                    </p>
+                    <p class="text-sm text-duo-orange font-medium mb-4">
+                        Horario: 17:00 - 21:00
+                    </p>
+                    <button onclick="openChat()" class="w-full bg-duo-green text-white py-3 px-4 rounded-lg font-medium hover:bg-green-600 transition-colors">
+                        Iniciar Chat
+                    </button>
+                </div>
+
+                <!-- Email Support -->
+                <div class="support-card bg-white p-6 rounded-2xl shadow-lg border border-gray-100 text-center">
+                    <div class="w-16 h-16 bg-duo-blue rounded-full flex items-center justify-center mx-auto mb-4">
+                        <span class="text-3xl">📧</span>
+                    </div>
+                    <h3 class="font-poppins font-semibold text-xl text-duo-text-dark mb-3">
+                        Soporte por Email
+                    </h3>
+                    <p class="text-gray-600 mb-4">
+                        Envía tu consulta y te responderemos en 24h
+                    </p>
+                    <a href="mailto:studyfy@technologist.com" class="block w-full bg-duo-blue text-white py-3 px-4 rounded-lg font-medium hover:bg-blue-600 transition-colors">
+                        Enviar Email
+                    </a>
+                </div>
+
+                <!-- FAQ -->
+                <div class="support-card bg-white p-6 rounded-2xl shadow-lg border border-gray-100 text-center">
+                    <div class="w-16 h-16 bg-duo-orange rounded-full flex items-center justify-center mx-auto mb-4">
+                        <span class="text-3xl">❓</span>
+                    </div>
+                    <h3 class="font-poppins font-semibold text-xl text-duo-text-dark mb-3">
+                        Preguntas Frecuentes
+                    </h3>
+                    <p class="text-gray-600 mb-4">
+                        Encuentra respuestas rápidas a dudas comunes
+                    </p>
+                    <button onclick="scrollToFAQ()" class="w-full bg-duo-orange text-white py-3 px-4 rounded-lg font-medium hover:bg-orange-600 transition-colors">
+                        Ver FAQ
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section id="faq" class="py-20 bg-gray-100">
+        <div class="max-w-4xl mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="font-poppins font-bold text-4xl text-duo-text-dark mb-4">
+                    Preguntas Frecuentes
+                </h2>
+                <p class="text-xl text-gray-600">
+                    Resolvemos las dudas más comunes sobre Studyfy
+                </p>
+            </div>
+            
+            <div class="space-y-4">
+                <!-- FAQ Item 1 -->
+                <div class="faq-item bg-white rounded-lg shadow-sm border border-gray-200">
+                    <button onclick="toggleFAQ(1)" class="w-full px-6 py-4 text-left flex items-center justify-between hover:bg-gray-50 transition-colors">
+                        <span class="font-poppins font-semibold text-duo-text-dark">¿Cómo puedo importar mis materiales de estudio?</span>
+                        <span class="text-duo-text-green text-xl" id="faq-icon-1">+</span>
+                    </button>
+                    <div class="faq-content px-6 pb-4" id="faq-content-1">
+                        <p class="text-gray-600">
+                            Puedes importar tus materiales de dos formas: subiendo un archivo JSON directamente o copiando y pegando el código JSON en el campo de texto. Una vez importado, asigna el material a una carpeta y podrás acceder a él desde cualquier momento.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- FAQ Item 2 -->
+                <div class="faq-item bg-white rounded-lg shadow-sm border border-gray-200">
+                    <button onclick="toggleFAQ(2)" class="w-full px-6 py-4 text-left flex items-center justify-between hover:bg-gray-50 transition-colors">
+                        <span class="font-poppins font-semibold text-duo-text-dark">¿Qué tipos de material puedo crear con Studyfy?</span>
+                        <span class="text-duo-text-green text-xl" id="faq-icon-2">+</span>
+                    </button>
+                    <div class="faq-content px-6 pb-4" id="faq-content-2">
+                        <p class="text-gray-600">
+                            Studyfy te permite crear: apuntes y esquemas, tests personalizados, exámenes de práctica, flashcards interactivas, ejercicios con corrección automática, y mucho más. Todo se adapta a tu nivel y estilo de aprendizaje.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- FAQ Item 3 -->
+                <div class="faq-item bg-white rounded-lg shadow-sm border border-gray-200">
+                    <button onclick="toggleFAQ(3)" class="w-full px-6 py-4 text-left flex items-center justify-between hover:bg-gray-50 transition-colors">
+                        <span class="font-poppins font-semibold text-duo-text-dark">¿Cómo funciona el sistema de carpetas?</span>
+                        <span class="text-duo-text-green text-xl" id="faq-icon-3">+</span>
+                    </button>
+                    <div class="faq-content px-6 pb-4" id="faq-content-3">
+                        <p class="text-gray-600">
+                            El sistema de carpetas te permite organizar todo tu material de estudio de manera lógica. Puedes crear carpetas por asignatura, tema, o cualquier criterio que prefieras. Cada material se guarda automáticamente en el localStorage de tu navegador.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- FAQ Item 4 -->
+                <div class="faq-item bg-white rounded-lg shadow-sm border border-gray-200">
+                    <button onclick="toggleFAQ(4)" class="w-full px-6 py-4 text-left flex items-center justify-between hover:bg-gray-50 transition-colors">
+                        <span class="font-poppins font-semibold text-duo-text-dark">¿Puedo exportar mi material de estudio?</span>
+                        <span class="text-duo-text-green text-xl" id="faq-icon-4">+</span>
+                    </button>
+                    <div class="faq-content px-6 pb-4" id="faq-content-4">
+                        <p class="text-gray-600">
+                            Sí, puedes exportar todo tu material de estudio en un solo archivo JSON. Esto incluye apuntes, tests, flashcards, ejercicios y estadísticas. Es perfecto para hacer copias de seguridad o transferir tu material a otro dispositivo.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- FAQ Item 5 -->
+                <div class="faq-item bg-white rounded-lg shadow-sm border border-gray-200">
+                    <button onclick="toggleFAQ(5)" class="w-full px-6 py-4 text-left flex items-center justify-between hover:bg-gray-50 transition-colors">
+                        <span class="font-poppins font-semibold text-duo-text-dark">¿Cómo se calculan las estadísticas de progreso?</span>
+                        <span class="text-duo-text-green text-xl" id="faq-icon-5">+</span>
+                    </button>
+                    <div class="faq-content px-6 pb-4" id="faq-content-5">
+                        <p class="text-gray-600">
+                            Las estadísticas se calculan basándose en tu rendimiento en tests, tiempo de estudio, progreso en flashcards y ejercicios completados. El sistema analiza estos datos para mostrarte tu evolución y sugerir áreas de mejora.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- FAQ Item 6 -->
+                <div class="faq-item bg-white rounded-lg shadow-sm border border-gray-200">
+                    <button onclick="toggleFAQ(6)" class="w-full px-6 py-4 text-left flex items-center justify-between hover:bg-gray-50 transition-colors">
+                        <span class="font-poppins font-semibold text-duo-text-dark">¿Qué navegadores son compatibles con Studyfy?</span>
+                        <span class="text-duo-text-green text-xl" id="faq-icon-6">+</span>
+                    </button>
+                    <div class="faq-content px-6 pb-4" id="faq-content-6">
+                        <p class="text-gray-600">
+                            Studyfy es compatible con todos los navegadores modernos: Chrome, Firefox, Safari, Edge y Opera. Para una experiencia óptima, recomendamos usar la versión más reciente de tu navegador.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- FAQ Item 7 -->
+                <div class="faq-item bg-white rounded-lg shadow-sm border border-gray-200">
+                    <button onclick="toggleFAQ(7)" class="w-full px-6 py-4 text-left flex items-center justify-between hover:bg-gray-50 transition-colors">
+                        <span class="font-poppins font-semibold text-duo-text-dark">¿Cómo puedo obtener ayuda si tengo un problema técnico?</span>
+                        <span class="text-duo-text-green text-xl" id="faq-icon-7">+</span>
+                    </button>
+                    <div class="faq-content px-6 pb-4" id="faq-content-7">
+                        <p class="text-gray-600">
+                            Si experimentas algún problema técnico, puedes contactarnos a través del chat en vivo (17:00-21:00) o enviar un email a studyfy@technologist.com. Siempre intentamos responder en menos de 24 horas.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- FAQ Item 8 -->
+                <div class="faq-item bg-white rounded-lg shadow-sm border border-gray-200">
+                    <button onclick="toggleFAQ(8)" class="w-full px-6 py-4 text-left flex items-center justify-between hover:bg-gray-50 transition-colors">
+                        <span class="font-poppins font-semibold text-duo-text-dark">¿Studyfy es gratuito?</span>
+                        <span class="text-duo-text-green text-xl" id="faq-icon-8">+</span>
+                    </button>
+                    <div class="faq-content px-6 pb-4" id="faq-content-8">
+                        <p class="text-gray-600">
+                            Sí, Studyfy es completamente gratuito para uso individual. Ofrecemos todas las funcionalidades sin coste alguno. Para instituciones educativas, contamos con planes especiales que incluyen soporte personalizado y funcionalidades avanzadas.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="py-20 bg-white">
+        <div class="max-w-4xl mx-auto px-4 text-center">
+            <h2 class="font-poppins font-bold text-4xl text-duo-text-dark mb-6">
+                ¿No encontraste lo que buscabas?
+            </h2>
+            <p class="text-xl text-gray-600 mb-8">
+                Nuestro equipo está aquí para ayudarte. No dudes en contactarnos.
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <button onclick="openChat()" class="bg-duo-green text-white px-8 py-4 rounded-lg font-semibold text-lg hover:bg-green-600 transition-colors">
+                    Chat en Vivo
+                </button>
+                <a href="mailto:studyfy@technologist.com" class="border-2 border-duo-green text-duo-text-green px-8 py-4 rounded-lg font-semibold text-lg hover:bg-duo-green hover:text-white transition-colors">
+                    Enviar Email
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-duo-text-dark text-white py-12">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="grid md:grid-cols-4 gap-8">
+                <div>
+                    <div class="flex items-center space-x-3 mb-4">
+                        <img src="logos/tinta-blanca.png" alt="Studyfy Logo" class="w-8 h-8">
+                        <span class="font-poppins font-bold text-xl">Studyfy</span>
+                    </div>
+                    <p class="text-gray-300">
+                        Transformando la educación con inteligencia artificial para crear un futuro más brillante.
+                    </p>
+                </div>
+                
+                <div>
+                    <h4 class="font-poppins font-semibold text-lg mb-4">Producto</h4>
+                    <ul class="space-y-2 text-gray-300">
+                        <li><a href="app/app.html" class="hover:text-white transition-colors">Acceder a la App</a></li>
+                        <li><a href="help.html" class="hover:text-white transition-colors">Centro de Ayuda</a></li>
+                        <li><a href="colegios.html" class="hover:text-white transition-colors">Para Colegios</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="font-poppins font-semibold text-lg mb-4">Soporte</h4>
+                    <ul class="space-y-2 text-gray-300">
+                        <li><a href="help.html" class="hover:text-white transition-colors">Chat en Vivo</a></li>
+                        <li><a href="mailto:studyfy@technologist.com" class="hover:text-white transition-colors">Email</a></li>
+                        <li><a href="help.html" class="hover:text-white transition-colors">FAQ</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="font-poppins font-semibold text-lg mb-4">Contacto</h4>
+                    <p class="text-gray-300 mb-2">studyfy@technologist.com</p>
+                    <div class="flex space-x-4 mt-4">
+                        <a href="#" class="text-gray-300 hover:text-white transition-colors">
+                            <span class="text-2xl">📧</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-700 mt-8 pt-8 text-center text-gray-300">
+                <p>&copy; 2025 Studyfy. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        function toggleFAQ(id) {
+            const content = document.getElementById(`faq-content-${id}`);
+            const icon = document.getElementById(`faq-icon-${id}`);
+            
+            if (content.classList.contains('open')) {
+                content.classList.remove('open');
+                icon.textContent = '+';
+            } else {
+                content.classList.add('open');
+                icon.textContent = '−';
+            }
+        }
+
+        function openChat() {
+            // Abrir el chat en una nueva ventana
+            window.open('https://tawk.to/chat/68b452d68e5e8d7ad6a00c13/1j40675rh', '_blank');
+        }
+
+        function scrollToFAQ() {
+            document.getElementById('faq').scrollIntoView({ behavior: 'smooth' });
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,566 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Studyfy - Tu compañero de estudio con IA</title>
+    <link rel="icon" type="image/png" href="logos/icono.png">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'duo-green': '#58cc02',
+                        'duo-orange': '#ff9600',
+                        'duo-blue': '#1cb0f6',
+                        'duo-purple': '#ce82ff',
+                        'duo-red': '#ff4b4b',
+                        'duo-yellow': '#ffc800',
+                        'duo-text-dark': '#4b4b4b',
+                        'duo-text-white': '#ffffff',
+                        'duo-text-green': '#58cc02'
+                    },
+                    fontFamily: {
+                        'poppins': ['Poppins', 'sans-serif'],
+                        'roboto': ['Roboto', 'sans-serif']
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .fade-in {
+            animation: fadeIn 0.8s ease-in-out;
+        }
+        
+        .slide-up {
+            animation: slideUp 0.8s ease-out;
+        }
+        
+        .scale-in {
+            animation: scaleIn 0.6s ease-out;
+        }
+        
+        .slide-left {
+            animation: slideLeft 0.8s ease-out;
+        }
+        
+        .slide-right {
+            animation: slideRight 0.8s ease-out;
+        }
+        
+        .bounce-in {
+            animation: bounceIn 0.8s ease-out;
+        }
+        
+        .rotate-in {
+            animation: rotateIn 0.8s ease-out;
+        }
+        
+        .fade-in-up {
+            animation: fadeInUp 1s ease-out;
+        }
+        
+        .fade-in-down {
+            animation: fadeInDown 1s ease-out;
+        }
+        
+        .zoom-in {
+            animation: zoomIn 0.8s ease-out;
+        }
+        
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        
+        @keyframes slideUp {
+            from { transform: translateY(50px); opacity: 0; }
+            to { transform: translateY(0); opacity: 1; }
+        }
+        
+        @keyframes slideLeft {
+            from { transform: translateX(-50px); opacity: 0; }
+            to { transform: translateX(0); opacity: 1; }
+        }
+        
+        @keyframes slideRight {
+            from { transform: translateX(50px); opacity: 0; }
+            to { transform: translateX(0); opacity: 1; }
+        }
+        
+        @keyframes scaleIn {
+            from { transform: scale(0.8); opacity: 0; }
+            to { transform: scale(1); opacity: 1; }
+        }
+        
+        @keyframes bounceIn {
+            0% { transform: scale(0.3); opacity: 0; }
+            50% { transform: scale(1.05); }
+            70% { transform: scale(0.9); }
+            100% { transform: scale(1); opacity: 1; }
+        }
+        
+        @keyframes rotateIn {
+            from { transform: rotate(-200deg); opacity: 0; }
+            to { transform: rotate(0); opacity: 1; }
+        }
+        
+        @keyframes fadeInUp {
+            from { transform: translateY(30px); opacity: 0; }
+            to { transform: translateY(0); opacity: 1; }
+        }
+        
+        @keyframes fadeInDown {
+            from { transform: translateY(-30px); opacity: 0; }
+            to { transform: translateY(0); opacity: 1; }
+        }
+        
+        @keyframes zoomIn {
+            from { transform: scale(0.5); opacity: 0; }
+            to { transform: scale(1); opacity: 1; }
+        }
+        
+        .hover-lift {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        
+        .hover-lift:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+        }
+        
+        .gradient-bg {
+            background: linear-gradient(135deg, #58cc02 0%, #4aad02 100%);
+        }
+        
+        .section-padding {
+            padding: 80px 0;
+        }
+        
+        @media (max-width: 768px) {
+            .section-padding {
+                padding: 60px 0;
+            }
+        }
+        
+        /* Animaciones de entrada para secciones */
+        .section-animate {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: all 0.8s ease-out;
+        }
+        
+        .section-animate.animate-in {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    </style>
+</head>
+<body class="font-roboto text-duo-text-dark">
+    <!-- Navegación -->
+    <nav class="fixed top-0 w-full bg-white/95 backdrop-blur-sm z-50 shadow-lg transition-all duration-300 border-b border-gray-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <div class="flex items-center space-x-3 group">
+                    <img src="logos/sin-fondo.png" alt="Studyfy Logo" class="h-12 w-auto transition-transform duration-300 group-hover:scale-110">
+                    <span class="font-poppins font-bold text-3xl text-duo-text-green group-hover:text-green-600 transition-colors duration-300">Studyfy</span>
+                </div>
+                <div class="hidden md:flex items-center space-x-1">
+                    <a href="#inicio" class="nav-link text-duo-text-green font-semibold bg-green-50 px-6 py-3 rounded-full hover:bg-green-100 hover:text-green-700 transition-all duration-300 transform hover:scale-105">Inicio</a>
+                    <a href="colegios.html" class="nav-link text-duo-text-dark hover:text-duo-text-green hover:bg-gray-50 px-6 py-3 rounded-full transition-all duration-300 transform hover:scale-105">Para Colegios</a>
+                    <a href="help.html" class="nav-link text-duo-text-dark hover:text-duo-text-green hover:bg-gray-50 px-6 py-3 rounded-full transition-all duration-300 transform hover:scale-105">Ayuda</a>
+                    <a href="app/app.html" class="bg-gradient-to-r from-duo-green to-green-600 text-white px-8 py-3 rounded-full font-semibold hover:from-green-600 hover:to-green-700 transition-all duration-300 transform hover:scale-105 hover:shadow-lg shadow-md">Acceder</a>
+                </div>
+                <div class="md:hidden">
+                    <button id="mobile-menu-btn" class="text-duo-text-dark hover:text-duo-text-green p-2 rounded-lg hover:bg-gray-100 transition-colors">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Menú móvil -->
+        <div id="mobile-menu" class="md:hidden hidden bg-white border-t border-gray-100 shadow-lg">
+            <div class="px-4 pt-4 pb-6 space-y-2">
+                <a href="#inicio" class="block px-4 py-3 text-duo-text-green font-semibold bg-green-50 rounded-lg hover:bg-green-100 transition-colors duration-300">Inicio</a>
+                <a href="colegios.html" class="block px-4 py-3 text-duo-text-dark hover:text-duo-text-green hover:bg-gray-50 rounded-lg transition-colors duration-300">Para Colegios</a>
+                <a href="help.html" class="block px-4 py-3 text-duo-text-dark hover:text-duo-text-green hover:bg-gray-50 rounded-lg transition-colors duration-300">Ayuda</a>
+                <a href="app/app.html" class="block px-4 py-3 bg-gradient-to-r from-duo-green to-green-600 text-white rounded-lg font-semibold text-center hover:from-green-600 hover:to-green-700 transition-all duration-300">Acceder</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Sección Inicio -->
+    <section id="inicio" class="min-h-screen gradient-bg flex items-center justify-center section-padding">
+        <div class="text-center text-white">
+            <h1 class="font-poppins font-bold text-6xl md:text-8xl mb-6 animate-pulse bounce-in">
+                Studyfy
+            </h1>
+            <p class="font-roboto text-xl md:text-2xl mb-8 max-w-2xl mx-auto opacity-90 fade-in" style="animation-delay: 0.3s;">
+                Tu compañero de estudio inteligente con IA
+            </p>
+            <a href="app/app.html" class="inline-block bg-duo-orange hover:bg-orange-500 text-white font-poppins font-semibold px-8 py-4 rounded-full text-lg transition-all duration-300 hover-lift shadow-lg zoom-in" style="animation-delay: 0.6s;">
+                Acceder a la App
+            </a>
+        </div>
+    </section>
+
+    <!-- Sección Qué es Studyfy -->
+    <section id="que-es" class="bg-white section-padding section-animate">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16 fade-in-down">
+                <h2 class="font-poppins font-bold text-4xl md:text-5xl text-duo-text-green mb-6">
+                    ¿Qué es Studyfy?
+                </h2>
+                <p class="font-roboto text-xl text-duo-text-dark max-w-3xl mx-auto">
+                    Studyfy es una aplicación revolucionaria que combina el poder de la Inteligencia Artificial con técnicas de estudio probadas para transformar tu experiencia de aprendizaje.
+                </p>
+            </div>
+            
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div class="space-y-6 slide-left" style="animation-delay: 0.2s;">
+                    <div class="flex items-start space-x-4 bounce-in" style="animation-delay: 0.4s;">
+                        <div class="bg-duo-blue text-white p-3 rounded-full rotate-in">
+                            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"></path>
+                            </svg>
+                        </div>
+                        <div>
+                            <h3 class="font-poppins font-semibold text-xl text-duo-text-dark mb-2">Estudio Inteligente</h3>
+                            <p class="font-roboto text-duo-text-dark">Utiliza IA avanzada para crear materiales de estudio personalizados y adaptados a tu estilo de aprendizaje.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="flex items-start space-x-4 bounce-in" style="animation-delay: 0.6s;">
+                        <div class="bg-duo-purple text-white p-3 rounded-full rotate-in">
+                            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.246 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"></path>
+                            </svg>
+                        </div>
+                        <div>
+                            <h3 class="font-poppins font-semibold text-xl text-duo-text-dark mb-2">Material Personalizado</h3>
+                            <p class="font-roboto text-duo-text-dark">Genera apuntes, esquemas y ejercicios específicos para tus libros y temas de estudio.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="zoom-in" style="animation-delay: 0.4s;">
+                    <img src="logos/sin-fondo.png" alt="Studyfy App" class="w-full max-w-md mx-auto hover-lift">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección Cómo funciona -->
+    <section id="como-funciona" class="bg-gray-50 section-padding section-animate">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16 fade-in-up">
+                <h2 class="font-poppins font-bold text-4xl md:text-5xl text-duo-text-green mb-6">
+                    ¿Cómo funciona?
+                </h2>
+                <p class="font-roboto text-xl text-duo-text-dark max-w-3xl mx-auto">
+                    El proceso es simple y eficiente. Solo necesitas seguir estos pasos para comenzar a estudiar de manera inteligente.
+                </p>
+            </div>
+            
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="text-center bounce-in" style="animation-delay: 0.1s;">
+                    <div class="bg-duo-green text-white w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-6 text-2xl font-bold rotate-in">
+                        1
+                    </div>
+                    <h3 class="font-poppins font-semibold text-xl text-duo-text-dark mb-4">Crea con IA</h3>
+                    <p class="font-roboto text-duo-text-dark">Usa GPT para generar material de estudio en formato JSON. Conversa hasta obtener exactamente lo que necesitas.</p>
+                </div>
+                
+                <div class="text-center bounce-in" style="animation-delay: 0.3s;">
+                    <div class="bg-duo-orange text-white w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-6 text-2xl font-bold rotate-in">
+                        2
+                    </div>
+                    <h3 class="font-poppins font-semibold text-xl text-duo-text-dark mb-4">Importa a Studyfy</h3>
+                    <p class="font-roboto text-duo-text-dark">Sube tu archivo JSON o pega el código directamente en la aplicación para importarlo.</p>
+                </div>
+                
+                <div class="text-center bounce-in" style="animation-delay: 0.5s;">
+                    <div class="bg-duo-blue text-white w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-6 text-2xl font-bold rotate-in">
+                        3
+                    </div>
+                    <h3 class="font-poppins font-semibold text-xl text-duo-text-dark mb-4">Organiza y Estudia</h3>
+                    <p class="font-roboto text-duo-text-dark">Asigna el material a carpetas, añade títulos y comienza a estudiar con todas las herramientas disponibles.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección Funciones -->
+    <section id="funciones" class="bg-white section-padding section-animate">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16 fade-in-down">
+                <h2 class="font-poppins font-bold text-4xl md:text-5xl text-duo-text-green mb-6">
+                    Funciones de Studyfy
+                </h2>
+                <p class="font-roboto text-xl text-duo-text-dark max-w-3xl mx-auto">
+                    Descubre todas las herramientas que Studyfy pone a tu disposición para maximizar tu aprendizaje.
+                </p>
+            </div>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="bg-white p-6 rounded-xl shadow-lg hover-lift border border-gray-100 zoom-in" style="animation-delay: 0.1s;">
+                    <div class="bg-duo-green text-white p-3 rounded-full w-fit mb-4 rotate-in">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="font-poppins font-semibold text-xl text-duo-text-dark mb-3">Apuntes y Esquemas</h3>
+                    <p class="font-roboto text-duo-text-dark">Genera apuntes estructurados y esquemas visuales a partir de tus libros de texto.</p>
+                </div>
+                
+                <div class="bg-white p-6 rounded-xl shadow-lg hover-lift border border-gray-100 zoom-in" style="animation-delay: 0.2s;">
+                    <div class="bg-duo-orange text-white p-3 rounded-full w-fit mb-4 rotate-in">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8.228 9c.549-1.165 2.03-2 3.772-2 2.21 0 4 1.343 4 3 0 1.4-1.278 2.575-3.006 2.907-.542.104-.994.54-.994 1.093m0 3h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="font-poppins font-semibold text-xl text-duo-text-dark mb-3">Tests y Exámenes</h3>
+                    <p class="font-roboto text-duo-text-dark">Practica con tests personalizados y exámenes de prueba basados en tu material de estudio.</p>
+                </div>
+                
+                <div class="bg-white p-6 rounded-xl shadow-lg hover-lift border border-gray-100 zoom-in" style="animation-delay: 0.3s;">
+                    <div class="bg-duo-blue text-white p-3 rounded-full w-fit mb-4 rotate-in">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v10a2 2 0 002 2h8a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2"></path>
+                        </svg>
+                    </div>
+                    <h3 class="font-poppins font-semibold text-xl text-duo-text-dark mb-3">Flash Cards</h3>
+                    <p class="font-roboto text-duo-text-dark">Crea tarjetas de memoria para repasar conceptos clave de manera efectiva.</p>
+                </div>
+                
+                <div class="bg-white p-6 rounded-xl shadow-lg hover-lift border border-gray-100 zoom-in" style="animation-delay: 0.4s;">
+                    <div class="bg-duo-purple text-white p-3 rounded-full w-fit mb-4 rotate-in">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="font-poppins font-semibold text-xl text-duo-text-dark mb-3">Corrección y Ejercicios</h3>
+                    <p class="font-roboto text-duo-text-dark">Recibe correcciones detalladas y ejercicios adicionales para reforzar tu aprendizaje.</p>
+                </div>
+                
+                <div class="bg-white p-6 rounded-xl shadow-lg hover-lift border border-gray-100 zoom-in" style="animation-delay: 0.5s;">
+                    <div class="bg-duo-yellow text-white p-3 rounded-full w-fit mb-4 rotate-in">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8.228 9c.549-1.165 2.03-2 3.772-2 2.21 0 4 1.343 4 3 0 1.4-1.278 2.575-3.006 2.907-.542.104-.994.54-.994 1.093m0 3h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="font-poppins font-semibold text-xl text-duo-text-dark mb-3">Explicaciones y Dudas</h3>
+                    <p class="font-roboto text-duo-text-dark">Resuelve dudas y obtén explicaciones claras sobre cualquier tema de estudio.</p>
+                </div>
+                
+                <div class="bg-white p-6 rounded-xl shadow-lg hover-lift border border-gray-100 zoom-in" style="animation-delay: 0.6s;">
+                    <div class="bg-duo-green text-white p-3 rounded-full w-fit mb-4 rotate-in">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 7v10a2 2 0 002 2h14a2 2 0 002-2V9a2 2 0 00-2-2H5a2 2 0 00-2-2z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="font-poppins font-semibold text-xl text-duo-text-dark mb-3">Organización Inteligente</h3>
+                    <p class="font-roboto text-duo-text-dark">Guarda y organiza todo tu material en carpetas personalizadas para un acceso rápido.</p>
+                </div>
+            </div>
+            
+            <div class="text-center mt-12 bounce-in" style="animation-delay: 0.7s;">
+                <a href="app/app.html" class="inline-block bg-duo-green hover:bg-green-600 text-white font-poppins font-semibold px-8 py-4 rounded-full text-lg transition-all duration-300 hover-lift shadow-lg">
+                    Comenzar a Estudiar
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección Contacto -->
+    <section id="contacto" class="bg-gray-50 section-padding section-animate">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <div class="fade-in-up">
+                <h2 class="font-poppins font-bold text-4xl md:text-5xl text-duo-text-green mb-6">
+                    ¿Tienes alguna pregunta?
+                </h2>
+                <p class="font-roboto text-xl text-duo-text-dark mb-8 max-w-2xl mx-auto">
+                    Estamos aquí para ayudarte. No dudes en contactarnos si necesitas más información sobre Studyfy.
+                </p>
+                
+                <div class="bg-white p-8 rounded-xl shadow-lg hover-lift inline-block">
+                    <div class="flex items-center justify-center space-x-3 mb-4">
+                        <div class="bg-duo-green text-white p-3 rounded-full">
+                            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 4.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
+                            </svg>
+                        </div>
+                        <span class="font-poppins font-semibold text-xl text-duo-text-dark">Contacto</span>
+                    </div>
+                    <a href="mailto:studyfy@technologist.com" class="text-duo-text-green hover:text-green-600 font-roboto text-lg transition-colors duration-300">
+                        studyfy@technologist.com
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-duo-text-dark text-white py-12">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="grid md:grid-cols-4 gap-8">
+                <div>
+                    <div class="flex items-center space-x-3 mb-4">
+                        <img src="logos/tinta-blanca.png" alt="Studyfy Logo" class="w-8 h-8">
+                        <span class="font-poppins font-bold text-xl">Studyfy</span>
+                    </div>
+                    <p class="text-gray-300">
+                        Transformando la educación con inteligencia artificial para crear un futuro más brillante.
+                    </p>
+                </div>
+                
+                <div>
+                    <h4 class="font-poppins font-semibold text-lg mb-4">Producto</h4>
+                    <ul class="space-y-2 text-gray-300">
+                        <li><a href="app/app.html" class="hover:text-white transition-colors">Acceder a la App</a></li>
+                        <li><a href="help.html" class="hover:text-white transition-colors">Centro de Ayuda</a></li>
+                        <li><a href="colegios.html" class="hover:text-white transition-colors">Para Colegios</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="font-poppins font-semibold text-lg mb-4">Soporte</h4>
+                    <ul class="space-y-2 text-gray-300">
+                        <li><a href="help.html" class="hover:text-white transition-colors">Chat en Vivo</a></li>
+                        <li><a href="mailto:studyfy@technologist.com" class="hover:text-white transition-colors">Email</a></li>
+                        <li><a href="help.html" class="hover:text-white transition-colors">FAQ</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="font-poppins font-semibold text-lg mb-4">Contacto</h4>
+                    <p class="text-gray-300 mb-2">studyfy@technologist.com</p>
+                    <div class="flex space-x-4 mt-4">
+                        <a href="#" class="text-gray-300 hover:text-white transition-colors">
+                            <span class="text-2xl">📧</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-700 mt-8 pt-8 text-center text-gray-300">
+                <p>&copy; 2025 Studyfy. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Navegación suave
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Menú móvil
+        const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+        
+        mobileMenuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Cerrar menú móvil al hacer clic en un enlace
+        document.querySelectorAll('#mobile-menu a').forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('hidden');
+            });
+        });
+
+        // Animaciones al hacer scroll
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('fade-in');
+                }
+            });
+        }, observerOptions);
+
+        // Observar elementos para animaciones
+        document.querySelectorAll('.slide-up, .scale-in, .slide-left, .slide-right, .bounce-in, .rotate-in, .fade-in-up, .fade-in-down, .zoom-in').forEach(el => {
+            observer.observe(el);
+        });
+        
+        // Observar secciones para animaciones de entrada
+        const sectionObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('animate-in');
+                }
+            });
+        }, { threshold: 0.1 });
+        
+        // Observar secciones con animaciones
+        document.querySelectorAll('.section-animate').forEach(section => {
+            sectionObserver.observe(section);
+        });
+
+        // Navegación activa
+        const sections = document.querySelectorAll('section[id]');
+        const navLinks = document.querySelectorAll('.nav-link');
+
+        window.addEventListener('scroll', () => {
+            let current = '';
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop;
+                const sectionHeight = section.clientHeight;
+                if (scrollY >= (sectionTop - 200)) {
+                    current = section.getAttribute('id');
+                }
+            });
+
+            navLinks.forEach(link => {
+                link.classList.remove('text-duo-text-green');
+                link.classList.add('text-duo-text-dark');
+                if (link.getAttribute('href') === `#${current}`) {
+                    link.classList.remove('text-duo-text-dark');
+                    link.classList.add('text-duo-text-green');
+                }
+            });
+        });
+
+        // Efectos de hover en botones
+        document.querySelectorAll('a[href*="app.html"]').forEach(button => {
+            button.addEventListener('mouseenter', function() {
+                this.style.transform = 'translateY(-5px) scale(1.05)';
+            });
+            
+            button.addEventListener('mouseleave', function() {
+                this.style.transform = 'translateY(0) scale(1)';
+            });
+        });
+
+        // Animación de carga inicial
+        window.addEventListener('load', () => {
+            document.body.style.opacity = '0';
+            document.body.style.transition = 'opacity 0.5s ease-in-out';
+            setTimeout(() => {
+                document.body.style.opacity = '1';
+            }, 100);
+        });
+    </script>
+</body>
+</html> 

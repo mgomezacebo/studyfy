@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Studyfy para Colegios - Transforma la Educación</title>
+    <link rel="icon" type="image/png" href="logos/icono.png">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'duo-green': '#58cc02',
+                        'duo-orange': '#ff9600',
+                        'duo-blue': '#1cb0f6',
+                        'duo-purple': '#ce82ff',
+                        'duo-red': '#ff4b4b',
+                        'duo-yellow': '#ffc800',
+                        'duo-text-dark': '#4b4b4b',
+                        'duo-text-green': '#58cc02'
+                    },
+                    fontFamily: {
+                        'poppins': ['Poppins', 'sans-serif'],
+                        'roboto': ['Roboto', 'sans-serif']
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .hero-gradient {
+            background: linear-gradient(135deg, #58cc02 0%, #1cb0f6 100%);
+        }
+        
+        .feature-card {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        
+        .feature-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 25px 50px rgba(0,0,0,0.15);
+        }
+        
+        .stats-card {
+            background: linear-gradient(135deg, #58cc02 0%, #10b981 100%);
+        }
+    </style>
+</head>
+<body class="font-roboto bg-gray-50">
+    <!-- Header -->
+    <header class="bg-white shadow-lg border-b border-gray-100">
+        <div class="max-w-7xl mx-auto px-4 py-4">
+            <div class="flex items-center justify-between h-20">
+                <div class="flex items-center space-x-3 group">
+                    <img src="logos/sin-fondo.png" alt="Studyfy Logo" class="w-12 h-12 transition-transform duration-300 group-hover:scale-110">
+                    <h1 class="font-poppins font-bold text-3xl text-duo-text-green group-hover:text-green-600 transition-colors duration-300">Studyfy</h1>
+                </div>
+                <nav class="hidden md:flex items-center space-x-1">
+                    <a href="index.html" class="text-duo-text-dark hover:text-duo-text-green hover:bg-gray-50 px-6 py-3 rounded-full transition-all duration-300 transform hover:scale-105">Inicio</a>
+                    <a href="colegios.html" class="text-duo-text-green font-semibold bg-green-50 px-6 py-3 rounded-full hover:bg-green-100 hover:text-green-700 transition-all duration-300 transform hover:scale-105">Para Colegios</a>
+                    <a href="help.html" class="text-duo-text-dark hover:text-duo-text-green hover:bg-gray-50 px-6 py-3 rounded-full transition-all duration-300 transform hover:scale-105">Ayuda</a>
+                    <a href="app/app.html" class="bg-gradient-to-r from-duo-green to-green-600 text-white px-8 py-3 rounded-full font-semibold hover:from-green-600 hover:to-green-700 transition-all duration-300 transform hover:scale-105 hover:shadow-lg shadow-md">Acceder</a>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero-gradient text-white py-20">
+        <div class="max-w-7xl mx-auto px-4 text-center">
+            <h1 class="font-poppins font-bold text-5xl md:text-6xl mb-6">
+                Transforma la Educación con IA
+            </h1>
+            <p class="text-xl md:text-2xl mb-8 max-w-3xl mx-auto opacity-90">
+                Studyfy revoluciona la forma en que los estudiantes aprenden, proporcionando herramientas inteligentes que personalizan la experiencia educativa
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <a href="app/app.html" class="bg-white text-duo-text-green px-8 py-4 rounded-lg font-semibold text-lg hover:bg-gray-100 transition-colors">
+                    Acceder como Usuario
+                </a>
+                <a href="#contacto" class="border-2 border-white text-white px-8 py-4 rounded-lg font-semibold text-lg hover:bg-white hover:text-duo-text-green transition-colors">
+                    Contactar
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="font-poppins font-bold text-4xl text-duo-text-dark mb-4">
+                    ¿Por qué elegir Studyfy?
+                </h2>
+                <p class="text-xl text-gray-600 max-w-2xl mx-auto">
+                    Nuestra plataforma combina la inteligencia artificial más avanzada con una interfaz intuitiva para maximizar el aprendizaje
+                </p>
+            </div>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Feature 1 -->
+                <div class="feature-card bg-white p-8 rounded-2xl shadow-lg border border-gray-100">
+                    <div class="w-16 h-16 bg-duo-green rounded-full flex items-center justify-center mb-6">
+                        <span class="text-3xl">📚</span>
+                    </div>
+                    <h3 class="font-poppins font-semibold text-xl text-duo-text-dark mb-4">
+                        Apuntes Inteligentes
+                    </h3>
+                    <p class="text-gray-600">
+                        Genera apuntes y esquemas personalizados a partir de cualquier material educativo, adaptándose al nivel de cada estudiante.
+                    </p>
+                </div>
+
+                <!-- Feature 2 -->
+                <div class="feature-card bg-white p-8 rounded-2xl shadow-lg border border-gray-100">
+                    <div class="w-16 h-16 bg-duo-orange rounded-full flex items-center justify-center mb-6">
+                        <span class="text-3xl">🧠</span>
+                    </div>
+                    <h3 class="font-poppins font-semibold text-xl text-duo-text-dark mb-4">
+                        Tests Adaptativos
+                    </h3>
+                    <p class="text-gray-600">
+                        Crea tests personalizados que se ajustan automáticamente al progreso del estudiante, identificando áreas de mejora.
+                    </p>
+                </div>
+
+                <!-- Feature 3 -->
+                <div class="feature-card bg-white p-8 rounded-2xl shadow-lg border border-gray-100">
+                    <div class="w-16 h-16 bg-duo-blue rounded-full flex items-center justify-center mb-6">
+                        <span class="text-3xl">📝</span>
+                    </div>
+                    <h3 class="font-poppins font-semibold text-xl text-duo-text-dark mb-4">
+                        Exámenes de Práctica
+                    </h3>
+                    <p class="text-gray-600">
+                        Genera exámenes completos con preguntas variadas para preparar a los estudiantes de manera efectiva.
+                    </p>
+                </div>
+
+                <!-- Feature 4 -->
+                <div class="feature-card bg-white p-8 rounded-2xl shadow-lg border border-gray-100">
+                    <div class="w-16 h-16 bg-duo-purple rounded-full flex items-center justify-center mb-6">
+                        <span class="text-3xl">🃏</span>
+                    </div>
+                    <h3 class="font-poppins font-semibold text-xl text-duo-text-dark mb-4">
+                        Flashcards Interactivas
+                    </h3>
+                    <p class="text-gray-600">
+                        Crea tarjetas de estudio personalizadas que optimizan la retención de información a largo plazo.
+                    </p>
+                </div>
+
+                <!-- Feature 5 -->
+                <div class="feature-card bg-white p-8 rounded-2xl shadow-lg border border-gray-100">
+                    <div class="w-16 h-16 bg-duo-yellow rounded-full flex items-center justify-center mb-6">
+                        <span class="text-3xl">💬</span>
+                    </div>
+                    <h3 class="font-poppins font-semibold text-xl text-duo-text-dark mb-4">
+                        Tutoría IA 24/7
+                    </h3>
+                    <p class="text-gray-600">
+                        Proporciona soporte educativo continuo con un chatbot inteligente que resuelve dudas en tiempo real.
+                    </p>
+                </div>
+
+                <!-- Feature 6 -->
+                <div class="feature-card bg-white p-8 rounded-2xl shadow-lg border border-gray-100">
+                    <div class="w-16 h-16 bg-duo-red rounded-full flex items-center justify-center mb-6">
+                        <span class="text-3xl">📊</span>
+                    </div>
+                    <h3 class="font-poppins font-semibold text-xl text-duo-text-dark mb-4">
+                        Organización Inteligente
+                    </h3>
+                    <p class="text-gray-600">
+                        Sistema de carpetas personalizadas para organizar todo el material de estudio de manera eficiente.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Benefits for Schools -->
+    <section class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="font-poppins font-bold text-4xl text-duo-text-dark mb-4">
+                    Beneficios para tu Institución
+                </h2>
+                <p class="text-xl text-gray-600 max-w-2xl mx-auto">
+                    Studyfy mejora la experiencia de aprendizaje y optimiza la gestión educativa
+                </p>
+            </div>
+            
+            <div class="grid lg:grid-cols-2 gap-12 items-center">
+                <div>
+                    <h3 class="font-poppins font-semibold text-2xl text-duo-text-dark mb-6">
+                        Ventajas para Profesores
+                    </h3>
+                    <ul class="space-y-4">
+                        <li class="flex items-start space-x-3">
+                            <span class="text-duo-green text-xl">✓</span>
+                            <span class="text-gray-700">Ahorro de tiempo en la creación de material didáctico</span>
+                        </li>
+                        <li class="flex items-start space-x-3">
+                            <span class="text-duo-green text-xl">✓</span>
+                            <span class="text-gray-700">Herramientas para crear contenido educativo personalizado</span>
+                        </li>
+                        <li class="flex items-start space-x-3">
+                            <span class="text-duo-green text-xl">✓</span>
+                            <span class="text-gray-700">Generación automática de evaluaciones variadas</span>
+                        </li>
+                        <li class="flex items-start space-x-3">
+                            <span class="text-duo-green text-xl">✓</span>
+                            <span class="text-gray-700">Soporte para diferentes estilos de aprendizaje</span>
+                        </li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h3 class="font-poppins font-semibold text-2xl text-duo-text-dark mb-6">
+                        Ventajas para Estudiantes
+                    </h3>
+                    <ul class="space-y-4">
+                        <li class="flex items-start space-x-3">
+                            <span class="text-duo-green text-xl">✓</span>
+                            <span class="text-gray-700">Aprendizaje adaptado a su ritmo y estilo</span>
+                        </li>
+                        <li class="flex items-start space-x-3">
+                            <span class="text-duo-green text-xl">✓</span>
+                            <span class="text-gray-700">Práctica constante con material personalizado</span>
+                        </li>
+                        <li class="flex items-start space-x-3">
+                            <span class="text-duo-green text-xl">✓</span>
+                            <span class="text-gray-700">Soporte educativo disponible en cualquier momento</span>
+                        </li>
+                        <li class="flex items-start space-x-3">
+                            <span class="text-duo-green text-xl">✓</span>
+                            <span class="text-gray-700">Organización eficiente de materiales de estudio</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contacto" class="py-20 bg-gray-100">
+        <div class="max-w-4xl mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="font-poppins font-bold text-4xl text-duo-text-dark mb-4">
+                    ¿Listo para Transformar tu Colegio?
+                </h2>
+                <p class="text-xl text-gray-600">
+                    Contacta con nosotros para más información sobre cómo Studyfy puede revolucionar la educación en tu institución
+                </p>
+            </div>
+            
+            <div class="bg-white rounded-2xl shadow-lg p-8 text-center">
+                <h3 class="font-poppins font-semibold text-2xl text-duo-text-dark mb-6">
+                    Información de Contacto
+                </h3>
+                <div class="space-y-4 mb-8">
+                    <div class="flex items-center justify-center space-x-3">
+                        <span class="text-duo-green text-xl">📧</span>
+                        <span class="text-gray-700 text-lg">studyfy@technologist.com</span>
+                    </div>
+                </div>
+                
+                <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                    <a href="app/app.html" class="bg-duo-green text-white px-8 py-4 rounded-lg font-semibold text-lg hover:bg-green-600 transition-colors">
+                        Probar Studyfy
+                    </a>
+                    <a href="mailto:studyfy@technologist.com" class="border-2 border-duo-green text-duo-text-green px-8 py-4 rounded-lg font-semibold text-lg hover:bg-duo-green hover:text-white transition-colors">
+                        Enviar Email
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-duo-text-dark text-white py-12">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="grid md:grid-cols-4 gap-8">
+                <div>
+                    <div class="flex items-center space-x-3 mb-4">
+                        <img src="logos/tinta-blanca.png" alt="Studyfy Logo" class="w-8 h-8">
+                        <span class="font-poppins font-bold text-xl">Studyfy</span>
+                    </div>
+                    <p class="text-gray-300">
+                        Transformando la educación con inteligencia artificial para crear un futuro más brillante.
+                    </p>
+                </div>
+                
+                <div>
+                    <h4 class="font-poppins font-semibold text-lg mb-4">Producto</h4>
+                    <ul class="space-y-2 text-gray-300">
+                        <li><a href="app/app.html" class="hover:text-white transition-colors">Acceder a la App</a></li>
+                        <li><a href="help.html" class="hover:text-white transition-colors">Centro de Ayuda</a></li>
+                        <li><a href="colegios.html" class="hover:text-white transition-colors">Para Colegios</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="font-poppins font-semibold text-lg mb-4">Soporte</h4>
+                    <ul class="space-y-2 text-gray-300">
+                        <li><a href="help.html" class="hover:text-white transition-colors">Chat en Vivo</a></li>
+                        <li><a href="mailto:studyfy@technologist.com" class="hover:text-white transition-colors">Email</a></li>
+                        <li><a href="help.html" class="hover:text-white transition-colors">FAQ</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="font-poppins font-semibold text-lg mb-4">Contacto</h4>
+                    <p class="text-gray-300 mb-2">studyfy@technologist.com</p>
+                    <div class="flex space-x-4 mt-4">
+                        <a href="#" class="text-gray-300 hover:text-white transition-colors">
+                            <span class="text-2xl">📧</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-700 mt-8 pt-8 text-center text-gray-300">
+                <p>&copy; 2025 Studyfy. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
