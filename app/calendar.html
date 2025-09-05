@@ -1,0 +1,540 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Studyfy - Calendario</title>
+    <link rel="icon" type="image/png" href="../logos/icono.png">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'duo-green': '#58cc02',
+                        'duo-orange': '#ff9600',
+                        'duo-blue': '#1cb0f6',
+                        'duo-purple': '#ce82ff',
+                        'duo-red': '#ff4b4b',
+                        'duo-yellow': '#ffc800',
+                        'duo-text-dark': '#4b4b4b',
+                        'duo-text-green': '#58cc02'
+                    },
+                    fontFamily: {
+                        'poppins': ['Poppins', 'sans-serif'],
+                        'roboto': ['Roboto', 'sans-serif']
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .fade-in {
+            animation: fadeIn 0.8s ease-in-out;
+        }
+        
+        .slide-up {
+            animation: slideUp 0.8s ease-out;
+        }
+        
+        .scale-in {
+            animation: scaleIn 0.6s ease-out;
+        }
+        
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        
+        @keyframes slideUp {
+            from { transform: translateY(50px); opacity: 0; }
+            to { transform: translateY(0); opacity: 1; }
+        }
+        
+        @keyframes scaleIn {
+            from { transform: scale(0.8); opacity: 0; }
+            to { transform: scale(1); opacity: 1; }
+        }
+        
+        .hover-lift {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        
+        .hover-lift:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+        }
+        
+        .popup-overlay {
+            background-color: rgba(0, 0, 0, 0.5);
+        }
+        
+        .popup-content {
+            box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+        }
+    </style>
+    <script src="/acceso/guard-sesion.js" defer></script>
+</head>
+<body class="font-roboto bg-gray-50 min-h-screen pb-20">
+    <!-- Header -->
+    <header class="bg-white shadow-sm border-b border-gray-200">
+        <div class="max-w-4xl mx-auto px-4 py-4">
+            <div class="flex items-center justify-between">
+                <div class="flex items-center space-x-3">
+                    <button onclick="goBack()" class="text-duo-text-dark hover:text-duo-text-green transition-colors">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path>
+                        </svg>
+                    </button>
+                    <h1 class="font-poppins font-bold text-2xl text-duo-text-green">Calendario</h1>
+                </div>
+                <button onclick="showAddEventPopup()" class="bg-duo-green text-white py-2 px-4 rounded-lg font-medium hover:bg-green-600 transition-colors">
+                    + Añadir Evento
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="max-w-4xl mx-auto px-4 py-6">
+        <div id="events-container" class="space-y-4">
+            <!-- Events will be loaded here -->
+        </div>
+    </main>
+
+    <!-- Bottom Navigation -->
+    <nav class="fixed bottom-0 left-0 right-0 bg-white border-t border-gray-200 shadow-lg">
+        <div class="max-w-4xl mx-auto px-4">
+            <div class="flex justify-around py-3">
+                <button onclick="goToHome()" class="flex flex-col items-center space-y-1 text-duo-text-dark">
+                    <div class="text-2xl">📁</div>
+                    <span class="text-xs font-medium">Inicio</span>
+                </button>
+                <button onclick="goToCalendar()" class="flex flex-col items-center space-y-1 text-duo-text-green">
+                    <div class="text-2xl">📅</div>
+                    <span class="text-xs font-medium">Calendario</span>
+                </button>
+                <button onclick="goToStats()" class="flex flex-col items-center space-y-1 text-duo-text-dark">
+                    <div class="text-2xl">📊</div>
+                    <span class="text-xs font-medium">Estadísticas</span>
+                </button>
+                <button onclick="goToChat()" class="flex flex-col items-center space-y-1 text-duo-text-dark">
+                    <div class="text-2xl">🤖</div>
+                    <span class="text-xs font-medium">Chatbot</span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Add Event Popup -->
+    <div id="add-event-popup" class="popup-overlay fixed inset-0 z-50 hidden">
+        <div class="flex items-center justify-center min-h-screen p-4">
+            <div class="popup-content bg-white rounded-xl p-6 max-w-md w-full mx-4">
+                <h3 class="font-poppins font-semibold text-xl text-duo-text-dark mb-4">Añadir Evento</h3>
+                <form id="add-event-form" class="space-y-4">
+                    <div>
+                        <label class="block text-sm font-medium text-duo-text-dark mb-2">Título</label>
+                        <input type="text" id="event-title" required class="w-full p-3 border border-gray-300 rounded-lg font-roboto">
+                    </div>
+                    <div>
+                        <label class="block text-sm font-medium text-duo-text-dark mb-2">Descripción</label>
+                        <textarea id="event-description" class="w-full p-3 border border-gray-300 rounded-lg font-roboto h-20"></textarea>
+                    </div>
+                    <div class="grid grid-cols-2 gap-4">
+                        <div>
+                            <label class="block text-sm font-medium text-duo-text-dark mb-2">Fecha</label>
+                            <input type="date" id="event-date" required class="w-full p-3 border border-gray-300 rounded-lg font-roboto">
+                        </div>
+                        <div>
+                            <label class="block text-sm font-medium text-duo-text-dark mb-2">Hora</label>
+                            <input type="time" id="event-time" required class="w-full p-3 border border-gray-300 rounded-lg font-roboto">
+                        </div>
+                    </div>
+                    <div>
+                        <label class="block text-sm font-medium text-duo-text-dark mb-2">Asignatura</label>
+                        <input type="text" id="event-subject" class="w-full p-3 border border-gray-300 rounded-lg font-roboto">
+                    </div>
+                    <div>
+                        <label class="block text-sm font-medium text-duo-text-dark mb-2">Tipo de Evento</label>
+                        <select id="event-type" class="w-full p-3 border border-gray-300 rounded-lg font-roboto">
+                            <option value="deberes">Deberes</option>
+                            <option value="trabajo">Trabajo</option>
+                            <option value="examen">Examen</option>
+                            <option value="otro">Otro</option>
+                        </select>
+                    </div>
+                    <div class="flex space-x-3">
+                        <button type="submit" class="flex-1 bg-duo-green text-white py-2 px-4 rounded-lg font-medium hover:bg-green-600 transition-colors">
+                            Añadir
+                        </button>
+                        <button type="button" onclick="closeAddEventPopup()" class="flex-1 py-2 px-4 border border-gray-300 rounded-lg text-duo-text-dark hover:bg-gray-50 transition-colors">
+                            Cancelar
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- Edit Event Popup -->
+    <div id="edit-event-popup" class="popup-overlay fixed inset-0 z-50 hidden">
+        <div class="flex items-center justify-center min-h-screen p-4">
+            <div class="popup-content bg-white rounded-xl p-6 max-w-md w-full mx-4">
+                <h3 class="font-poppins font-semibold text-xl text-duo-text-dark mb-4">Editar Evento</h3>
+                <form id="edit-event-form" class="space-y-4">
+                    <input type="hidden" id="edit-event-id">
+                    <div>
+                        <label class="block text-sm font-medium text-duo-text-dark mb-2">Título</label>
+                        <input type="text" id="edit-event-title" required class="w-full p-3 border border-gray-300 rounded-lg font-roboto">
+                    </div>
+                    <div>
+                        <label class="block text-sm font-medium text-duo-text-dark mb-2">Descripción</label>
+                        <textarea id="edit-event-description" class="w-full p-3 border border-gray-300 rounded-lg font-roboto h-20"></textarea>
+                    </div>
+                    <div class="grid grid-cols-2 gap-4">
+                        <div>
+                            <label class="block text-sm font-medium text-duo-text-dark mb-2">Fecha</label>
+                            <input type="date" id="edit-event-date" required class="w-full p-3 border border-gray-300 rounded-lg font-roboto">
+                        </div>
+                        <div>
+                            <label class="block text-sm font-medium text-duo-text-dark mb-2">Hora</label>
+                            <input type="time" id="edit-event-time" required class="w-full p-3 border border-gray-300 rounded-lg font-roboto">
+                        </div>
+                    </div>
+                    <div>
+                        <label class="block text-sm font-medium text-duo-text-dark mb-2">Asignatura</label>
+                        <input type="text" id="edit-event-subject" class="w-full p-3 border border-gray-300 rounded-lg font-roboto">
+                    </div>
+                    <div>
+                        <label class="block text-sm font-medium text-duo-text-dark mb-2">Tipo de Evento</label>
+                        <select id="edit-event-type" class="w-full p-3 border border-gray-300 rounded-lg font-roboto">
+                            <option value="deberes">Deberes</option>
+                            <option value="trabajo">Trabajo</option>
+                            <option value="examen">Examen</option>
+                            <option value="otro">Otro</option>
+                        </select>
+                    </div>
+                    <div class="flex space-x-3">
+                        <button type="submit" class="flex-1 bg-duo-green text-white py-2 px-4 rounded-lg font-medium hover:bg-green-600 transition-colors">
+                            Guardar
+                        </button>
+                        <button type="button" onclick="deleteEventFromForm()" class="flex-1 bg-duo-red text-white py-2 px-4 rounded-lg font-medium hover:bg-red-600 transition-colors">
+                            Eliminar
+                        </button>
+                        <button type="button" onclick="closeEditEventPopup()" class="flex-1 py-2 px-4 border border-gray-300 rounded-lg text-duo-text-dark hover:bg-gray-50 transition-colors">
+                            Cancelar
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        let events = [];
+
+        // Load events from localStorage
+        function loadEvents() {
+            const appData = JSON.parse(localStorage.getItem('studyfy-data') || '{}');
+            events = appData.calendar || [];
+            renderEvents();
+        }
+
+        // Save events to localStorage
+        function saveEvents() {
+            const appData = JSON.parse(localStorage.getItem('studyfy-data') || '{}');
+            appData.calendar = events;
+            localStorage.setItem('studyfy-data', JSON.stringify(appData));
+        }
+
+        // Render events
+        function renderEvents() {
+            const container = document.getElementById('events-container');
+            
+            if (events.length === 0) {
+                container.innerHTML = `
+                    <div class="text-center py-12">
+                        <div class="text-6xl mb-4">📅</div>
+                        <h3 class="font-poppins font-semibold text-xl text-duo-text-dark mb-2">No hay eventos</h3>
+                        <p class="text-gray-500 mb-6">Añade tu primer evento para empezar a organizar tu tiempo</p>
+                        <button onclick="showAddEventPopup()" class="bg-duo-green text-white py-2 px-6 rounded-lg font-medium hover:bg-green-600 transition-colors">
+                            Añadir Evento
+                        </button>
+                    </div>
+                `;
+                return;
+            }
+
+            // Sort events by date and time
+            const sortedEvents = [...events].sort((a, b) => {
+                const dateA = new Date(`${a.date}T${a.time}`);
+                const dateB = new Date(`${b.date}T${b.time}`);
+                return dateA - dateB;
+            });
+
+            container.innerHTML = sortedEvents.map(event => {
+                const eventDate = new Date(`${event.date}T${event.time}`);
+                const now = new Date();
+                const isPast = eventDate < now;
+                const isToday = eventDate.toDateString() === now.toDateString();
+                
+                const typeColors = {
+                    'deberes': 'bg-duo-blue',
+                    'trabajo': 'bg-duo-orange',
+                    'examen': 'bg-duo-red',
+                    'otro': 'bg-duo-purple'
+                };
+
+                const typeIcons = {
+                    'deberes': '📚',
+                    'trabajo': '💼',
+                    'examen': '📝',
+                    'otro': '📌'
+                };
+
+                return `
+                    <div class="bg-white rounded-xl p-4 shadow-sm border border-gray-200 hover-lift cursor-pointer ${isPast ? 'opacity-60' : ''}" onclick="editEvent('${event.id}')">
+                        <div class="flex items-start justify-between">
+                            <div class="flex items-start space-x-3 flex-1">
+                                <div class="text-2xl">${typeIcons[event.type]}</div>
+                                <div class="flex-1">
+                                    <div class="flex items-center space-x-2 mb-1">
+                                        <h4 class="font-poppins font-semibold text-duo-text-dark">${event.title}</h4>
+                                        <span class="px-2 py-1 text-xs rounded-full text-white ${typeColors[event.type]}">${event.type}</span>
+                                        ${isToday ? '<span class="px-2 py-1 text-xs rounded-full bg-duo-yellow text-duo-text-dark">Hoy</span>' : ''}
+                                    </div>
+                                    ${event.description ? `<p class="text-sm text-gray-600 mb-2">${event.description}</p>` : ''}
+                                    ${event.subject ? `<p class="text-sm text-duo-text-green font-medium">${event.subject}</p>` : ''}
+                                    <div class="flex items-center space-x-4 text-sm text-gray-500 mt-2">
+                                        <span>📅 ${formatDate(event.date)}</span>
+                                        <span>🕐 ${event.time}</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <button onclick="event.stopPropagation(); deleteEvent('${event.id}')" class="text-duo-red hover:text-red-700 ml-2">
+                                🗑️
+                            </button>
+                        </div>
+                    </div>
+                `;
+            }).join('');
+        }
+
+        // Format date
+        function formatDate(dateString) {
+            const date = new Date(dateString);
+            const today = new Date();
+            const tomorrow = new Date(today);
+            tomorrow.setDate(tomorrow.getDate() + 1);
+
+            if (date.toDateString() === today.toDateString()) {
+                return 'Hoy';
+            } else if (date.toDateString() === tomorrow.toDateString()) {
+                return 'Mañana';
+            } else {
+                return date.toLocaleDateString('es-ES', { 
+                    day: '2-digit', 
+                    month: '2-digit', 
+                    year: 'numeric' 
+                });
+            }
+        }
+
+        // Navigation functions
+        function goBack() {
+            window.location.href = 'app.html';
+        }
+
+        function goToHome() {
+            window.location.href = 'app.html';
+        }
+
+        function goToCalendar() {
+            // Already on calendar page
+        }
+
+        function goToStats() {
+            window.location.href = 'stats.html';
+        }
+
+        function goToChat() {
+            window.location.href = 'chat.html';
+        }
+
+        // Popup functions
+        function showAddEventPopup() {
+            const popup = document.getElementById('add-event-popup');
+            popup.classList.remove('hidden');
+            document.getElementById('event-date').value = new Date().toISOString().split('T')[0];
+            
+            // Agregar funcionalidad de cerrarse al hacer clic fuera
+            popup.addEventListener('click', (e) => {
+                if (e.target === popup) {
+                    closeAddEventPopup();
+                }
+            });
+        }
+
+        function closeAddEventPopup() {
+            document.getElementById('add-event-popup').classList.add('hidden');
+            document.getElementById('add-event-form').reset();
+        }
+
+        function showEditEventPopup(eventId) {
+            const event = events.find(e => e.id === eventId);
+            if (!event) return;
+
+            document.getElementById('edit-event-id').value = event.id;
+            document.getElementById('edit-event-title').value = event.title;
+            document.getElementById('edit-event-description').value = event.description || '';
+            document.getElementById('edit-event-date').value = event.date;
+            document.getElementById('edit-event-time').value = event.time;
+            document.getElementById('edit-event-subject').value = event.subject || '';
+            document.getElementById('edit-event-type').value = event.type;
+
+            const popup = document.getElementById('edit-event-popup');
+            popup.classList.remove('hidden');
+            
+            // Agregar funcionalidad de cerrarse al hacer clic fuera
+            popup.addEventListener('click', (e) => {
+                if (e.target === popup) {
+                    closeEditEventPopup();
+                }
+            });
+        }
+
+        function closeEditEventPopup() {
+            document.getElementById('edit-event-popup').classList.add('hidden');
+        }
+
+        function editEvent(eventId) {
+            showEditEventPopup(eventId);
+        }
+
+        function deleteEvent(eventId) {
+            const event = events.find(e => e.id === eventId);
+            if (!event) return;
+
+            showCustomConfirm(`¿Estás seguro de que quieres eliminar el evento "${event.title}"?`, () => {
+                events = events.filter(e => e.id !== eventId);
+                saveEvents();
+                renderEvents();
+                closeEditEventPopup();
+                showCustomAlert('Evento eliminado exitosamente');
+            });
+        }
+
+        function deleteEventFromForm() {
+            const eventId = document.getElementById('edit-event-id').value;
+            deleteEvent(eventId);
+        }
+
+        // Custom alert function
+        function showCustomAlert(message) {
+            const alertPopup = document.createElement('div');
+            alertPopup.className = 'popup-overlay fixed inset-0 z-50 flex items-center justify-center';
+            alertPopup.innerHTML = `
+                <div class="popup-content bg-white rounded-xl p-6 max-w-md w-full mx-4">
+                    <div class="text-center">
+                        <div class="text-4xl mb-4">ℹ️</div>
+                        <p class="font-poppins font-medium text-duo-text-dark mb-6">${message}</p>
+                        <button onclick="this.parentElement.parentElement.parentElement.remove()" class="bg-duo-green text-white py-2 px-6 rounded-lg font-medium hover:bg-green-600 transition-colors">
+                            Aceptar
+                        </button>
+                    </div>
+                </div>
+            `;
+            document.body.appendChild(alertPopup);
+            alertPopup.addEventListener('click', (e) => { if (e.target === alertPopup) alertPopup.remove(); });
+        }
+
+        // Custom confirm function
+        function showCustomConfirm(message, callback) {
+            const existing = document.getElementById('confirm-popup-overlay');
+            if (existing) existing.remove();
+            const confirmPopup = document.createElement('div');
+            confirmPopup.id = 'confirm-popup-overlay';
+            confirmPopup.className = 'popup-overlay fixed inset-0 z-50 flex items-center justify-center';
+            confirmPopup.innerHTML = `
+                <div class="popup-content bg-white rounded-xl p-6 max-w-md w-full mx-4">
+                    <div class="text-center">
+                        <div class="text-4xl mb-4">⚠️</div>
+                        <p class="font-poppins font-medium text-duo-text-dark mb-6">${message}</p>
+                        <div class="flex space-x-3">
+                            <button onclick="submitCustomConfirm()" class="flex-1 bg-duo-red text-white py-2 px-4 rounded-lg font-medium hover:bg-red-600 transition-colors">
+                                Eliminar
+                            </button>
+                            <button onclick="closeCustomConfirm()" class="flex-1 py-2 px-4 border border-gray-300 rounded-lg text-duo-text-dark hover:bg-gray-50 transition-colors">
+                                Cancelar
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            `;
+            document.body.appendChild(confirmPopup);
+            window.customConfirmCallback = callback;
+            confirmPopup.addEventListener('click', (e) => { if (e.target === confirmPopup) closeCustomConfirm(); });
+        }
+
+        function submitCustomConfirm() {
+            if (window.customConfirmCallback) {
+                window.customConfirmCallback();
+            }
+            closeCustomConfirm();
+        }
+
+        function closeCustomConfirm() {
+            const popup = document.getElementById('confirm-popup-overlay');
+            if (popup) popup.remove();
+            window.customConfirmCallback = null;
+        }
+
+        // Form handlers
+        document.getElementById('add-event-form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            const newEvent = {
+                id: Date.now().toString(),
+                title: document.getElementById('event-title').value,
+                description: document.getElementById('event-description').value,
+                date: document.getElementById('event-date').value,
+                time: document.getElementById('event-time').value,
+                subject: document.getElementById('event-subject').value,
+                type: document.getElementById('event-type').value
+            };
+
+            events.push(newEvent);
+            saveEvents();
+            renderEvents();
+            closeAddEventPopup();
+            showCustomAlert('Evento añadido exitosamente');
+        });
+
+        document.getElementById('edit-event-form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            const eventId = document.getElementById('edit-event-id').value;
+            const event = events.find(e => e.id === eventId);
+            if (!event) return;
+
+            event.title = document.getElementById('edit-event-title').value;
+            event.description = document.getElementById('edit-event-description').value;
+            event.date = document.getElementById('edit-event-date').value;
+            event.time = document.getElementById('edit-event-time').value;
+            event.subject = document.getElementById('edit-event-subject').value;
+            event.type = document.getElementById('edit-event-type').value;
+
+            saveEvents();
+            renderEvents();
+            closeEditEventPopup();
+            showCustomAlert('Evento actualizado exitosamente');
+        });
+
+        // Initialize
+        document.addEventListener('DOMContentLoaded', function() {
+            loadEvents();
+        });
+    </script>
+</body>
+</html> 

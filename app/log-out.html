@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <title>Cerrar sesión</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- Tipografías -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet" />
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              green: '#58cc02',
+              blue: '#1cb0f6',
+              orange: '#ff9600',
+              red: '#ff4b4b'
+            }
+          },
+          fontFamily: {
+            heading: ['Poppins', 'ui-sans-serif', 'system-ui'],
+            body: ['Roboto', 'ui-sans-serif', 'system-ui']
+          },
+          boxShadow: { soft: '0 10px 25px rgba(0,0,0,0.08)' }
+        }
+      }
+    }
+  </script>
+  <style>
+    body { font-family: Roboto, ui-sans-serif, system-ui, -apple-system; }
+    h1, .font-heading { font-family: Poppins, ui-sans-serif, system-ui, -apple-system; }
+  </style>
+</head>
+<body class="min-h-screen flex items-center justify-center bg-gray-50">
+
+  <div class="w-full max-w-md bg-white shadow-lg rounded-2xl p-8 text-center">
+    <h1 class="text-2xl font-heading font-bold text-brand-green">Cerrando sesión…</h1>
+    <p class="mt-3 text-gray-600">Estamos finalizando tu sesión. Serás redirigido al inicio de sesión.</p>
+
+    <div class="mt-6 flex items-center justify-center">
+      <svg class="animate-spin h-6 w-6 text-brand-green" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" aria-hidden="true">
+        <circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle>
+        <path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8v4a4 4 0 00-4 4H4z"></path>
+      </svg>
+    </div>
+
+    <!-- Enlace directo correcto (carpetas hermanas) -->
+    <a href="/acceso/login.html" class="mt-6 inline-block bg-brand-blue text-white px-5 py-2 rounded-lg font-semibold">
+      Ir al inicio de sesión
+    </a>
+  </div>
+
+  <script>
+    (function logout() {
+      try {
+        // Invalidar sesión por pestaña y banderas de acceso
+        sessionStorage.clear();
+        localStorage.removeItem('AccesoValido');
+        localStorage.removeItem('AccesoExpiraAt');
+        localStorage.removeItem('AccesoValidoAt'); // si lo usas
+      } catch (e) {
+        console.error('Error al cerrar sesión:', e);
+      }
+
+      // Redirección ABSOLUTA a la carpeta hermana /acceso/
+      const LOGIN_URL = new URL('/acceso/login.html', window.location.origin).toString();
+      setTimeout(() => { window.location.replace(LOGIN_URL); }, 700);
+    })();
+  </script>
+</body>
+</html>
+
