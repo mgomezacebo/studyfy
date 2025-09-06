@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Studyfy - Estadísticas</title>
+    <link rel="icon" type="image/png" href="../logos/icono.png">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'duo-green': '#58cc02',
+                        'duo-orange': '#ff9600',
+                        'duo-blue': '#1cb0f6',
+                        'duo-purple': '#ce82ff',
+                        'duo-red': '#ff4b4b',
+                        'duo-yellow': '#ffc800',
+                        'duo-text-dark': '#4b4b4b',
+                        'duo-text-white': '#ffffff',
+                        'duo-text-green': '#58cc02'
+                    },
+                    fontFamily: {
+                        'poppins': ['Poppins', 'sans-serif'],
+                        'roboto': ['Roboto', 'sans-serif']
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .fade-in { animation: fadeIn 0.6s ease-in-out; }
+        .slide-up { animation: slideUp 0.6s ease-out; }
+        
+        @keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
+        @keyframes slideUp { from { transform: translateY(20px); opacity: 0; } to { transform: translateY(0); opacity: 1; } }
+        
+        .hover-lift { transition: transform 0.2s ease, box-shadow 0.2s ease; }
+        .hover-lift:hover { transform: translateY(-2px); box-shadow: 0 8px 25px rgba(0,0,0,0.1); }
+        
+        .progress-ring {
+            transform: rotate(-90deg);
+        }
+        
+        .progress-ring-circle {
+            transition: stroke-dasharray 0.35s;
+            transform-origin: 50% 50%;
+        }
+    </style>
+    <script src="../acceso/guard-sesion.js" defer></script>
+</head>
+<body class="font-roboto bg-gray-50 min-h-screen pb-20">
+    <!-- Header -->
+    <header class="bg-white shadow-sm border-b border-gray-200">
+        <div class="max-w-4xl mx-auto px-4 py-4">
+            <div class="flex items-center justify-between">
+                <div class="flex items-center space-x-3">
+                    <button onclick="goToHome()" class="text-duo-text-dark hover:text-duo-text-green">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path>
+                        </svg>
+                    </button>
+                    <h1 class="font-poppins font-bold text-xl text-duo-text-green">Estadísticas</h1>
+                </div>
+                <button onclick="refreshStats()" class="text-duo-text-dark hover:text-duo-text-green">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15"></path>
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="max-w-4xl mx-auto px-4 py-6">
+        <!-- Overall Performance -->
+        <div class="bg-white rounded-xl p-6 mb-6 shadow-sm fade-in">
+            <h2 class="font-poppins font-semibold text-xl text-duo-text-dark mb-4">Rendimiento General</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <div class="text-center">
+                    <div class="relative inline-block">
+                        <svg class="w-24 h-24 progress-ring">
+                            <circle class="progress-ring-circle" stroke="#e5e7eb" stroke-width="8" fill="transparent" r="44" cx="48" cy="48"/>
+                            <circle class="progress-ring-circle" stroke="#58cc02" stroke-width="8" fill="transparent" r="44" cx="48" cy="48" 
+                                    id="overall-progress" stroke-dasharray="0 276.46"/>
+                        </svg>
+                        <div class="absolute inset-0 flex items-center justify-center">
+                            <span id="overall-percentage" class="font-poppins font-bold text-xl text-duo-text-green">0%</span>
+                        </div>
+                    </div>
+                    <p class="text-sm text-duo-text-dark mt-2">Promedio General</p>
+                </div>
+                
+                <div class="text-center">
+                    <div class="text-4xl font-poppins font-bold text-duo-text-blue mb-2" id="total-tests">0</div>
+                    <p class="text-sm text-duo-text-dark">Tests Completados</p>
+                </div>
+                
+                <div class="text-center">
+                    <div class="text-4xl font-poppins font-bold text-duo-text-orange mb-2" id="total-flashcards">0</div>
+                    <p class="text-sm text-duo-text-dark">Flashcards Revisadas</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Test Statistics -->
+        <div class="bg-white rounded-xl p-6 mb-6 shadow-sm slide-up">
+            <h2 class="font-poppins font-semibold text-xl text-duo-text-dark mb-4">Tests de Práctica</h2>
+            <div id="test-stats-container">
+                <!-- Test stats will be loaded here -->
+            </div>
+        </div>
+
+        <!-- Exercise Statistics -->
+        <div class="bg-white rounded-xl p-6 mb-6 shadow-sm slide-up">
+            <h2 class="font-poppins font-semibold text-xl text-duo-text-dark mb-4">Ejercicios de Práctica</h2>
+            <div id="exercise-stats-container">
+                <!-- Exercise stats will be loaded here -->
+            </div>
+        </div>
+
+        <!-- Flashcard Statistics -->
+        <div class="bg-white rounded-xl p-6 mb-6 shadow-sm slide-up">
+            <h2 class="font-poppins font-semibold text-xl text-duo-text-dark mb-4">Flashcards</h2>
+            <div id="flashcard-stats-container">
+                <!-- Flashcard stats will be loaded here -->
+            </div>
+        </div>
+
+
+    </main>
+
+    <!-- Bottom Navigation -->
+    <nav class="fixed bottom-0 left-0 right-0 bg-white border-t border-gray-200 shadow-lg">
+        <div class="max-w-4xl mx-auto px-4">
+            <div class="flex justify-around py-3">
+                <button onclick="goToHome()" class="flex flex-col items-center space-y-1 text-duo-text-dark">
+                    <div class="text-2xl">📁</div>
+                    <span class="text-xs font-medium">Inicio</span>
+                </button>
+                <button onclick="goToCalendar()" class="flex flex-col items-center space-y-1 text-duo-text-dark">
+                    <div class="text-2xl">📅</div>
+                    <span class="text-xs font-medium">Calendario</span>
+                </button>
+                <button onclick="goToStats()" class="flex flex-col items-center space-y-1 text-duo-text-green">
+                    <div class="text-2xl">📊</div>
+                    <span class="text-xs font-medium">Estadísticas</span>
+                </button>
+                <button onclick="goToChat()" class="flex flex-col items-center space-y-1 text-duo-text-dark">
+                    <div class="text-2xl">🤖</div>
+                    <span class="text-xs font-medium">Chatbot</span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <script>
+        // Initialize stats page
+        document.addEventListener('DOMContentLoaded', function() {
+            loadStats();
+            renderStats();
+        });
+
+        // Load stats from localStorage
+        function loadStats() {
+            const appData = JSON.parse(localStorage.getItem('studyfy-data') || '{}');
+            return appData.stats || { tests: [], exercises: [], flashcards: [] };
+        }
+
+        // Calculate and render statistics
+        function renderStats() {
+            const stats = loadStats();
+            
+            // Calculate overall performance
+            const overallPercentage = calculateOverallPercentage(stats);
+            updateOverallProgress(overallPercentage);
+            
+            // Update counters
+            document.getElementById('total-tests').textContent = stats.tests.length;
+            document.getElementById('total-flashcards').textContent = stats.flashcards.length;
+            
+            // Render individual stats
+            renderTestStats(stats.tests);
+            renderExerciseStats(stats.exercises);
+            renderFlashcardStats(stats.flashcards);
+        }
+
+        // Calculate overall percentage
+        function calculateOverallPercentage(stats) {
+            let totalScore = 0;
+            let totalItems = 0;
+            
+            // Tests
+            stats.tests.forEach(test => {
+                if (test.score !== undefined) {
+                    totalScore += test.score;
+                    totalItems++;
+                }
+            });
+            
+            // Exercises
+            stats.exercises.forEach(exercise => {
+                if (exercise.score !== undefined) {
+                    totalScore += exercise.score;
+                    totalItems++;
+                }
+            });
+            
+            // Flashcards
+            stats.flashcards.forEach(flashcard => {
+                if (flashcard.percentage !== undefined) {
+                    totalScore += flashcard.percentage;
+                    totalItems++;
+                }
+            });
+            
+            return totalItems > 0 ? Math.round(totalScore / totalItems) : 0;
+        }
+
+        // Update overall progress circle
+        function updateOverallProgress(percentage) {
+            const circle = document.getElementById('overall-progress');
+            const text = document.getElementById('overall-percentage');
+            
+            const circumference = 2 * Math.PI * 44; // r = 44
+            const dasharray = (percentage / 100) * circumference;
+            
+            circle.style.strokeDasharray = `${dasharray} ${circumference}`;
+            text.textContent = `${percentage}%`;
+        }
+
+        // Render test statistics
+        function renderTestStats(tests) {
+            const container = document.getElementById('test-stats-container');
+            
+            if (tests.length === 0) {
+                container.innerHTML = `
+                    <div class="text-center py-8 text-duo-text-dark">
+                        <div class="text-4xl mb-3">❓</div>
+                        <p class="font-poppins font-medium">No hay estadísticas de tests</p>
+                        <p class="text-sm text-gray-500">Completa algunos tests para ver tu progreso</p>
+                    </div>
+                `;
+                return;
+            }
+
+            const totalTests = tests.length;
+            const averageScore = tests.reduce((sum, test) => sum + (test.score || 0), 0) / totalTests;
+            const bestScore = Math.max(...tests.map(test => test.score || 0));
+            const recentTests = tests.slice(-5).reverse();
+
+            container.innerHTML = `
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mb-6">
+                    <div class="bg-blue-50 p-4 rounded-lg text-center">
+                        <div class="text-2xl font-poppins font-bold text-duo-blue">${totalTests}</div>
+                        <p class="text-sm text-duo-text-dark">Total de Tests</p>
+                    </div>
+                    <div class="bg-green-50 p-4 rounded-lg text-center">
+                        <div class="text-2xl font-poppins font-bold text-duo-green">${Math.round(averageScore)}%</div>
+                        <p class="text-sm text-duo-text-dark">Puntuación Media</p>
+                    </div>
+                    <div class="bg-orange-50 p-4 rounded-lg text-center">
+                        <div class="text-2xl font-poppins font-bold text-duo-orange">${bestScore}%</div>
+                        <p class="text-sm text-duo-text-dark">Mejor Puntuación</p>
+                    </div>
+                </div>
+                
+                <div>
+                    <h4 class="font-poppins font-medium text-duo-text-dark mb-3">Tests Recientes</h4>
+                    <div class="space-y-2">
+                        ${recentTests.map(test => `
+                            <div class="flex items-center justify-between p-3 bg-gray-50 rounded-lg">
+                                <div>
+                                    <p class="font-medium text-duo-text-dark">${test.title || 'Test'}</p>
+                                    <p class="text-sm text-gray-500">${formatDate(test.date)}</p>
+                                </div>
+                                <div class="text-right">
+                                    <div class="font-poppins font-bold text-lg ${getScoreColor(test.score)}">${test.score}%</div>
+                                    <p class="text-xs text-gray-500">${test.correct}/${test.total} correctas</p>
+                                </div>
+                            </div>
+                        `).join('')}
+                    </div>
+                </div>
+            `;
+        }
+
+        // Render exercise statistics
+        function renderExerciseStats(exercises) {
+            const container = document.getElementById('exercise-stats-container');
+            
+            if (exercises.length === 0) {
+                container.innerHTML = `
+                    <div class="text-center py-8 text-duo-text-dark">
+                        <div class="text-4xl mb-3">✏️</div>
+                        <p class="font-poppins font-medium">No hay estadísticas de ejercicios</p>
+                        <p class="text-sm text-gray-500">Completa algunos ejercicios para ver tu progreso</p>
+                    </div>
+                `;
+                return;
+            }
+
+            const totalExercises = exercises.length;
+            const averageScore = exercises.reduce((sum, exercise) => sum + (exercise.score || 0), 0) / totalExercises;
+            const completedExercises = exercises.filter(exercise => exercise.completed).length;
+
+            container.innerHTML = `
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mb-6">
+                    <div class="bg-purple-50 p-4 rounded-lg text-center">
+                        <div class="text-2xl font-poppins font-bold text-duo-purple">${totalExercises}</div>
+                        <p class="text-sm text-duo-text-dark">Total de Ejercicios</p>
+                    </div>
+                    <div class="bg-green-50 p-4 rounded-lg text-center">
+                        <div class="text-2xl font-poppins font-bold text-duo-green">${Math.round(averageScore)}%</div>
+                        <p class="text-sm text-duo-text-dark">Puntuación Media</p>
+                    </div>
+                    <div class="bg-blue-50 p-4 rounded-lg text-center">
+                        <div class="text-2xl font-poppins font-bold text-duo-blue">${completedExercises}</div>
+                        <p class="text-sm text-duo-text-dark">Completados</p>
+                    </div>
+                </div>
+                
+                <div>
+                    <h4 class="font-poppins font-medium text-duo-text-dark mb-3">Ejercicios Recientes</h4>
+                    <div class="space-y-2">
+                        ${exercises.slice(-5).reverse().map(exercise => `
+                            <div class="flex items-center justify-between p-3 bg-gray-50 rounded-lg">
+                                <div>
+                                    <p class="font-medium text-duo-text-dark">${exercise.title || 'Ejercicio'}</p>
+                                    <p class="text-sm text-gray-500">${formatDate(exercise.date)}</p>
+                                </div>
+                                <div class="text-right">
+                                    <div class="font-poppins font-bold text-lg ${getScoreColor(exercise.score)}">${exercise.score}%</div>
+                                    <p class="text-xs text-gray-500">${exercise.completed ? 'Completado' : 'Pendiente'}</p>
+                                </div>
+                            </div>
+                        `).join('')}
+                    </div>
+                </div>
+            `;
+        }
+
+        // Render flashcard statistics
+        function renderFlashcardStats(flashcards) {
+            const container = document.getElementById('flashcard-stats-container');
+            
+            if (flashcards.length === 0) {
+                container.innerHTML = `
+                    <div class="text-center py-8 text-duo-text-dark">
+                        <div class="text-4xl mb-3">🗂️</div>
+                        <p class="font-poppins font-medium">No hay estadísticas de flashcards</p>
+                        <p class="text-sm text-gray-500">Completa algunos sets de flashcards para ver tu progreso</p>
+                    </div>
+                `;
+                return;
+            }
+
+            const totalCards = flashcards.reduce((sum, f) => sum + f.total, 0);
+            const knownCards = flashcards.reduce((sum, f) => sum + f.known, 0);
+            const averagePercentage = totalCards > 0 ? Math.round((knownCards / totalCards) * 100) : 0;
+
+            container.innerHTML = `
+                <div class="bg-white rounded-xl p-6 shadow-sm">
+                    <h3 class="font-poppins font-semibold text-lg text-duo-text-dark mb-4">Flashcards</h3>
+                    <div class="grid grid-cols-3 gap-4 text-center mb-4">
+                        <div>
+                            <div class="text-2xl font-bold text-duo-text-green">${totalCards}</div>
+                            <div class="text-sm text-gray-500">Total</div>
+                        </div>
+                        <div>
+                            <div class="text-2xl font-bold text-duo-text-green">${knownCards}</div>
+                            <div class="text-sm text-gray-500">Conocidas</div>
+                        </div>
+                        <div>
+                            <div class="text-2xl font-bold text-duo-text-green">${averagePercentage}%</div>
+                            <div class="text-sm text-gray-500">Promedio</div>
+                        </div>
+                    </div>
+                    <div class="space-y-3">
+                        ${flashcards.map(flashcard => `
+                            <div class="flex items-center justify-between p-3 bg-gray-50 rounded-lg">
+                                <div>
+                                    <div class="font-medium text-duo-text-dark">${flashcard.setTitle}</div>
+                                    <div class="text-sm text-gray-500">${flashcard.known}/${flashcard.total} tarjetas</div>
+                                </div>
+                                <div class="text-right">
+                                    <div class="font-bold text-duo-text-green">${flashcard.percentage}%</div>
+                                    <div class="text-xs text-gray-500">${new Date(flashcard.date).toLocaleDateString('es-ES')}</div>
+                                </div>
+                            </div>
+                        `).join('')}
+                    </div>
+                </div>
+            `;
+        }
+
+        // Get flashcard sets grouped by title
+        function getFlashcardSets(flashcards) {
+            const sets = {};
+            
+            flashcards.forEach(card => {
+                const title = card.setTitle || 'Sin título';
+                if (!sets[title]) {
+                    sets[title] = { title, total: 0, known: 0 };
+                }
+                sets[title].total++;
+                if (card.knows) {
+                    sets[title].known++;
+                }
+            });
+            
+            return Object.values(sets).map(set => ({
+                ...set,
+                percentage: Math.round((set.known / set.total) * 100)
+            }));
+        }
+
+
+
+        // Utility functions
+        function getScoreColor(score) {
+            if (score >= 80) return 'text-duo-green';
+            if (score >= 60) return 'text-duo-yellow';
+            return 'text-duo-red';
+        }
+
+        function formatDate(dateString) {
+            const date = new Date(dateString);
+            return date.toLocaleDateString('es-ES', { 
+                day: '2-digit', 
+                month: '2-digit', 
+                year: 'numeric' 
+            });
+        }
+
+        function refreshStats() {
+            renderStats();
+        }
+
+        // Navigation functions
+        function goToHome() {
+            window.location.href = 'app.html';
+        }
+
+        function goToCalendar() {
+            window.location.href = 'calendar.html';
+        }
+
+        function goToStats() {
+            // Already on stats page
+        }
+
+        function goToChat() {
+            window.location.href = 'chat.html';
+        }
+    </script>
+</body>
+</html> 
