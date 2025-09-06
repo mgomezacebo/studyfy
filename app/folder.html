@@ -578,8 +578,8 @@
             if (isCorrect) {
                 playSound('correcto');
             } else {
-                // Para respuestas incorrectas, usar el mismo sonido pero con volumen reducido
-                const audio = new Audio(`../sonidos/correcto.mp3`);
+                // CORRECCIÓN: Ahora se usa el sonido incorrecto.mp3 en vez del sonido correcto.mp3 con menos volumen
+                const audio = new Audio(`../sonidos/incorrecto.mp3`);
                 audio.volume = 0.5; // Reducir volumen para distinguir respuestas incorrectas
                 audio.play().catch(()=>{});
             }
@@ -1000,4 +1000,5 @@
         }
     </script>
 </body>
+
 </html> 
