@@ -1,0 +1,3349 @@
+{
+  "folder": {
+    "id": "1764110677578",
+    "name": "Tema 2 Historia",
+    "contents": [
+      {
+        "id": "1764110693554",
+        "title": "Conceptos",
+        "type": "flashcards",
+        "data": {
+          "type": "flashcards",
+          "title": "Flashcards: Conceptos de Sistema Político y Estado",
+          "subject": "Historia",
+          "description": "Flashcards basadas en los apuntes proporcionados",
+          "cards": [
+            {
+              "question": "¿Qué es el sistema político liberal?",
+              "answer": "El antecesor de la democracia moderna.",
+              "category": "Política",
+              "difficulty": "Fácil"
+            },
+            {
+              "question": "¿Qué implica la división de poderes?",
+              "answer": "Separación entre legislativo, ejecutivo y judicial.",
+              "category": "Política",
+              "difficulty": "Media"
+            },
+            {
+              "question": "Nombra dos derechos individuales del sistema liberal.",
+              "answer": "Propiedad privada e igualdad ante la ley.",
+              "category": "Derechos",
+              "difficulty": "Fácil"
+            },
+            {
+              "question": "¿Qué es la soberanía nacional?",
+              "answer": "El pueblo toma decisiones mediante representantes.",
+              "category": "Política",
+              "difficulty": "Media"
+            },
+            {
+              "question": "¿Qué es una constitución?",
+              "answer": "Documento que recoge derechos y obligaciones de los ciudadanos.",
+              "category": "Política",
+              "difficulty": "Fácil"
+            },
+            {
+              "question": "¿Qué caracteriza a un Estado laico?",
+              "answer": "No hay religión oficial y no se financian religiones.",
+              "category": "Estado",
+              "difficulty": "Media"
+            },
+            {
+              "question": "¿Qué es un Estado aconfesional?",
+              "answer": "El Estado no tiene religión pero puede favorecer alguna.",
+              "category": "Estado",
+              "difficulty": "Media"
+            },
+            {
+              "question": "¿Qué propone el marxismo?",
+              "answer": "Abolición de la propiedad privada y control estatal de la economía.",
+              "category": "Ideologías",
+              "difficulty": "Difícil"
+            },
+            {
+              "question": "¿Qué busca el anarquismo?",
+              "answer": "Abolir Estado, Iglesia y familia para crear nueva sociedad.",
+              "category": "Ideologías",
+              "difficulty": "Difícil"
+            },
+            {
+              "question": "¿Qué es el federalismo?",
+              "answer": "Unión de estados con competencias propias; ejemplo: EEUU.",
+              "category": "Organización del Estado",
+              "difficulty": "Media"
+            }
+          ],
+          "totalCards": 10,
+          "categories": [
+            "Política",
+            "Derechos",
+            "Estado",
+            "Ideologías",
+            "Organización del Estado"
+          ],
+          "difficultyLevels": [
+            "Fácil",
+            "Media",
+            "Difícil"
+          ]
+        },
+        "importedAt": "2025-11-25T22:44:53.554Z"
+      },
+      {
+        "id": "1764111641745",
+        "title": "Conceptos: Sistema político liberal",
+        "type": "flashcards",
+        "data": {
+          "type": "flashcards",
+          "title": "Flashcards: Sistema Político Liberal (Definiciones de la foto)",
+          "subject": "Historia",
+          "description": "Flashcards explicativas basadas en las características del sistema político liberal según los apuntes.",
+          "cards": [
+            {
+              "question": "¿Qué es el sistema político liberal?",
+              "answer": "Es un modelo político que defiende la libertad individual, la separación de poderes, la soberanía nacional y una constitución que regula derechos y obligaciones. Es la base de la democracia moderna.",
+              "category": "Definición general",
+              "difficulty": "Fácil"
+            },
+            {
+              "question": "¿Qué es la división de poderes?",
+              "answer": "Es la separación del poder del Estado en tres ramas independientes para evitar abusos y garantizar equilibrio político.",
+              "category": "Características",
+              "difficulty": "Fácil"
+            },
+            {
+              "question": "¿Qué función tiene el poder legislativo?",
+              "answer": "El poder legislativo se encarga de elaborar, redactar y aprobar las leyes que organizan la vida política y social.",
+              "category": "Poderes del Estado",
+              "difficulty": "Media"
+            },
+            {
+              "question": "¿Qué función tiene el poder ejecutivo?",
+              "answer": "El poder ejecutivo toma decisiones gubernamentales, dirige la acción política del país y ejecuta las leyes aprobadas.",
+              "category": "Poderes del Estado",
+              "difficulty": "Media"
+            },
+            {
+              "question": "¿Qué función tiene el poder judicial?",
+              "answer": "El poder judicial interpreta y hace cumplir las leyes, garantizando que todos las respeten.",
+              "category": "Poderes del Estado",
+              "difficulty": "Media"
+            },
+            {
+              "question": "¿Qué son los derechos individuales en el liberalismo?",
+              "answer": "Son libertades básicas como la propiedad privada, la igualdad ante la ley, la inviolabilidad del domicilio y el derecho a no ser torturado.",
+              "category": "Características",
+              "difficulty": "Fácil"
+            },
+            {
+              "question": "¿Qué es la soberanía nacional?",
+              "answer": "Es el principio según el cual el poder reside en el pueblo, que toma decisiones a través de representantes elegidos.",
+              "category": "Características",
+              "difficulty": "Fácil"
+            },
+            {
+              "question": "¿Qué es una constitución en el sistema liberal?",
+              "answer": "Es un documento fundamental que recoge los derechos, deberes y la organización del Estado, limitando su poder.",
+              "category": "Características",
+              "difficulty": "Fácil"
+            }
+          ],
+          "totalCards": 8,
+          "categories": [
+            "Definición general",
+            "Características",
+            "Poderes del Estado"
+          ],
+          "difficultyLevels": [
+            "Fácil",
+            "Media",
+            "Difícil"
+          ]
+        },
+        "importedAt": "2025-11-25T23:00:41.745Z"
+      },
+      {
+        "id": "1764111811869",
+        "title": "Conceptos : Relación Iglesia-Estado",
+        "type": "flashcards",
+        "data": {
+          "type": "flashcards",
+          "title": "Flashcards: Relación Iglesia–Estado",
+          "subject": "Historia",
+          "description": "Flashcards explicativas basadas en los conceptos subrayados en la imagen: Estado laico, aconfesional y confesional.",
+          "cards": [
+            {
+              "question": "¿Qué es un Estado laico?",
+              "answer": "Un Estado laico es aquel en el que la religión no interviene en asuntos públicos. No existe religión oficial, el Estado no promueve ni impone ninguna creencia religiosa, y ninguna confesión recibe financiación o ventajas por parte del gobierno. Se garantiza la neutralidad total ante todas las religiones.",
+              "category": "Relación Iglesia–Estado",
+              "difficulty": "Fácil"
+            },
+            {
+              "question": "¿Qué es un Estado aconfesional?",
+              "answer": "Un Estado aconfesional es aquel que no adopta una religión propia oficialmente, pero reconoce la importancia social de algunas confesiones y puede favorecerlas en ciertos aspectos. Aunque el Estado no tiene religión, puede ofrecer colaboración o trato preferente a una o varias religiones.",
+              "category": "Relación Iglesia–Estado",
+              "difficulty": "Media"
+            },
+            {
+              "question": "¿Qué es un Estado confesional?",
+              "answer": "Un Estado confesional es aquel que adopta una religión concreta como oficial. La religión elegida influye en la organización política, social y legal del país, y el Estado puede protegerla, promoverla o imponerla. Se identifica como un Estado unido a una religión específica.",
+              "category": "Relación Iglesia–Estado",
+              "difficulty": "Media"
+            }
+          ],
+          "totalCards": 3,
+          "categories": [
+            "Relación Iglesia–Estado"
+          ],
+          "difficultyLevels": [
+            "Fácil",
+            "Media",
+            "Difícil"
+          ]
+        },
+        "importedAt": "2025-11-25T23:03:31.869Z"
+      },
+      {
+        "id": "1764111980315",
+        "title": "Conceptos: Movimiento obrero",
+        "type": "flashcards",
+        "data": {
+          "type": "flashcards",
+          "title": "Flashcards: Movimiento Obrero",
+          "subject": "Historia",
+          "description": "Flashcards explicativas del Movimiento Obrero y sus ideologías según los apuntes proporcionados.",
+          "cards": [
+            {
+              "question": "¿Qué es el Movimiento Obrero y qué busca?",
+              "answer": "El Movimiento Obrero es un movimiento social que surge para defender a los trabajadores. Busca la abolición de la propiedad privada para evitar abusos, lograr más derechos laborales y conseguir mejores condiciones de trabajo.",
+              "category": "Movimiento Obrero",
+              "difficulty": "Fácil"
+            },
+            {
+              "question": "¿En qué dos ideologías se divide el Movimiento Obrero?",
+              "answer": "En marxismo y anarquismo.",
+              "category": "Movimiento Obrero",
+              "difficulty": "Fácil"
+            },
+            {
+              "question": "¿Qué es el marxismo?",
+              "answer": "El marxismo rechaza la propiedad privada. Propone que el Estado debe fijar los precios y ser quien produzca y reparta los bienes. Su objetivo es eliminar desigualdades económicas y sociales mediante el control estatal de la economía.",
+              "category": "Ideologías",
+              "difficulty": "Media"
+            },
+            {
+              "question": "¿Qué es el anarquismo?",
+              "answer": "El anarquismo busca abolir el Estado, la Iglesia y la familia tradicional porque consideran que estos tres elementos limitan la libertad. Pretende crear una nueva sociedad sin leyes, sin imposiciones y sin estructuras de autoridad.",
+              "category": "Ideologías",
+              "difficulty": "Media"
+            }
+          ],
+          "totalCards": 4,
+          "categories": [
+            "Movimiento Obrero",
+            "Ideologías"
+          ],
+          "difficultyLevels": [
+            "Fácil",
+            "Media",
+            "Difícil"
+          ]
+        },
+        "importedAt": "2025-11-25T23:06:20.315Z"
+      },
+      {
+        "id": "1764112194589",
+        "title": "Conceptos: Organización del Estado",
+        "type": "flashcards",
+        "data": {
+          "type": "flashcards",
+          "title": "Flashcards: Organización del Estado",
+          "subject": "Historia",
+          "description": "Flashcards basadas en los apuntes: tipos de organización del Estado, definiciones y ejemplos.",
+          "cards": [
+            {
+              "question": "¿Cuáles son los tres tipos de organización del Estado?",
+              "answer": "Federalismo, centralismo y Estado autonómico.",
+              "category": "Organización del Estado",
+              "difficulty": "Fácil"
+            },
+            {
+              "question": "¿Qué es el federalismo?",
+              "answer": "Es un sistema en el que varios estados deciden unirse para formar una federación. Comparten competencias federales como política monetaria, política exterior y defensa, pero cada estado conserva competencias propias y autonomía interna.",
+              "category": "Definiciones",
+              "difficulty": "Media"
+            },
+            {
+              "question": "¿Qué es el centralismo?",
+              "answer": "Es un sistema en el que todo el poder político y administrativo está concentrado en el Estado central, sin autonomía para regiones o territorios.",
+              "category": "Definiciones",
+              "difficulty": "Media"
+            },
+            {
+              "question": "¿Qué es un Estado autonómico?",
+              "answer": "Es un sistema en el que las autonomías poseen capacidad de gestión política y competencias propias, aunque el Estado central mantiene otras competencias. Combina elementos del sistema centralista y federal.",
+              "category": "Definiciones",
+              "difficulty": "Media"
+            },
+            {
+              "question": "Ejemplo de federalismo",
+              "answer": "Estados Unidos (EEUU), donde los estados tienen competencias propias y forman una federación.",
+              "category": "Ejemplos",
+              "difficulty": "Fácil"
+            },
+            {
+              "question": "Ejemplo de centralismo",
+              "answer": "Francia, donde el poder se concentra en el Estado central.",
+              "category": "Ejemplos",
+              "difficulty": "Fácil"
+            },
+            {
+              "question": "Ejemplo de Estado autonómico",
+              "answer": "España, donde las comunidades autónomas tienen competencias políticas propias.",
+              "category": "Ejemplos",
+              "difficulty": "Fácil"
+            }
+          ],
+          "totalCards": 7,
+          "categories": [
+            "Organización del Estado",
+            "Definiciones",
+            "Ejemplos"
+          ],
+          "difficultyLevels": [
+            "Fácil",
+            "Media",
+            "Difícil"
+          ]
+        },
+        "importedAt": "2025-11-25T23:09:54.589Z"
+      },
+      {
+        "id": "1764112450728",
+        "title": "Conceptos",
+        "type": "test",
+        "data": {
+          "type": "test",
+          "title": "Test: Sistema Liberal, Iglesia-Estado, Movimiento Obrero y Organización del Estado",
+          "subject": "Historia",
+          "description": "Test de 20 preguntas sobre los cuatro temas estudiados.",
+          "passingScore": 60,
+          "timeLimit": 0,
+          "questions": [
+            {
+              "question": "¿Qué principio básico caracteriza al sistema político liberal?",
+              "options": [
+                "Libertad individual y limitación del poder estatal",
+                "Supremacía militar",
+                "Gobierno hereditario",
+                "Ausencia de leyes"
+              ],
+              "correct": "Libertad individual y limitación del poder estatal",
+              "explanation": "El liberalismo se basa en proteger libertades y limitar el poder del Estado."
+            },
+            {
+              "question": "¿Cuál de los siguientes NO es uno de los tres poderes del Estado liberal?",
+              "options": [
+                "Legislativo",
+                "Ejecutivo",
+                "Judicial",
+                "Militar"
+              ],
+              "correct": "Militar",
+              "explanation": "El sistema liberal divide el poder en legislativo, ejecutivo y judicial."
+            },
+            {
+              "question": "¿Qué función tiene el poder legislativo?",
+              "options": [
+                "Interpretar leyes",
+                "Crear y aprobar leyes",
+                "Hacer cumplir leyes",
+                "Organizar elecciones"
+              ],
+              "correct": "Crear y aprobar leyes",
+              "explanation": "El legislativo redacta y aprueba leyes."
+            },
+            {
+              "question": "¿Qué garantiza la división de poderes?",
+              "options": [
+                "Que el rey gobierne solo",
+                "Evitar abusos de poder",
+                "Eliminar la constitución",
+                "Que el ejército controle el Estado"
+              ],
+              "correct": "Evitar abusos de poder",
+              "explanation": "Separar poderes evita concentrar autoridad."
+            },
+            {
+              "question": "¿Cuál es un derecho individual del sistema liberal?",
+              "options": [
+                "Privacidad e inviolabilidad del domicilio",
+                "Obligación de seguir una religión",
+                "Trabajo forzoso",
+                "Tribunales militares"
+              ],
+              "correct": "Privacidad e inviolabilidad del domicilio",
+              "explanation": "Los derechos individuales protegen libertades básicas."
+            },
+            {
+              "question": "La soberanía nacional significa que:",
+              "options": [
+                "El poder lo tiene un monarca",
+                "El poder reside en el pueblo",
+                "La Iglesia dirige al Estado",
+                "El ejército toma decisiones"
+              ],
+              "correct": "El poder reside en el pueblo",
+              "explanation": "La soberanía nacional establece que el poder pertenece a los ciudadanos."
+            },
+            {
+              "question": "¿Qué es una constitución?",
+              "options": [
+                "Una ley secundaria",
+                "Un documento que recoge derechos, deberes y la organización del Estado",
+                "Un acuerdo entre países",
+                "Un impuesto"
+              ],
+              "correct": "Un documento que recoge derechos, deberes y la organización del Estado",
+              "explanation": "La constitución limita el poder y organiza el Estado."
+            },
+            {
+              "question": "¿Qué caracteriza a un Estado laico?",
+              "options": [
+                "Tiene religión oficial",
+                "No reconoce religiones",
+                "No impone ni financia religiones",
+                "Favorece una religión"
+              ],
+              "correct": "No impone ni financia religiones",
+              "explanation": "En el Estado laico no hay religión oficial ni financiación religiosa."
+            },
+            {
+              "question": "¿Qué es un Estado aconfesional?",
+              "options": [
+                "Impone una religión",
+                "No tiene religión oficial pero puede favorecer alguna",
+                "Prohíbe toda religión",
+                "Es una teocracia"
+              ],
+              "correct": "No tiene religión oficial pero puede favorecer alguna",
+              "explanation": "El Estado aconfesional coopera con religiones sin adoptar una."
+            },
+            {
+              "question": "¿Qué es un Estado confesional?",
+              "options": [
+                "Carece de religión oficial",
+                "Reconoce varias religiones por igual",
+                "Adopta una religión oficial",
+                "Prohíbe practicar religión"
+              ],
+              "correct": "Adopta una religión oficial",
+              "explanation": "En un Estado confesional la religión oficial influye en la política."
+            },
+            {
+              "question": "¿Qué busca el movimiento obrero?",
+              "options": [
+                "Aumentar impuestos",
+                "Abolir propiedad privada y mejorar derechos laborales",
+                "Eliminar derechos sociales",
+                "Concentrar poder en empresarios"
+              ],
+              "correct": "Abolir propiedad privada y mejorar derechos laborales",
+              "explanation": "El movimiento obrero lucha por derechos laborales y contra abusos."
+            },
+            {
+              "question": "¿En qué dos ideologías se divide el movimiento obrero?",
+              "options": [
+                "Liberalismo y socialismo",
+                "Marxismo y anarquismo",
+                "Federalismo y centralismo",
+                "Clasicismo y romanticismo"
+              ],
+              "correct": "Marxismo y anarquismo",
+              "explanation": "Estas son las dos corrientes principales del movimiento obrero."
+            },
+            {
+              "question": "¿Qué propone el marxismo?",
+              "options": [
+                "Propiedad privada total",
+                "Estado controla producción y precios",
+                "Abolir toda ley",
+                "Dar poder a empresarios"
+              ],
+              "correct": "Estado controla producción y precios",
+              "explanation": "El marxismo rechaza propiedad privada y propone control estatal."
+            },
+            {
+              "question": "¿Qué propone el anarquismo?",
+              "options": [
+                "Más poder estatal",
+                "Abolición del Estado, Iglesia y familia tradicional",
+                "Gobierno militar",
+                "Centralizar la economía"
+              ],
+              "correct": "Abolición del Estado, Iglesia y familia tradicional",
+              "explanation": "El anarquismo busca una sociedad sin estructuras de autoridad."
+            },
+            {
+              "question": "El federalismo consiste en:",
+              "options": [
+                "Un solo gobierno central con todo el poder",
+                "Unión de estados que comparten competencias federales",
+                "Un ejército regional",
+                "Un Estado religioso"
+              ],
+              "correct": "Unión de estados que comparten competencias federales",
+              "explanation": "Los estados mantienen autonomía y comparten competencias centrales."
+            },
+            {
+              "question": "¿Qué competencia suele ser federal?",
+              "options": [
+                "Educación local",
+                "Política monetaria",
+                "Fiestas regionales",
+                "Gestión municipal"
+              ],
+              "correct": "Política monetaria",
+              "explanation": "La política monetaria pertenece al gobierno federal."
+            },
+            {
+              "question": "El centralismo se caracteriza por:",
+              "options": [
+                "Autonomía de regiones",
+                "Concentración del poder en el Estado central",
+                "Independencia entre territorios",
+                "División en estados"
+              ],
+              "correct": "Concentración del poder en el Estado central",
+              "explanation": "En el centralismo no existen autonomías."
+            },
+            {
+              "question": "¿Qué es un Estado autonómico?",
+              "options": [
+                "Sin gobierno central",
+                "Autonomías con competencias propias y otras centralizadas",
+                "División militar del territorio",
+                "Unión de países"
+              ],
+              "correct": "Autonomías con competencias propias y otras centralizadas",
+              "explanation": "Combina elementos federales y centralistas."
+            },
+            {
+              "question": "Ejemplo de federalismo:",
+              "options": [
+                "Francia",
+                "España",
+                "Estados Unidos",
+                "Portugal"
+              ],
+              "correct": "Estados Unidos",
+              "explanation": "EEUU es un ejemplo clásico de federación."
+            },
+            {
+              "question": "Ejemplo de Estado centralista:",
+              "options": [
+                "Francia",
+                "España",
+                "México",
+                "Brasil"
+              ],
+              "correct": "Francia",
+              "explanation": "Francia concentra el poder en el Estado central."
+            }
+          ]
+        },
+        "importedAt": "2025-11-25T23:14:10.728Z"
+      },
+      {
+        "id": "1764112987914",
+        "title": "Potencias: Francia",
+        "type": "flashcards",
+        "data": {
+          "type": "flashcards",
+          "title": "Flashcards: Francia – Tema 2 (Potencias)",
+          "subject": "Historia",
+          "description": "Flashcards basadas en los apuntes de Francia: sistema político, personajes y acontecimientos.",
+          "cards": [
+            {
+              "question": "¿Cuál era el sistema político de Francia en esta etapa?",
+              "answer": "Francia era una república con un sistema liberal basado en derechos individuales, división de poderes y participación ciudadana.",
+              "category": "Sistema político",
+              "difficulty": "Fácil"
+            },
+            {
+              "question": "¿Qué significa que Francia pasara a ser un Estado laico?",
+              "answer": "Significa que el Estado deja de tener religión oficial, no impone creencias religiosas y mantiene separación total entre política y religión.",
+              "category": "Sistema político",
+              "difficulty": "Media"
+            },
+            {
+              "question": "¿Quién fue Napoleón III?",
+              "answer": "Napoleón III fue el emperador de Francia hasta ser derrocado en 1870 tras la derrota frente a Prusia en la Guerra Franco-Prusiana.",
+              "category": "Personajes",
+              "difficulty": "Fácil"
+            },
+            {
+              "question": "¿Quién fue Jules Ferry?",
+              "answer": "Jules Ferry fue presidente durante el inicio de la Tercera República. Impulsó la expansión del imperio francés y promovió ideas imperialistas.",
+              "category": "Personajes",
+              "difficulty": "Media"
+            },
+            {
+              "question": "¿Qué ocurrió en la Guerra Franco-Prusiana?",
+              "answer": "En esta guerra, Alemania derrotó a Francia, provocando la caída de Napoleón III y la pérdida de territorios. Supuso el fin del Imperio y el inicio de la Tercera República.",
+              "category": "Acontecimientos",
+              "difficulty": "Media"
+            },
+            {
+              "question": "¿Qué fue la Comuna de París?",
+              "answer": "La Comuna de París (marzo–mayo de 1871) fue un breve gobierno revolucionario surgido tras la derrota en la guerra. El movimiento obrero tomó París y se implantó un gobierno marxista y anarquista hasta que el ejército recuperó el control.",
+              "category": "Acontecimientos",
+              "difficulty": "Difícil"
+            }
+          ],
+          "totalCards": 6,
+          "categories": [
+            "Sistema político",
+            "Personajes",
+            "Acontecimientos"
+          ],
+          "difficultyLevels": [
+            "Fácil",
+            "Media",
+            "Difícil"
+          ]
+        },
+        "importedAt": "2025-11-25T23:23:07.914Z"
+      },
+      {
+        "id": "1764113118532",
+        "title": "Potencias: Francia",
+        "type": "test",
+        "data": {
+          "type": "test",
+          "title": "Test: Francia – Tema 2 (Potencias)",
+          "subject": "Historia",
+          "description": "Preguntas sobre sistema político, personajes y acontecimientos de Francia.",
+          "passingScore": 60,
+          "timeLimit": 0,
+          "questions": [
+            {
+              "question": "¿Qué tipo de sistema político tenía Francia en esta etapa?",
+              "options": [
+                "Monarquía absoluta",
+                "República con sistema liberal",
+                "Imperio militar",
+                "Estado confesional"
+              ],
+              "correct": "República con sistema liberal",
+              "explanation": "Francia funcionaba como república con un sistema liberal."
+            },
+            {
+              "question": "¿Qué significa que Francia pasara a ser un Estado laico?",
+              "options": [
+                "La Iglesia controla el Estado",
+                "El Estado adopta una religión oficial",
+                "El Estado no impone ni financia religiones",
+                "Se prohíbe toda religión"
+              ],
+              "correct": "El Estado no impone ni financia religiones",
+              "explanation": "El laicismo implica neutralidad religiosa total del Estado."
+            },
+            {
+              "question": "¿Qué ocurrió con Napoleón III?",
+              "options": [
+                "Fundó la Tercera República",
+                "Fue derrocado en 1870 tras la guerra Franco‑Prusiana",
+                "Se retiró voluntariamente",
+                "Dirigió la Comuna de París"
+              ],
+              "correct": "Fue derrocado en 1870 tras la guerra Franco‑Prusiana",
+              "explanation": "La derrota frente a Prusia provocó su caída."
+            },
+            {
+              "question": "¿Qué impulsó Jules Ferry durante la Tercera República?",
+              "options": [
+                "El fin del liberalismo",
+                "La expansión imperial e ideas imperialistas",
+                "La abolición del ejército",
+                "La monarquía parlamentaria"
+              ],
+              "correct": "La expansión imperial e ideas imperialistas",
+              "explanation": "Ferry promovió la expansión del imperio francés."
+            },
+            {
+              "question": "¿Qué consecuencia tuvo la Guerra Franco‑Prusiana?",
+              "options": [
+                "El crecimiento militar francés",
+                "La caída de Napoleón III y el inicio de la Tercera República",
+                "La creación de la Comuna de París inmediatamente",
+                "La unión entre Francia y Alemania"
+              ],
+              "correct": "La caída de Napoleón III y el inicio de la Tercera República",
+              "explanation": "La derrota provocó la caída del Imperio y el cambio de régimen."
+            },
+            {
+              "question": "¿Cuándo tuvo lugar la Comuna de París?",
+              "options": [
+                "1860–1861",
+                "1870–1872",
+                "Marzo a mayo de 1871",
+                "1900–1901"
+              ],
+              "correct": "Marzo a mayo de 1871",
+              "explanation": "La Comuna duró apenas unos meses en 1871."
+            },
+            {
+              "question": "¿Qué ideologías influyeron en la Comuna de París?",
+              "options": [
+                "Liberalismo y capitalismo",
+                "Marxismo y anarquismo",
+                "Federalismo y centralismo",
+                "Romanticismo y realismo"
+              ],
+              "correct": "Marxismo y anarquismo",
+              "explanation": "Fue un gobierno revolucionario basado en estas corrientes."
+            },
+            {
+              "question": "¿Qué grupo tomó el control de París durante la Comuna?",
+              "options": [
+                "El ejército prusiano",
+                "La nobleza francesa",
+                "El movimiento obrero",
+                "La Iglesia"
+              ],
+              "correct": "El movimiento obrero",
+              "explanation": "El movimiento obrero instauró un gobierno revolucionario."
+            },
+            {
+              "question": "¿Qué provocó la creación de la Comuna de París?",
+              "options": [
+                "Una crisis religiosa",
+                "La derrota francesa en la guerra Franco‑Prusiana",
+                "Un golpe de Estado monárquico",
+                "Una revuelta campesina"
+              ],
+              "correct": "La derrota francesa en la guerra Franco‑Prusiana",
+              "explanation": "La crisis tras la guerra permitió el levantamiento en París."
+            },
+            {
+              "question": "¿Cómo terminó la Comuna de París?",
+              "options": [
+                "Con una reforma constitucional",
+                "Con la victoria obrera",
+                "Con el ejército recuperando el control de París",
+                "Con la división de Francia"
+              ],
+              "correct": "Con el ejército recuperando el control de París",
+              "explanation": "El ejército francés sofocó la Comuna en mayo de 1871."
+            }
+          ]
+        },
+        "importedAt": "2025-11-25T23:25:18.532Z"
+      },
+      {
+        "id": "1764113420747",
+        "title": "Potencias: Alemania",
+        "type": "flashcards",
+        "data": {
+          "type": "flashcards",
+          "title": "Flashcards: Alemania – Potencias (Tema 2)",
+          "subject": "Historia",
+          "description": "Flashcards basadas en sistema político, personajes, acontecimientos y territorios de Alemania.",
+          "cards": [
+            {
+              "question": "¿Cómo era el sistema político del Imperio Alemán?",
+              "answer": "Alemania tenía una monarquía liberal en apariencia, pero realmente funcionaba como una monarquía autoritaria donde el Kaiser concentraba gran parte del poder.",
+              "category": "Sistema político",
+              "difficulty": "Media"
+            },
+            {
+              "question": "¿Qué papel tenían el Kaiser y el Canciller en el sistema político alemán?",
+              "answer": "El Kaiser elegía al Canciller, quien controlaba el gobierno. Aunque existía un parlamento que elaboraba leyes, el Kaiser tenía derecho de veto.",
+              "category": "Sistema político",
+              "difficulty": "Media"
+            },
+            {
+              "question": "¿Qué significa que Alemania fuera una monarquía federal?",
+              "answer": "Significa que Alemania estaba formada por varios territorios o estados que conservaban parte de su autonomía, especialmente los reinos y principados que se beneficiaban del modelo federal.",
+              "category": "Sistema político",
+              "difficulty": "Difícil"
+            },
+            {
+              "question": "¿Quién fue Otto von Bismarck?",
+              "answer": "Fue el Canciller de Guillermo I y artífice de la unificación alemana. Impulsó políticas militares, diplomáticas y sociales que consolidaron el Imperio.",
+              "category": "Personajes",
+              "difficulty": "Media"
+            },
+            {
+              "question": "¿Quién fue Guillermo I?",
+              "answer": "Rey de Prusia y primer emperador de Alemania. Su reinado supuso la unificación bajo liderazgo prusiano.",
+              "category": "Personajes",
+              "difficulty": "Fácil"
+            },
+            {
+              "question": "¿Quién fue Guillermo II?",
+              "answer": "Hijo de Guillermo I. Llevó una política exterior agresiva, fomentó el aislamiento internacional de Alemania y destituyó a Bismarck, cambiando el rumbo del Imperio.",
+              "category": "Personajes",
+              "difficulty": "Media"
+            },
+            {
+              "question": "¿Qué ocurrió en la Guerra Franco-Prusiana (1870–1871)?",
+              "answer": "Prusia derrotó a Francia, provocando la caída de Napoleón III. Esta victoria consolidó la unificación alemana y permitió la anexión de Alsacia y Lorena.",
+              "category": "Acontecimientos",
+              "difficulty": "Media"
+            },
+            {
+              "question": "¿Qué es el II Reich?",
+              "answer": "Es la Alemania unificada proclamada en 1871 tras la victoria prusiana. Duró hasta 1918 con la Primera Guerra Mundial.",
+              "category": "Acontecimientos",
+              "difficulty": "Media"
+            },
+            {
+              "question": "¿Qué fue la Paz Armada (1890–1914)?",
+              "answer": "Un periodo de tensión internacional en el que los países europeos aumentaron su gasto militar, preparándose para un conflicto que finalmente estalló en 1914.",
+              "category": "Acontecimientos",
+              "difficulty": "Difícil"
+            },
+            {
+              "question": "¿Qué países perdieron territorios para la formación de Alemania?",
+              "answer": "Dinamarca perdió los Ducados; Austria perdió territorios tras la Guerra Austro-Prusiana; Francia perdió Alsacia y Lorena tras la Guerra Franco-Prusiana.",
+              "category": "Territorios",
+              "difficulty": "Difícil"
+            },
+            {
+              "question": "¿De qué reino parte la unificación alemana?",
+              "answer": "La unificación alemana parte del Reino de Prusia, que lideró militar y políticamente el proceso de unificación territorial.",
+              "category": "Territorios",
+              "difficulty": "Media"
+            }
+          ],
+          "totalCards": 11,
+          "categories": [
+            "Sistema político",
+            "Personajes",
+            "Acontecimientos",
+            "Territorios"
+          ],
+          "difficultyLevels": [
+            "Fácil",
+            "Media",
+            "Difícil"
+          ]
+        },
+        "importedAt": "2025-11-25T23:30:20.747Z"
+      },
+      {
+        "id": "1764113715189",
+        "title": "Potencias: Alemania",
+        "type": "test",
+        "data": {
+          "type": "test",
+          "title": "Test: Alemania – Potencias (Tema 2)",
+          "subject": "Historia",
+          "description": "Test completo sobre el sistema político, personajes, acontecimientos y territorios de Alemania.",
+          "passingScore": 60,
+          "timeLimit": 0,
+          "questions": [
+            {
+              "question": "¿Qué tipo de sistema político tenía el Imperio Alemán?",
+              "options": [
+                "Monarquía autoritaria con apariencia liberal",
+                "República parlamentaria",
+                "Democracia federal moderna",
+                "Estado laico y democrático"
+              ],
+              "correct": "Monarquía autoritaria con apariencia liberal",
+              "explanation": "Alemania tenía una monarquía liberal solo en apariencia, pero realmente autoritaria."
+            },
+            {
+              "question": "¿Quién elegía al Canciller en el Imperio Alemán?",
+              "options": [
+                "El parlamento",
+                "El Kaiser",
+                "El pueblo mediante voto directo",
+                "El ejército"
+              ],
+              "correct": "El Kaiser",
+              "explanation": "El Kaiser tenía el poder de elegir al Canciller."
+            },
+            {
+              "question": "¿Qué derecho tenía el Kaiser sobre las leyes?",
+              "options": [
+                "Modificar leyes sin aprobación",
+                "Proponer leyes",
+                "Derecho de veto",
+                "Elegir a los jueces"
+              ],
+              "correct": "Derecho de veto",
+              "explanation": "Aunque el parlamento elaboraba leyes, el Kaiser podía vetarlas."
+            },
+            {
+              "question": "¿Qué caracteriza a la monarquía federal alemana?",
+              "options": [
+                "Todas las regiones tenían el mismo poder",
+                "Los territorios conservaban autonomía propia",
+                "Existía un solo parlamento sin divisiones",
+                "Las leyes eran iguales en todos los territorios"
+              ],
+              "correct": "Los territorios conservaban autonomía propia",
+              "explanation": "La unificación incluía estados con autonomía interna."
+            },
+            {
+              "question": "¿Quién fue Otto von Bismarck?",
+              "options": [
+                "Presidente de la Comuna de París",
+                "Líder militar francés",
+                "Canciller de Guillermo I y artífice de la unificación alemana",
+                "Rey de Baviera"
+              ],
+              "correct": "Canciller de Guillermo I y artífice de la unificación alemana",
+              "explanation": "Bismarck dirigió el proceso de unificación política y militar."
+            },
+            {
+              "question": "¿Quién fue Guillermo I?",
+              "options": [
+                "Primer emperador de Alemania y rey de Prusia",
+                "Líder del ejército francés",
+                "Presidente alemán",
+                "Rey de Austria"
+              ],
+              "correct": "Primer emperador de Alemania y rey de Prusia",
+              "explanation": "Guillermo I fue proclamado emperador tras la unificación."
+            },
+            {
+              "question": "¿Qué política caracterizó a Guillermo II?",
+              "options": [
+                "Política pacífica y diplomática",
+                "Política exterior agresiva y ruptura con Bismarck",
+                "Reformas democráticas",
+                "Neutralidad internacional"
+              ],
+              "correct": "Política exterior agresiva y ruptura con Bismarck",
+              "explanation": "Guillermo II aisló internacionalmente a Alemania."
+            },
+            {
+              "question": "¿Qué conflicto provocó la caída de Napoleón III y favoreció la unificación alemana?",
+              "options": [
+                "Guerra Austro-Prusiana",
+                "Guerra Franco-Prusiana",
+                "Primera Guerra Mundial",
+                "Guerra de los Ducados"
+              ],
+              "correct": "Guerra Franco-Prusiana",
+              "explanation": "Prusia derrotó a Francia y anexó Alsacia y Lorena."
+            },
+            {
+              "question": "¿En qué año se proclamó el II Reich?",
+              "options": [
+                "1860",
+                "1871",
+                "1890",
+                "1914"
+              ],
+              "correct": "1871",
+              "explanation": "Tras la victoria prusiana se proclamó el Imperio Alemán."
+            },
+            {
+              "question": "¿Cuándo tuvo lugar la Paz Armada?",
+              "options": [
+                "1800–1820",
+                "1850–1870",
+                "1890–1914",
+                "1871–1875"
+              ],
+              "correct": "1890–1914",
+              "explanation": "Fue un periodo de tensión y aumento del gasto militar."
+            },
+            {
+              "question": "¿Qué país perdió los Ducados durante la unificación alemana?",
+              "options": [
+                "Francia",
+                "Austria",
+                "Dinamarca",
+                "Rusia"
+              ],
+              "correct": "Dinamarca",
+              "explanation": "Los Ducados fueron arrebatados a Dinamarca."
+            },
+            {
+              "question": "¿Qué territorios perdió Austria en la unificación alemana?",
+              "options": [
+                "Territorios italianos",
+                "Territorios austríacos tras la Guerra Austro‑Prusiana",
+                "Alsacia y Lorena",
+                "Baviera"
+              ],
+              "correct": "Territorios austríacos tras la Guerra Austro‑Prusiana",
+              "explanation": "Prusia derrotó a Austria y tomó sus territorios."
+            },
+            {
+              "question": "¿Qué territorios perdió Francia tras la Guerra Franco‑Prusiana?",
+              "options": [
+                "Baviera",
+                "Renania",
+                "Alsacia y Lorena",
+                "Sajonia"
+              ],
+              "correct": "Alsacia y Lorena",
+              "explanation": "Prusia anexó estos territorios tras su victoria."
+            },
+            {
+              "question": "¿Qué reino lideró la unificación alemana?",
+              "options": [
+                "Baviera",
+                "Austria",
+                "Prusia",
+                "Sajonia"
+              ],
+              "correct": "Prusia",
+              "explanation": "Prusia tomó el liderazgo político y militar."
+            }
+          ]
+        },
+        "importedAt": "2025-11-25T23:35:15.189Z"
+      },
+      {
+        "id": "1764113951542",
+        "title": "Potencias Rusia",
+        "type": "flashcards",
+        "data": {
+          "type": "flashcards",
+          "title": "Flashcards: Rusia – Potencias (Tema 2)",
+          "subject": "Historia",
+          "description": "Flashcards explicativas sobre cada concepto subrayado en rosa en los apuntes de Rusia.",
+          "cards": [
+            {
+              "question": "¿Qué fue la monarquía absoluta en Rusia?",
+              "answer": "Rusia estaba gobernada por un Zar con poder total. La dinastía Romanov controlaba el Estado sin límites constitucionales, siendo la última monarquía absoluta de Europa.",
+              "category": "Sistema político",
+              "difficulty": "Media"
+            },
+            {
+              "question": "¿Por qué se consideraba que Rusia era un país atrasado?",
+              "answer": "Su economía era mayoritariamente agraria, la industria era escasa y la población vivía en gran pobreza. Existía una minoría rica pero no había clase media desarrollada.",
+              "category": "Sistema político",
+              "difficulty": "Media"
+            },
+            {
+              "question": "¿Qué papel tenía el cristianismo ortodoxo como religión oficial?",
+              "answer": "La Iglesia ortodoxa estaba unida al Estado; el Zar era su protector. Esto convertía a Rusia en un Estado confesional donde religión y política estaban estrechamente vinculadas.",
+              "category": "Religión",
+              "difficulty": "Fácil"
+            },
+            {
+              "question": "¿Qué significa que Rusia fuera un imperio multinacional?",
+              "answer": "El Imperio incluía pueblos diversos como polacos, ucranianos, bálticos y bielorrusos. Se aplicaba la rusificación: imposición cultural y lingüística rusa en las colonias.",
+              "category": "Imperio",
+              "difficulty": "Difícil"
+            },
+            {
+              "question": "¿Quién fue Alejandro II?",
+              "answer": "Zar entre 1855 y 1881. Inició la modernización y la abolición de la servidumbre, pero fue asesinado. Su muerte frenó reformas y generó inestabilidad.",
+              "category": "Personajes",
+              "difficulty": "Media"
+            },
+            {
+              "question": "¿Quién fue Alejandro III?",
+              "answer": "Zar de 1881 a 1894. Tras el asesinato de Alejandro II implantó un régimen más conservador con fuerte censura y una policía política severa.",
+              "category": "Personajes",
+              "difficulty": "Media"
+            },
+            {
+              "question": "¿Quién fue Nicolás II?",
+              "answer": "Zar entre 1894 y 1917 y último zar ruso. Su reinado vio crisis políticas, derrotas militares y levantamientos que culminaron en la Revolución.",
+              "category": "Personajes",
+              "difficulty": "Media"
+            },
+            {
+              "question": "¿Quién fue Rasputín?",
+              "answer": "Monje ortodoxo que llegó a la corte en 1905 por su relación con la familia imperial. Tuvo gran influencia sobre la Zarina hasta que fue asesinado en 1916.",
+              "category": "Personajes",
+              "difficulty": "Media"
+            },
+            {
+              "question": "¿Qué fue la abolición de la servidumbre en 1861?",
+              "answer": "Reforma que liberó a los siervos, pero ejecutada de forma pobre: generó crisis económica y malestar social porque no solucionó los problemas agrarios.",
+              "category": "Acontecimientos",
+              "difficulty": "Difícil"
+            },
+            {
+              "question": "¿Qué fue la industrialización tardía de 1870–1914?",
+              "answer": "Proceso lento que desarrolló ferrocarriles transiberianos e impulsó la clase obrera. Surgió el proletariado urbano y el trabajo masivo en fábricas.",
+              "category": "Acontecimientos",
+              "difficulty": "Media"
+            },
+            {
+              "question": "¿Qué significó el asesinato de Alejandro II en 1881?",
+              "answer": "Su muerte provocó un giro hacia políticas conservadoras: aumento de censura, represión policial y control estatal más estricto.",
+              "category": "Acontecimientos",
+              "difficulty": "Media"
+            },
+            {
+              "question": "¿Qué ocurrió en la Guerra Ruso-Japonesa (1904–1905)?",
+              "answer": "Japón derrotó a Rusia en una guerra sorprendente. Rusia perdió poder internacional y su prestigio militar quedó gravemente dañado.",
+              "category": "Acontecimientos",
+              "difficulty": "Media"
+            },
+            {
+              "question": "¿Qué fue el Domingo Sangriento de 1905?",
+              "answer": "Manifestación pacífica en San Petersburgo reprimida por el ejército. Desató agitación social y levantamientos contra el Zar.",
+              "category": "Acontecimientos",
+              "difficulty": "Difícil"
+            },
+            {
+              "question": "¿Qué ocurrió en el motín del acorazado Potemkin (1905)?",
+              "answer": "Marineros del Potemkin se sublevaron por malos tratos y ejecutaron a sus oficiales. La rebelión impulsó la creación de la Duma y obligó a Nicolás II a iniciar reformas.",
+              "category": "Acontecimientos",
+              "difficulty": "Difícil"
+            }
+          ],
+          "totalCards": 14,
+          "categories": [
+            "Sistema político",
+            "Religión",
+            "Imperio",
+            "Personajes",
+            "Acontecimientos"
+          ],
+          "difficultyLevels": [
+            "Fácil",
+            "Media",
+            "Difícil"
+          ]
+        },
+        "importedAt": "2025-11-25T23:39:11.542Z"
+      },
+      {
+        "id": "1764114201008",
+        "title": "Potencias: Rusia",
+        "type": "test",
+        "data": {
+          "type": "test",
+          "title": "Test: Rusia – Potencias (Tema 2)",
+          "subject": "Historia",
+          "description": "Test completo sobre sistema político, personajes y acontecimientos de Rusia.",
+          "passingScore": 60,
+          "timeLimit": 0,
+          "questions": [
+            {
+              "question": "¿Qué tipo de sistema político tenía Rusia a finales del siglo XIX?",
+              "options": [
+                "Monarquía constitucional",
+                "Monarquía absoluta dirigida por el Zar",
+                "República federal",
+                "Estado parlamentario"
+              ],
+              "correct": "Monarquía absoluta dirigida por el Zar",
+              "explanation": "Rusia era la última monarquía absoluta de Europa bajo la dinastía Romanov."
+            },
+            {
+              "question": "¿Por qué Rusia era considerada un país atrasado?",
+              "options": [
+                "Tenía una gran industria",
+                "Su economía era mayoritariamente agraria y la población era pobre",
+                "Carecía de recursos naturales",
+                "Tenía una gran clase media"
+              ],
+              "correct": "Su economía era mayoritariamente agraria y la población era pobre",
+              "explanation": "La economía era agrícola y la estructura social muy desigual."
+            },
+            {
+              "question": "¿Cuál era la religión oficial de Rusia?",
+              "options": [
+                "Catolicismo",
+                "Protestantismo",
+                "Cristianismo ortodoxo",
+                "Islam"
+              ],
+              "correct": "Cristianismo ortodoxo",
+              "explanation": "Rusia era un Estado confesional donde la Iglesia ortodoxa estaba ligada al Zar."
+            },
+            {
+              "question": "¿Qué significa que Rusia era un imperio multinacional?",
+              "options": [
+                "Solo tenía población rusa",
+                "Incluía numerosos pueblos y territorios bajo control ruso",
+                "Era un país pequeño",
+                "Tenía colonias en América"
+              ],
+              "correct": "Incluía numerosos pueblos y territorios bajo control ruso",
+              "explanation": "Imperio con polacos, ucranianos, bálticos, bielorrusos, etc."
+            },
+            {
+              "question": "¿Qué fue la rusificación?",
+              "options": [
+                "El fin de la esclavitud",
+                "La imposición cultural y lingüística rusa en las colonias",
+                "La expansión militar",
+                "La división del imperio"
+              ],
+              "correct": "La imposición cultural y lingüística rusa en las colonias",
+              "explanation": "Los pueblos sometidos debían adoptar la cultura rusa."
+            },
+            {
+              "question": "¿Qué reforma impulsó Alejandro II?",
+              "options": [
+                "La industrialización",
+                "La abolición de la servidumbre en 1861",
+                "La creación de la Duma",
+                "La censura"
+              ],
+              "correct": "La abolición de la servidumbre en 1861",
+              "explanation": "El Zar liberó a los siervos, aunque la reforma fracasó en la práctica."
+            },
+            {
+              "question": "¿Qué consecuencia tuvo el asesinato de Alejandro II?",
+              "options": [
+                "Una etapa de reformas liberales",
+                "Un giro hacia políticas conservadoras y mayor censura",
+                "La caída del Zar",
+                "El inicio de la Primera Guerra Mundial"
+              ],
+              "correct": "Un giro hacia políticas conservadoras y mayor censura",
+              "explanation": "Alejandro III impuso represión y censura."
+            },
+            {
+              "question": "¿Qué caracterizó el gobierno de Alejandro III?",
+              "options": [
+                "Reformas democráticas",
+                "Fuerte conservadurismo, censura y policía política",
+                "Expansión colonial",
+                "Separación Iglesia-Estado"
+              ],
+              "correct": "Fuerte conservadurismo, censura y policía política",
+              "explanation": "Reforzó el autoritarismo tras el asesinato de su padre."
+            },
+            {
+              "question": "¿Quién fue Nicolás II?",
+              "options": [
+                "Primer ministro ruso",
+                "Último zar ruso entre 1894 y 1917",
+                "Rey de Polonia",
+                "Líder bolchevique"
+              ],
+              "correct": "Último zar ruso entre 1894 y 1917",
+              "explanation": "Su reinado vio crisis militares y sociales que llevaron a la Revolución."
+            },
+            {
+              "question": "¿Quién fue Rasputín?",
+              "options": [
+                "Un general ruso",
+                "Un monje ortodoxo con influencia en la corte",
+                "Un ministro de economía",
+                "Un revolucionario"
+              ],
+              "correct": "Un monje ortodoxo con influencia en la corte",
+              "explanation": "Tuvo gran influencia sobre la Zarina hasta su asesinato en 1916."
+            },
+            {
+              "question": "¿Qué fue la industrialización tardía en Rusia?",
+              "options": [
+                "Proceso industrial rápido",
+                "Un desarrollo lento entre 1870 y 1914 que creó ferrocarriles y clase obrera",
+                "La mejora agrícola",
+                "La expansión imperial"
+              ],
+              "correct": "Un desarrollo lento entre 1870 y 1914 que creó ferrocarriles y clase obrera",
+              "explanation": "Surge el proletariado urbano y fábricas modernas."
+            },
+            {
+              "question": "¿Qué país derrotó a Rusia en la Guerra Ruso-Japonesa?",
+              "options": [
+                "China",
+                "Japón",
+                "Alemania",
+                "Reino Unido"
+              ],
+              "correct": "Japón",
+              "explanation": "Japón sorprendió al mundo venciendo a Rusia entre 1904–1905."
+            },
+            {
+              "question": "¿Qué ocurrió en el Domingo Sangriento (1905)?",
+              "options": [
+                "Una victoria militar rusa",
+                "Manifestación pacífica reprimida violentamente por el ejército",
+                "Un golpe de Estado",
+                "Una revolución bolchevique"
+              ],
+              "correct": "Manifestación pacífica reprimida violentamente por el ejército",
+              "explanation": "Provocó fuerte agitación social contra el Zar."
+            },
+            {
+              "question": "¿Qué ocurrió en el motín del acorazado Potemkin?",
+              "options": [
+                "Una huelga obrera",
+                "Los marineros se sublevaron y mataron a sus oficiales por malos tratos",
+                "Una victoria naval rusa",
+                "La invasión de Japón"
+              ],
+              "correct": "Los marineros se sublevaron y mataron a sus oficiales por malos tratos",
+              "explanation": "El motín contribuyó a la creación de la Duma y presión por reformas."
+            },
+            {
+              "question": "¿Qué institución creó Nicolás II tras las revueltas de 1905?",
+              "options": [
+                "El Senado",
+                "La Duma",
+                "El Soviet Supremo",
+                "La Unión del Pueblo Ruso"
+              ],
+              "correct": "La Duma",
+              "explanation": "Fue un parlamento creado para intentar frenar la revolución."
+            }
+          ]
+        },
+        "importedAt": "2025-11-25T23:43:21.009Z"
+      },
+      {
+        "id": "1764114324367",
+        "title": "Potencias: Imperio Austrohúngaro",
+        "type": "flashcards",
+        "data": {
+          "type": "flashcards",
+          "title": "Flashcards: Imperio Austrohúngaro – Potencias (Tema 2)",
+          "subject": "Historia",
+          "description": "Flashcards explicando cada concepto subrayado en naranja en los apuntes del Imperio Austrohúngaro.",
+          "cards": [
+            {
+              "question": "¿Qué era la monarquía absoluta en el Imperio Austrohúngaro?",
+              "answer": "Era un sistema similar al de Rusia: el emperador concentraba todo el poder político. No había separación de poderes real y la autoridad imperial era superior a cualquier institución.",
+              "category": "Sistema político",
+              "difficulty": "Media"
+            },
+            {
+              "question": "¿Qué era la monarquía dual en el Imperio Austrohúngaro?",
+              "answer": "El Imperio Austrohúngaro tenía un único emperador pero dos reinos: Austria y Hungría. Cada reino mantenía su propia organización política, aunque compartían al emperador y algunos asuntos comunes.",
+              "category": "Sistema político",
+              "difficulty": "Media"
+            },
+            {
+              "question": "¿Qué significa que el Imperio Austrohúngaro era un imperio multinacional?",
+              "answer": "El imperio incluía culturas diversas: predominaban alemanes y húngaros, pero también convivían italianos, ucranianos, croatas, eslovenos, checos, polacos y otros pueblos. En las culturas minoritarias surgieron movimientos nacionalistas e independentistas.",
+              "category": "Sistema político",
+              "difficulty": "Difícil"
+            },
+            {
+              "question": "¿Quién fue Francisco José I?",
+              "answer": "Miembro de la dinastía de los Habsburgo. Gobernó durante gran parte del siglo XIX y estuvo al frente del Imperio Austrohúngaro en un periodo de tensiones nacionalistas y conflictos internos.",
+              "category": "Personajes",
+              "difficulty": "Fácil"
+            },
+            {
+              "question": "¿Quién fue Isabel de Baviera (Sissi)?",
+              "answer": "Esposa de Francisco José I. Tenía gran simpatía en el imperio y fue una figura muy querida. Su vida en la corte estuvo marcada por tensiones y presiones políticas.",
+              "category": "Personajes",
+              "difficulty": "Media"
+            },
+            {
+              "question": "¿Quién fue Rodolfo de Austria?",
+              "answer": "Hijo de Francisco José I e Isabel de Baviera. Tuvo fuertes desacuerdos con su padre y finalmente se suicidó, dejando una gran crisis en la sucesión imperial.",
+              "category": "Personajes",
+              "difficulty": "Media"
+            },
+            {
+              "question": "¿Quién fue Francisco Fernando?",
+              "answer": "Sobrino de Francisco José I y heredero tras la muerte de Rodolfo. Su asesinato en Sarajevo en 1914 desencadenó una crisis internacional que llevó al inicio de la Primera Guerra Mundial.",
+              "category": "Personajes",
+              "difficulty": "Media"
+            },
+            {
+              "question": "¿Cuál era el contexto político de los Balcanes antes de la Primera Guerra Mundial?",
+              "answer": "La Península Balcánica albergaba pueblos eslavos (croatas, serbios, eslovenos...). Muchos estaban sometidos a grandes potencias: Serbia buscaba expandirse; el Imperio Austrohúngaro tenía territorios en la zona; el Imperio Otomano perdía influencia; y Rusia protegía a los pueblos eslavos. Era una zona de gran tensión y conflictos nacionalistas.",
+              "category": "Acontecimientos",
+              "difficulty": "Difícil"
+            },
+            {
+              "question": "¿Qué fue la anexión de Bosnia y Herzegovina al Imperio Austrohúngaro en 1908?",
+              "answer": "El Imperio Austrohúngaro incorporó Bosnia y Herzegovina, territorios de cultura eslava. Esta acción generó tensiones porque Serbia aspiraba a esa zona, aumentando el conflicto en los Balcanes.",
+              "category": "Acontecimientos",
+              "difficulty": "Media"
+            },
+            {
+              "question": "¿Qué ocurrió en el asesinato del archiduque Francisco Fernando en 1914?",
+              "answer": "Francisco Fernando visitó Sarajevo el día nacional de Bosnia. Le lanzaron una bomba que falló; más tarde, cuando iba al ayuntamiento, su coche tomó una calle equivocada y un terrorista llamado Princip lo asesinó. El Imperio Austrohúngaro acusó a Serbia de estar detrás del atentado y declaró la guerra, lo que desencadenó la Primera Guerra Mundial.",
+              "category": "Acontecimientos",
+              "difficulty": "Difícil"
+            }
+          ],
+          "totalCards": 10,
+          "categories": [
+            "Sistema político",
+            "Personajes",
+            "Acontecimientos"
+          ],
+          "difficultyLevels": [
+            "Fácil",
+            "Media",
+            "Difícil"
+          ]
+        },
+        "importedAt": "2025-11-25T23:45:24.367Z"
+      },
+      {
+        "id": "1764114404176",
+        "title": "Potencias: Imperio Austrohúngaro",
+        "type": "test",
+        "data": {
+          "type": "test",
+          "title": "Test: Imperio Austrohúngaro – Potencias (Tema 2)",
+          "subject": "Historia",
+          "description": "Test completo para comprender el Imperio Austrohúngaro.",
+          "passingScore": 60,
+          "timeLimit": 0,
+          "questions": [
+            {
+              "question": "¿Qué tipo de sistema político tenía el Imperio Austrohúngaro?",
+              "options": [
+                "Parlamento constitucional real",
+                "Monarquía absoluta con poder concentrado en el emperador",
+                "República federal",
+                "Democracia parlamentaria"
+              ],
+              "correct": "Monarquía absoluta con poder concentrado en el emperador",
+              "explanation": "Aunque había Parlamento, el emperador mantenía el poder absoluto."
+            },
+            {
+              "question": "¿Qué carácter tenía la monarquía dual austrohúngara?",
+              "options": [
+                "Dos emperadores independientes",
+                "Un emperador y dos reinos con organización política propia",
+                "Reinos totalmente fusionados",
+                "Un gobierno democrático"
+              ],
+              "correct": "Un emperador y dos reinos con organización política propia",
+              "explanation": "Austria y Hungría compartían emperador pero mantenían estructuras internas propias."
+            },
+            {
+              "question": "¿Qué definía al Imperio Austrohúngaro como imperio multinacional?",
+              "options": [
+                "Un solo idioma oficial",
+                "Presencia de muchas culturas y pueblos distintos",
+                "Predominio únicamente alemán",
+                "Un gobierno descentralizado"
+              ],
+              "correct": "Presencia de muchas culturas y pueblos distintos",
+              "explanation": "Convivían alemanes, húngaros, italianos, ucranianos, croatas, checos, polacos…"
+            },
+            {
+              "question": "¿Qué problema surgió en las culturas minoritarias dentro del imperio?",
+              "options": [
+                "Adopción inmediata del alemán",
+                "Movimientos nacionalistas e independentistas",
+                "Unificación total del imperio",
+                "Desaparición de sus lenguas"
+              ],
+              "correct": "Movimientos nacionalistas e independentistas",
+              "explanation": "Las minorías buscaban autonomía o independencia."
+            },
+            {
+              "question": "¿Quién fue Francisco José I?",
+              "options": [
+                "Rey de Italia",
+                "Emperador del Imperio Austrohúngaro perteneciente a los Habsburgo",
+                "Líder revolucionario",
+                "Príncipe alemán"
+              ],
+              "correct": "Emperador del Imperio Austrohúngaro perteneciente a los Habsburgo",
+              "explanation": "Gobernó durante un largo periodo con tensiones internas."
+            },
+            {
+              "question": "¿Quién fue Isabel de Baviera (Sissi)?",
+              "options": [
+                "Reina de Inglaterra",
+                "Esposa de Francisco José I, muy querida en el imperio",
+                "Líder nacionalista húngara",
+                "Figura militar"
+              ],
+              "correct": "Esposa de Francisco José I, muy querida en el imperio",
+              "explanation": "Tenía una imagen popular dentro del imperio."
+            },
+            {
+              "question": "¿Quién fue Rodolfo de Austria?",
+              "options": [
+                "Hermano del emperador",
+                "Hijo de Francisco José I y heredero hasta su suicidio",
+                "Rey de Hungría",
+                "General del ejército"
+              ],
+              "correct": "Hijo de Francisco José I y heredero hasta su suicidio",
+              "explanation": "Su muerte generó crisis sucesoria."
+            },
+            {
+              "question": "¿Quién fue Francisco Fernando?",
+              "options": [
+                "General del imperio",
+                "Hijo de Rodolfo",
+                "Sobrino de Francisco José I y heredero tras el suicidio de Rodolfo",
+                "Ministro de guerra"
+              ],
+              "correct": "Sobrino de Francisco José I y heredero tras el suicidio de Rodolfo",
+              "explanation": "Su asesinato desató la Primera Guerra Mundial."
+            },
+            {
+              "question": "¿Por qué los Balcanes eran un punto crítico antes de 1914?",
+              "options": [
+                "Carecían de recursos",
+                "Región sin importancia política",
+                "Zona con pueblos eslavos sometidos a potencias y con fuertes tensiones nacionalistas",
+                "Región controlada únicamente por Alemania"
+              ],
+              "correct": "Zona con pueblos eslavos sometidos a potencias y con fuertes tensiones nacionalistas",
+              "explanation": "Serbia, Austria-Hungría, el Imperio Otomano y Rusia tenían intereses allí."
+            },
+            {
+              "question": "¿Qué potencias tenían influencia o interés en los Balcanes?",
+              "options": [
+                "China y Japón",
+                "Serbia, Austria-Hungría, Imperio Otomano y Rusia",
+                "Italia y Portugal",
+                "Estados Unidos y Francia"
+              ],
+              "correct": "Serbia, Austria-Hungría, Imperio Otomano y Rusia",
+              "explanation": "Estas potencias disputaban el control de la región."
+            },
+            {
+              "question": "¿Qué ocurrió con Bosnia y Herzegovina en 1908?",
+              "options": [
+                "Serbia las conquistó",
+                "Se independizaron",
+                "Austria-Hungría las anexionó, provocando tensiones regionales",
+                "Fueron cedidas a Rusia"
+              ],
+              "correct": "Austria-Hungría las anexionó, provocando tensiones regionales",
+              "explanation": "Serbia consideraba esos territorios parte de su expansión nacionalista."
+            },
+            {
+              "question": "¿Qué detonó el inicio de la Primera Guerra Mundial?",
+              "options": [
+                "La caída del Imperio Otomano",
+                "Una revolución en Hungría",
+                "El asesinato del archiduque Francisco Fernando en Sarajevo",
+                "La victoria rusa en los Balcanes"
+              ],
+              "correct": "El asesinato del archiduque Francisco Fernando en Sarajevo",
+              "explanation": "Fue el evento que encadenó declaraciones de guerra."
+            },
+            {
+              "question": "¿Quién asesinó a Francisco Fernando?",
+              "options": [
+                "Un soldado austríaco",
+                "Un terrorista serbio llamado Gavrilo Princip",
+                "Un miembro del ejército ruso",
+                "Un espía alemán"
+              ],
+              "correct": "Un terrorista serbio llamado Gavrilo Princip",
+              "explanation": "Princip pertenecía a un grupo nacionalista serbio."
+            },
+            {
+              "question": "¿Qué hizo Austria-Hungría tras el asesinato del archiduque?",
+              "options": [
+                "Declaró la guerra a Serbia",
+                "Firmó la paz",
+                "Abdicó el emperador",
+                "Retiró sus tropas de los Balcanes"
+              ],
+              "correct": "Declaró la guerra a Serbia",
+              "explanation": "Consideraba que Serbia estaba detrás del atentado."
+            },
+            {
+              "question": "¿Por qué entró Rusia en conflicto?",
+              "options": [
+                "Quería territorios austríacos",
+                "Respondió a la invasión alemana",
+                "Protegía a los pueblos eslavos y defendió a Serbia",
+                "Quería expandirse hacia el Mediterráneo"
+              ],
+              "correct": "Protegía a los pueblos eslavos y defendió a Serbia",
+              "explanation": "Rusia apoyaba a Serbia en los Balcanes."
+            }
+          ]
+        },
+        "importedAt": "2025-11-25T23:46:44.176Z"
+      },
+      {
+        "id": "1764114602513",
+        "title": "Potencias: Reino Unido",
+        "type": "flashcards",
+        "data": {
+          "type": "flashcards",
+          "title": "Flashcards: Reino Unido – Potencias (Tema 2)",
+          "subject": "Historia",
+          "description": "Flashcards sobre los conceptos subrayados en rosa y morado en los apuntes del Reino Unido.",
+          "cards": [
+            {
+              "question": "¿Qué eran los Whigs en el Reino Unido del siglo XIX?",
+              "answer": "Los Whigs eran un partido de ideología liberal. Entre sus líderes destacados se encontraba William Gladstone. Defendían reformas políticas y mayor participación democrática.",
+              "category": "Partidos",
+              "difficulty": "Media"
+            },
+            {
+              "question": "¿Qué eran los Tories en el Reino Unido del siglo XIX?",
+              "answer": "Los Tories eran el partido conservador. Su figura más representativa en esta época fue Benjamin Disraeli. Defendían la tradición, la estabilidad y un ritmo más moderado de reformas.",
+              "category": "Partidos",
+              "difficulty": "Media"
+            },
+            {
+              "question": "¿Cómo funcionaba el poder ejecutivo en el Reino Unido?",
+              "answer": "Estaba dividido en dos cámaras: la Cámara de los Lores, cuyos miembros tenían puesto hereditario, y la Cámara de los Comunes, cuyos miembros eran elegidos por sufragio censitario.",
+              "category": "Poderes",
+              "difficulty": "Media"
+            },
+            {
+              "question": "¿Cómo funcionaba el poder legislativo en el Reino Unido?",
+              "answer": "Aunque el poder legislativo recaía teóricamente en el rey, este lo delegaba en el primer ministro y en su gobierno, reforzando así el sistema parlamentario.",
+              "category": "Poderes",
+              "difficulty": "Fácil"
+            },
+            {
+              "question": "¿Cómo se ejercía el poder judicial en el Reino Unido?",
+              "answer": "El poder judicial era independiente del gobierno, garantizando la separación de poderes dentro del sistema político liberal del país.",
+              "category": "Poderes",
+              "difficulty": "Fácil"
+            },
+            {
+              "question": "¿Quién fue la Reina Victoria?",
+              "answer": "Reina del Reino Unido durante 63 años. Dio nombre a la 'Época Victoriana', caracterizada por moral rígida, estabilidad política y gran expansión imperial. Fue conocida como la 'abuela de Europa' por su gran descendencia.",
+              "category": "Personajes",
+              "difficulty": "Media"
+            },
+            {
+              "question": "¿Quién fue Jorge V?",
+              "answer": "Rey del Reino Unido cuando estalló la Primera Guerra Mundial. Su reinado estuvo marcado por el conflicto internacional y por tensiones internas dentro del imperio británico.",
+              "category": "Personajes",
+              "difficulty": "Media"
+            },
+            {
+              "question": "¿En qué consistieron las reformas sociales en el Reino Unido?",
+              "answer": "Incluyeron pensiones por jubilación, ayudas al desempleo y al trabajo, selección del Estado del bienestar y el establecimiento del salario mínimo.",
+              "category": "Acontecimientos",
+              "difficulty": "Media"
+            },
+            {
+              "question": "¿Qué fue la cuestión irlandesa?",
+              "answer": "Irlanda formaba parte del Reino Unido pero buscaba su independencia. Surgió un movimiento nacionalista y se produjo un proceso independentista que culminó con la independencia irlandesa en 1922.",
+              "category": "Acontecimientos",
+              "difficulty": "Media"
+            }
+          ],
+          "totalCards": 9,
+          "categories": [
+            "Partidos",
+            "Poderes",
+            "Personajes",
+            "Acontecimientos"
+          ],
+          "difficultyLevels": [
+            "Fácil",
+            "Media",
+            "Difícil"
+          ]
+        },
+        "importedAt": "2025-11-25T23:50:02.513Z"
+      },
+      {
+        "id": "1764114652394",
+        "title": "Potencias: Reino Unido",
+        "type": "test",
+        "data": {
+          "type": "test",
+          "title": "Test: Reino Unido – Potencias (Tema 2)",
+          "subject": "Historia",
+          "description": "Test completo para comprender el Reino Unido en la época imperial.",
+          "passingScore": 60,
+          "timeLimit": 0,
+          "questions": [
+            {
+              "question": "¿Por qué el Reino Unido era considerado la mayor potencia de la época?",
+              "options": [
+                "Por su economía agraria",
+                "Por su imperio colonial y poder económico",
+                "Por su neutralidad europea",
+                "Por su aislamiento político"
+              ],
+              "correct": "Por su imperio colonial y poder económico",
+              "explanation": "El Reino Unido tenía territorios en Canadá, África del Este, Oceanía e India."
+            },
+            {
+              "question": "¿Qué tipo de sistema político tenía el Reino Unido?",
+              "options": [
+                "Monarquía absoluta",
+                "Monarquía con sistema político liberal",
+                "República parlamentaria",
+                "Dictadura parlamentaria"
+              ],
+              "correct": "Monarquía con sistema político liberal",
+              "explanation": "El sistema político británico combinaba monarquía y parlamento."
+            },
+            {
+              "question": "¿Qué partido representaban los Whigs?",
+              "options": [
+                "Partido conservador",
+                "Partido liberal",
+                "Partido socialista",
+                "Partido nacionalista"
+              ],
+              "correct": "Partido liberal",
+              "explanation": "Los Whigs eran liberales y uno de sus líderes fue William Gladstone."
+            },
+            {
+              "question": "¿Qué partido representaban los Tories?",
+              "options": [
+                "Partido liberal",
+                "Partido conservador",
+                "Partido comunista",
+                "Partido radical"
+              ],
+              "correct": "Partido conservador",
+              "explanation": "Su figura más destacada fue Benjamin Disraeli."
+            },
+            {
+              "question": "¿Cómo se componía el poder ejecutivo británico?",
+              "options": [
+                "Rey y ejército",
+                "Cámara de los Lores y Cámara de los Comunes",
+                "Primer ministro y tribunales",
+                "Rey y parlamentos regionales"
+              ],
+              "correct": "Cámara de los Lores y Cámara de los Comunes",
+              "explanation": "Lores: puesto hereditario. Comunes: elegidos por sufragio censitario."
+            },
+            {
+              "question": "¿Cómo funcionaba el poder legislativo del Reino Unido?",
+              "options": [
+                "Lo ejercía únicamente el parlamento",
+                "El rey tenía el poder pero lo delegaba en el primer ministro",
+                "Lo ejercían los jueces",
+                "No existía poder legislativo"
+              ],
+              "correct": "El rey tenía el poder pero lo delegaba en el primer ministro",
+              "explanation": "El sistema parlamentario daba protagonismo al gobierno."
+            },
+            {
+              "question": "¿Cómo era el poder judicial en el Reino Unido?",
+              "options": [
+                "Dependiente del parlamento",
+                "Dependiente del primer ministro",
+                "Independiente",
+                "Controlado por el rey"
+              ],
+              "correct": "Independiente",
+              "explanation": "El poder judicial actuaba sin control del gobierno."
+            },
+            {
+              "question": "¿Quién fue la Reina Victoria?",
+              "options": [
+                "Reina de Francia",
+                "Reina del Reino Unido durante 63 años, símbolo de la era victoriana",
+                "Líder política socialista",
+                "Fundadora del imperio británico"
+              ],
+              "correct": "Reina del Reino Unido durante 63 años, símbolo de la era victoriana",
+              "explanation": "Ejerció una fuerte influencia moral y política y fue conocida como 'la abuela de Europa'."
+            },
+            {
+              "question": "¿Quién fue Jorge V?",
+              "options": [
+                "Rey cuando estalló la Primera Guerra Mundial",
+                "Último rey absoluto",
+                "Fundador de la Cámara de los Comunes",
+                "Rey del siglo XVIII"
+              ],
+              "correct": "Rey cuando estalló la Primera Guerra Mundial",
+              "explanation": "Su reinado coincidió con el estallido del conflicto."
+            },
+            {
+              "question": "¿Qué incluían las reformas sociales del Reino Unido?",
+              "options": [
+                "Prohibición del sufragio",
+                "Pensión de jubilación, salario mínimo y ayudas al desempleo",
+                "Reducción del parlamento",
+                "Eliminación del primer ministro"
+              ],
+              "correct": "Pensión de jubilación, salario mínimo y ayudas al desempleo",
+              "explanation": "Estas reformas dieron origen al Estado del bienestar."
+            },
+            {
+              "question": "¿Qué fue la cuestión irlandesa?",
+              "options": [
+                "Una alianza con Irlanda",
+                "Conflicto por la independencia de Irlanda respecto al Reino Unido",
+                "Una reforma educativa",
+                "Una guerra colonial"
+              ],
+              "correct": "Conflicto por la independencia de Irlanda respecto al Reino Unido",
+              "explanation": "Irlanda se independizó en 1922 tras un movimiento nacionalista."
+            }
+          ]
+        },
+        "importedAt": "2025-11-25T23:50:52.394Z"
+      },
+      {
+        "id": "1764189887762",
+        "title": "Potencias: Italia",
+        "type": "flashcards",
+        "data": {
+          "type": "flashcards",
+          "title": "Flashcards: Italia – Potencias (Tema 2)",
+          "subject": "Historia",
+          "description": "Flashcards completas sobre sistema político, personajes y acontecimientos clave de Italia.",
+          "cards": [
+            {
+              "question": "¿Cómo era el sistema político de Italia tras su unificación?",
+              "answer": "Italia adoptó una monarquía constitucional bajo la dinastía de los Saboya. El sistema político era liberal y funcionaba de forma similar al del Reino Unido, con instituciones parlamentarias y un rey con poderes limitados.",
+              "category": "Sistema político",
+              "difficulty": "Media"
+            },
+            {
+              "question": "¿Quién fue Víctor Manuel III?",
+              "answer": "Rey de Italia durante la Primera Guerra Mundial. Era nieto de Víctor Manuel II, el monarca que logró la unificación italiana.",
+              "category": "Personajes",
+              "difficulty": "Media"
+            },
+            {
+              "question": "¿Quién fue Víctor Manuel II?",
+              "answer": "Rey del Piamonte que lideró el proceso del Risorgimento. Logró la unificación italiana y se convirtió en el primer rey del Reino de Italia.",
+              "category": "Personajes",
+              "difficulty": "Media"
+            },
+            {
+              "question": "¿Qué fue el Risorgimento?",
+              "answer": "Fue el proceso de unificación de Italia, que culminó con la creación de un solo estado italiano bajo el liderazgo de Víctor Manuel II. Involucró guerras, alianzas y movimientos nacionalistas.",
+              "category": "Acontecimientos",
+              "difficulty": "Media"
+            },
+            {
+              "question": "¿Cuándo y con quiénes se incorporó Italia a la Triple Alianza?",
+              "answer": "Italia se unió a la Triple Alianza en 1882 junto con Alemania y el Imperio Austrohúngaro. La alianza tenía objetivos defensivos y buscaba mantener el equilibrio de poder en Europa.",
+              "category": "Acontecimientos",
+              "difficulty": "Media"
+            },
+            {
+              "question": "¿Qué postura adoptó Italia al inicio de la Primera Guerra Mundial?",
+              "answer": "Italia se declaró neutral inicialmente, pero en 1915 abandonó la Triple Alianza y se unió a la Triple Entente al recibir promesas territoriales de parte de los aliados.",
+              "category": "Acontecimientos",
+              "difficulty": "Media"
+            }
+          ],
+          "totalCards": 6,
+          "categories": [
+            "Sistema político",
+            "Personajes",
+            "Acontecimientos"
+          ],
+          "difficultyLevels": [
+            "Fácil",
+            "Media",
+            "Difícil"
+          ]
+        },
+        "importedAt": "2025-11-26T20:44:47.762Z"
+      },
+      {
+        "id": "1764189922104",
+        "title": "Potencias: Italia",
+        "type": "test",
+        "data": {
+          "type": "test",
+          "title": "Test: Italia – Potencias (Tema 2)",
+          "subject": "Historia",
+          "description": "Preguntas completas para dominar el tema de Italia durante la época imperial.",
+          "passingScore": 60,
+          "timeLimit": 0,
+          "questions": [
+            {
+              "question": "¿Qué tipo de sistema político tenía Italia tras su unificación?",
+              "options": [
+                "Monarquía absoluta",
+                "Monarquía constitucional liberal",
+                "República parlamentaria",
+                "Dictadura militar"
+              ],
+              "correct": "Monarquía constitucional liberal",
+              "explanation": "Italia adoptó una monarquía constitucional bajo la dinastía Saboya."
+            },
+            {
+              "question": "¿Qué familia reinaba en Italia tras la unificación?",
+              "options": [
+                "Los Habsburgo",
+                "Los Borbones",
+                "Los Saboya",
+                "Los Médici"
+              ],
+              "correct": "Los Saboya",
+              "explanation": "La nueva Italia unificada quedó bajo la dinastía de los Saboya."
+            },
+            {
+              "question": "¿A qué país se parecía el sistema político italiano?",
+              "options": [
+                "Alemania",
+                "Rusia",
+                "Reino Unido",
+                "Francia napoleónica"
+              ],
+              "correct": "Reino Unido",
+              "explanation": "El sistema liberal italiano funcionaba de forma similar al británico."
+            },
+            {
+              "question": "¿Quién fue Víctor Manuel II?",
+              "options": [
+                "Rey de Italia en la Primera Guerra Mundial",
+                "Rey del Piamonte que lideró la unificación italiana",
+                "Primer ministro italiano",
+                "Líder de la Triple Alianza"
+              ],
+              "correct": "Rey del Piamonte que lideró la unificación italiana",
+              "explanation": "Víctor Manuel II fue el impulsor del Risorgimento y primer rey de Italia."
+            },
+            {
+              "question": "¿Quién fue Víctor Manuel III?",
+              "options": [
+                "Rey del Piamonte",
+                "Rey de Italia durante la Primera Guerra Mundial",
+                "Emperador de Austria",
+                "Primer ministro italiano"
+              ],
+              "correct": "Rey de Italia durante la Primera Guerra Mundial",
+              "explanation": "Fue nieto de Víctor Manuel II y gobernó Italia durante la guerra."
+            },
+            {
+              "question": "¿Qué fue el Risorgimento?",
+              "options": [
+                "Una crisis económica",
+                "Un movimiento artístico italiano",
+                "El proceso de unificación italiana",
+                "La expansión colonial italiana en África"
+              ],
+              "correct": "El proceso de unificación italiana",
+              "explanation": "Unificó los territorios italianos bajo Víctor Manuel II."
+            },
+            {
+              "question": "¿En qué año se incorporó Italia a la Triple Alianza?",
+              "options": [
+                "1915",
+                "1882",
+                "1861",
+                "1900"
+              ],
+              "correct": "1882",
+              "explanation": "Italia se unió a la Triple Alianza junto con Alemania y Austria-Hungría."
+            },
+            {
+              "question": "¿Con qué países formaba Italia la Triple Alianza?",
+              "options": [
+                "Francia y Reino Unido",
+                "Alemania y Austria-Hungría",
+                "Rusia y Serbia",
+                "Estados Unidos y Japón"
+              ],
+              "correct": "Alemania y Austria-Hungría",
+              "explanation": "La alianza buscaba equilibrio y defensa mutua."
+            },
+            {
+              "question": "¿Qué postura adoptó Italia al inicio de la Primera Guerra Mundial?",
+              "options": [
+                "Se unió inmediatamente a la Triple Alianza",
+                "Declaró la guerra a Francia",
+                "Se declaró neutral",
+                "Se unió de inmediato a la Triple Entente"
+              ],
+              "correct": "Se declaró neutral",
+              "explanation": "Italia decidió inicialmente mantenerse fuera del conflicto."
+            },
+            {
+              "question": "¿Por qué Italia cambió de bando en 1915?",
+              "options": [
+                "Porque Alemania la atacó",
+                "Por promesas territoriales de la Triple Entente",
+                "Por la muerte del rey",
+                "Por presión rusa"
+              ],
+              "correct": "Por promesas territoriales de la Triple Entente",
+              "explanation": "Los aliados le prometieron territorios a cambio de unirse a su bando."
+            }
+          ]
+        },
+        "importedAt": "2025-11-26T20:45:22.104Z"
+      },
+      {
+        "id": "1764189960093",
+        "title": "PGM: Bandos",
+        "type": "flashcards",
+        "data": {
+          "type": "flashcards",
+          "title": "Flashcards: Primera Guerra Mundial – Bandos (3.1)",
+          "subject": "Historia",
+          "description": "Flashcards sobre los bandos de la Primera Guerra Mundial: Potencias Centrales y Triple Entente.",
+          "cards": [
+            {
+              "question": "¿Qué países formaban las Potencias Centrales en la Primera Guerra Mundial?",
+              "answer": "Las Potencias Centrales estaban formadas por Alemania y el Imperio Austrohúngaro. Inicialmente su alianza provenía de la Triple Alianza, aunque Italia no luchó junto a ellas.",
+              "category": "Bandos",
+              "difficulty": "Fácil"
+            },
+            {
+              "question": "¿Qué países integraban la Triple Entente?",
+              "answer": "La Triple Entente estaba compuesta por Francia, el Reino Unido y Rusia. Estas potencias se unieron para frenar el avance y la influencia de las Potencias Centrales.",
+              "category": "Bandos",
+              "difficulty": "Fácil"
+            },
+            {
+              "question": "¿Cuál era la diferencia esencial entre la Triple Entente y las Potencias Centrales?",
+              "answer": "Las Potencias Centrales eran una alianza militar previa entre Alemania y el Imperio Austrohúngaro, mientras que la Triple Entente era una coalición diplomática y militar entre Francia, Reino Unido y Rusia formada para equilibrar el poder alemán en Europa.",
+              "category": "Bandos",
+              "difficulty": "Media"
+            }
+          ],
+          "totalCards": 3,
+          "categories": [
+            "Bandos"
+          ],
+          "difficultyLevels": [
+            "Fácil",
+            "Media",
+            "Difícil"
+          ]
+        },
+        "importedAt": "2025-11-26T20:46:00.093Z"
+      },
+      {
+        "id": "1764190064835",
+        "title": "PGM: Bandos",
+        "type": "test",
+        "data": {
+          "type": "test",
+          "title": "Test: Bandos de la Primera Guerra Mundial (3.1)",
+          "subject": "Historia",
+          "description": "Mini test para repasar los bandos de la Primera Guerra Mundial.",
+          "passingScore": 60,
+          "timeLimit": 0,
+          "questions": [
+            {
+              "question": "¿Qué países formaban las Potencias Centrales?",
+              "options": [
+                "Alemania y Rusia",
+                "Alemania y el Imperio Austrohúngaro",
+                "Francia y Reino Unido",
+                "Italia y Alemania"
+              ],
+              "correct": "Alemania y el Imperio Austrohúngaro",
+              "explanation": "Ambas potencias lideraban el bloque central en la Primera Guerra Mundial."
+            },
+            {
+              "question": "¿Qué países formaban la Triple Entente?",
+              "options": [
+                "Alemania, Austria y Rusia",
+                "Francia, Reino Unido y Rusia",
+                "Italia, Francia y Japón",
+                "Reino Unido, Alemania y Rusia"
+              ],
+              "correct": "Francia, Reino Unido y Rusia",
+              "explanation": "Era la alianza que enfrentó a las Potencias Centrales."
+            },
+            {
+              "question": "¿Qué diferencia principal existía entre los dos bandos?",
+              "options": [
+                "Las Potencias Centrales tenían más colonias",
+                "La Triple Entente era una alianza diplomática y las Potencias Centrales una alianza militar previa",
+                "La Triple Entente tenía menos países",
+                "Las Potencias Centrales tenían una mejor economía"
+              ],
+              "correct": "La Triple Entente era una alianza diplomática y las Potencias Centrales una alianza militar previa",
+              "explanation": "Las Potencias Centrales venían de la Triple Alianza; la Entente era una coalición diplomática."
+            }
+          ]
+        },
+        "importedAt": "2025-11-26T20:47:44.835Z"
+      },
+      {
+        "id": "1764190229245",
+        "title": "PGM: Acontecimientos (1914)",
+        "type": "flashcards",
+        "data": {
+          "type": "flashcards",
+          "title": "Flashcards: Primera Guerra Mundial – Acontecimientos de 1914 (3.2)",
+          "subject": "Historia",
+          "description": "Flashcards completas sobre los acontecimientos de 1914 en el inicio de la Primera Guerra Mundial.",
+          "cards": [
+            {
+              "question": "¿Qué ocurrió en el atentado de 1914 contra Francisco Fernando?",
+              "answer": "En 1914, el heredero al trono austrohúngaro, Francisco Fernando, fue asesinado en Sarajevo. Este atentado fue llevado a cabo por un nacionalista serbio. El suceso es considerado el detonante inmediato de la Primera Guerra Mundial.",
+              "category": "1914",
+              "difficulty": "Media"
+            },
+            {
+              "question": "¿Cómo comenzaron las declaraciones de guerra en 1914?",
+              "answer": "Tras el asesinato de Francisco Fernando, comenzaron las declaraciones de guerra entre las Potencias Centrales y la Triple Entente. Austria-Hungría declaró la guerra a Serbia, y el sistema de alianzas provocó que todas las grandes potencias entraran rápidamente en conflicto.",
+              "category": "1914",
+              "difficulty": "Media"
+            },
+            {
+              "question": "¿En qué consistía el Plan Schlieffen?",
+              "answer": "El Plan Schlieffen era la estrategia alemana para evitar luchar en dos frentes. Consistía en invadir rápidamente Francia pasando por Bélgica (país neutral) mientras Rusia movilizaba sus tropas, y después dirigir el ejército alemán hacia el frente ruso.",
+              "category": "1914",
+              "difficulty": "Alta"
+            },
+            {
+              "question": "¿Qué fue la Batalla del Marne?",
+              "answer": "La Batalla del Marne fue un enfrentamiento clave en el que Francia logró frenar el avance alemán hacia París. Esta victoria impidió el éxito del Plan Schlieffen y dio lugar a la guerra de trincheras.",
+              "category": "1914",
+              "difficulty": "Media"
+            },
+            {
+              "question": "¿Qué fue la Batalla de Tannenberg?",
+              "answer": "La Batalla de Tannenberg fue una victoria alemana frente al ejército ruso. Alemania logró detener y derrotar el avance ruso en el frente oriental en 1914.",
+              "category": "1914",
+              "difficulty": "Media"
+            }
+          ],
+          "totalCards": 5,
+          "categories": [
+            "1914"
+          ],
+          "difficultyLevels": [
+            "Fácil",
+            "Media",
+            "Alta"
+          ]
+        },
+        "importedAt": "2025-11-26T20:50:29.245Z"
+      },
+      {
+        "id": "1764190462143",
+        "title": "PGM: Acontecimientos (1914)",
+        "type": "test",
+        "data": {
+          "type": "test",
+          "title": "Test: Primera Guerra Mundial – Acontecimientos de 1914",
+          "subject": "Historia",
+          "description": "Test completo sobre los principales sucesos de 1914.",
+          "passingScore": 60,
+          "timeLimit": 0,
+          "questions": [
+            {
+              "question": "¿Qué suceso detonó la Primera Guerra Mundial en 1914?",
+              "options": [
+                "La invasión alemana de Polonia",
+                "El asesinato de Francisco Fernando en Sarajevo",
+                "La entrada de Estados Unidos en la guerra",
+                "La rendición de Rusia"
+              ],
+              "correct": "El asesinato de Francisco Fernando en Sarajevo",
+              "explanation": "El atentado cometido por un nacionalista serbio desencadenó el conflicto."
+            },
+            {
+              "question": "¿Qué provocó el inicio de las declaraciones de guerra en 1914?",
+              "options": [
+                "La firma de un tratado económico",
+                "La movilización rusa contra Francia",
+                "El atentado contra Francisco Fernando y el sistema de alianzas",
+                "La derrota alemana en Marne"
+              ],
+              "correct": "El atentado contra Francisco Fernando y el sistema de alianzas",
+              "explanation": "Austria declaró la guerra a Serbia y las alianzas arrastraron al resto de potencias."
+            },
+            {
+              "question": "¿Cuál era el objetivo principal del Plan Schlieffen?",
+              "options": [
+                "Derrotar primero a Rusia para evitar un frente oriental",
+                "Evitar luchar contra Francia",
+                "Evitar la guerra de trincheras",
+                "Evitar una guerra en dos frentes derrotando primero a Francia"
+              ],
+              "correct": "Evitar una guerra en dos frentes derrotando primero a Francia",
+              "explanation": "El plan consistía en invadir Francia rápidamente pasando por Bélgica."
+            },
+            {
+              "question": "¿Por qué Alemania invadió Bélgica en 1914?",
+              "options": [
+                "Para conquistar sus recursos",
+                "Porque Bélgica declaró la guerra a Alemania",
+                "Porque el Plan Schlieffen lo exigía para llegar rápido a Francia",
+                "Para ayudar a Rusia"
+              ],
+              "correct": "Porque el Plan Schlieffen lo exigía para llegar rápido a Francia",
+              "explanation": "Bélgica era neutral, pero el plan alemán necesitaba pasar por su territorio."
+            },
+            {
+              "question": "¿Qué consecuencia tuvo la Batalla del Marne?",
+              "options": [
+                "Francia permitió el avance alemán",
+                "Alemania derrotó a Francia decisivamente",
+                "Francia frenó el avance alemán, frustrando el Plan Schlieffen",
+                "Rusia abandonó la guerra"
+              ],
+              "correct": "Francia frenó el avance alemán, frustrando el Plan Schlieffen",
+              "explanation": "Tras esta batalla comenzó la guerra de trincheras."
+            },
+            {
+              "question": "¿Qué ocurrió en la Batalla de Tannenberg?",
+              "options": [
+                "La Triple Entente venció a Alemania",
+                "Alemania derrotó al ejército ruso en el frente oriental",
+                "Rusia invadió Berlín",
+                "Austria derrotó a Francia"
+              ],
+              "correct": "Alemania derrotó al ejército ruso en el frente oriental",
+              "explanation": "Fue una de las primeras grandes victorias alemanas en el este."
+            }
+          ]
+        },
+        "importedAt": "2025-11-26T20:54:22.143Z"
+      },
+      {
+        "id": "1764190545462",
+        "title": "PGM: Acontecimientos (1915)",
+        "type": "flashcards",
+        "data": {
+          "type": "flashcards",
+          "title": "Flashcards: Primera Guerra Mundial – Acontecimientos de 1915 (3.2)",
+          "subject": "Historia",
+          "description": "Flashcards completas sobre los acontecimientos clave del año 1915 durante la Primera Guerra Mundial.",
+          "cards": [
+            {
+              "question": "¿Por qué Italia se unió a la Triple Entente en 1915?",
+              "answer": "Italia se unió a la Triple Entente en 1915 porque buscaba obtener ciertos territorios del Imperio Austrohúngaro. Aunque inicialmente formaba parte de la Triple Alianza, Italia decidió cambiar de bando tras recibir promesas territoriales de Francia y Reino Unido.",
+              "category": "1915",
+              "difficulty": "Media"
+            },
+            {
+              "question": "¿Qué marcó el inicio de la guerra química en 1915?",
+              "answer": "En 1915 comenzó el uso de gases tóxicos como arma de combate. El empleo de cloro por parte de Alemania enfrente de Ypres abrió una nueva etapa de guerra altamente peligrosa y devastadora para los soldados.",
+              "category": "1915",
+              "difficulty": "Alta"
+            },
+            {
+              "question": "¿Qué sucedió en la guerra naval de 1915?",
+              "answer": "La guerra naval se intensificó especialmente en el Mar del Norte entre Alemania y Reino Unido. El hecho más destacado fue el hundimiento del Lusitania, un barco civil estadounidense atacado por un submarino alemán, lo que provocó numerosas muertes civiles y acercó a EE.UU. a la posibilidad de entrar en la guerra.",
+              "category": "1915",
+              "difficulty": "Alta"
+            },
+            {
+              "question": "¿Cuál era la posición de Estados Unidos en 1915 respecto a la guerra?",
+              "answer": "Estados Unidos se mantenía neutral y consideraba el conflicto como una 'cosa de europeos'. Sin embargo, tenía negocios con los países europeos, especialmente vendiendo armas y productos, lo que generó tensiones y fue un factor que más tarde influiría en su entrada en la guerra.",
+              "category": "1915",
+              "difficulty": "Media"
+            },
+            {
+              "question": "¿Qué caracterizó la guerra de trincheras en 1915?",
+              "answer": "La guerra de trincheras surgió cuando el frente occidental se estancó. Tras avances iniciales, ambos bandos construyeron líneas defensivas de trincheras que convirtieron el conflicto en una guerra estática, de desgaste y condiciones extremas para los soldados.",
+              "category": "1915",
+              "difficulty": "Media"
+            },
+            {
+              "question": "¿Qué ocurrió en la Batalla de Gallípoli en 1915?",
+              "answer": "En la Batalla de Gallípoli, Reino Unido y sus aliados intentaron atacar a Turquía (Imperio Otomano) para abrir una nueva ruta de suministro hacia Rusia. La resistencia turca fue muy fuerte y la operación terminó en fracaso aliado.",
+              "category": "1915",
+              "difficulty": "Alta"
+            }
+          ],
+          "totalCards": 6,
+          "categories": [
+            "1915"
+          ],
+          "difficultyLevels": [
+            "Fácil",
+            "Media",
+            "Alta"
+          ]
+        },
+        "importedAt": "2025-11-26T20:55:45.463Z"
+      },
+      {
+        "id": "1764190645080",
+        "title": "PGM: Acontecimientos (1915)",
+        "type": "test",
+        "data": {
+          "type": "test",
+          "title": "Test: Primera Guerra Mundial – Acontecimientos de 1915",
+          "subject": "Historia",
+          "description": "Test completo sobre los acontecimientos principales del año 1915.",
+          "passingScore": 60,
+          "timeLimit": 0,
+          "questions": [
+            {
+              "question": "¿Por qué Italia se unió a la Triple Entente en 1915?",
+              "options": [
+                "Porque Alemania la atacó",
+                "Porque buscaba territorios del Imperio Austrohúngaro prometidos por los aliados",
+                "Porque Rusia la obligó",
+                "Porque ya formaba parte de ella desde 1900"
+              ],
+              "correct": "Porque buscaba territorios del Imperio Austrohúngaro prometidos por los aliados",
+              "explanation": "Italia cambió de bando tras recibir promesas territoriales de Reino Unido y Francia."
+            },
+            {
+              "question": "¿Qué marcó el inicio de la guerra química en 1915?",
+              "options": [
+                "El uso de gas mostaza por Francia",
+                "El uso de gases tóxicos por primera vez en combate",
+                "La creación de máscaras de gas",
+                "La batalla naval de Jutlandia"
+              ],
+              "correct": "El uso de gases tóxicos por primera vez en combate",
+              "explanation": "Alemania empleó cloro por primera vez en Ypres."
+            },
+            {
+              "question": "¿Dónde se centró la guerra naval en 1915?",
+              "options": [
+                "En el Mediterráneo",
+                "En el Mar del Norte, entre Alemania y Reino Unido",
+                "En el Atlántico Sur",
+                "En el Pacífico"
+              ],
+              "correct": "En el Mar del Norte, entre Alemania y Reino Unido",
+              "explanation": "Fue un punto clave del conflicto naval."
+            },
+            {
+              "question": "¿Qué importancia tuvo el hundimiento del Lusitania?",
+              "options": [
+                "Provocó la entrada inmediata de EE.UU. en la guerra",
+                "No tuvo consecuencias",
+                "Provocó la muerte de muchos civiles estadounidenses",
+                "Fue un accidente marítimo sin relación con la guerra"
+              ],
+              "correct": "Provocó la muerte de muchos civiles estadounidenses",
+              "explanation": "Fue hundido por un submarino alemán, aumentando la tensión con EE.UU."
+            },
+            {
+              "question": "¿Cuál era la postura de Estados Unidos en 1915 respecto a la guerra?",
+              "options": [
+                "Entró en la guerra junto a la Triple Entente",
+                "Apoyó a las Potencias Centrales",
+                "Se mantuvo neutral y veía el conflicto como 'cosa de europeos'",
+                "Invadió Rusia"
+              ],
+              "correct": "Se mantuvo neutral y veía el conflicto como 'cosa de europeos'",
+              "explanation": "Aunque neutral, mantenía negocios con países europeos."
+            },
+            {
+              "question": "¿Qué caracterizó la guerra de trincheras en 1915?",
+              "options": [
+                "Avances rápidos de ambos bandos",
+                "Una guerra móvil y de caballería",
+                "Un estancamiento del frente y la creación de trincheras",
+                "El fin del conflicto"
+              ],
+              "correct": "Un estancamiento del frente y la creación de trincheras",
+              "explanation": "Ambos bandos construyeron líneas defensivas, generando una guerra estática."
+            },
+            {
+              "question": "¿Qué ocurrió en la Batalla de Gallípoli?",
+              "options": [
+                "Alemania derrotó a Francia",
+                "Turquía fue derrotada fácilmente",
+                "Reino Unido atacó Turquía pero fracasó por la fuerte resistencia otomana",
+                "Rusia invadió el Imperio Otomano"
+              ],
+              "correct": "Reino Unido atacó Turquía pero fracasó por la fuerte resistencia otomana",
+              "explanation": "La operación buscaba abrir paso hacia Rusia, pero terminó en fracaso aliado."
+            }
+          ]
+        },
+        "importedAt": "2025-11-26T20:57:25.080Z"
+      },
+      {
+        "id": "1764190712941",
+        "title": "PGM: Acontecimientos (1916)",
+        "type": "flashcards",
+        "data": {
+          "type": "flashcards",
+          "title": "Flashcards: Acontecimientos de 1916 – Primera Guerra Mundial",
+          "subject": "Historia",
+          "description": "Flashcards sobre los sucesos principales del año 1916 durante la Primera Guerra Mundial.",
+          "cards": [
+            {
+              "question": "¿Qué fue la Batalla de Verdún en 1916?",
+              "answer": "La Batalla de Verdún fue un gran ataque alemán para conquistar la ciudad de Verdún. Los franceses resistieron con fuerza y lograron defender la ciudad. Es una de las batallas más largas y sangrientas de la Primera Guerra Mundial.",
+              "category": "1916",
+              "difficulty": "Media"
+            },
+            {
+              "question": "¿Qué ocurrió en la Batalla del Somme en 1916?",
+              "answer": "La Batalla del Somme fue un ataque francés (y británico) para recuperar territorio. Hubo muy poco avance y se convirtió en la batalla más sangrienta de la Primera Guerra Mundial. Destaca además porque fue la primera vez que se usaron tanques.",
+              "category": "1916",
+              "difficulty": "Alta"
+            }
+          ],
+          "totalCards": 2,
+          "categories": [
+            "1916"
+          ],
+          "difficultyLevels": [
+            "Fácil",
+            "Media",
+            "Alta"
+          ]
+        },
+        "importedAt": "2025-11-26T20:58:32.941Z"
+      },
+      {
+        "id": "1764190841611",
+        "title": "PGM: Acontecimientos (1916)",
+        "type": "test",
+        "data": {
+          "type": "test",
+          "title": "Test: Acontecimientos de 1916 – Primera Guerra Mundial",
+          "subject": "Historia",
+          "description": "Test sobre los sucesos más importantes de 1916.",
+          "passingScore": 60,
+          "timeLimit": 0,
+          "questions": [
+            {
+              "question": "¿Cuál fue el objetivo alemán en la Batalla de Verdún (1916)?",
+              "options": [
+                "Capturar París",
+                "Conquistar la ciudad de Verdún",
+                "Derrotar a Rusia en el frente oriental",
+                "Hundirse en trincheras para defender su territorio"
+              ],
+              "correct": "Conquistar la ciudad de Verdún",
+              "explanation": "Alemania lanzó un ataque masivo para tomar Verdún, pero Francia logró resistir."
+            },
+            {
+              "question": "¿Qué caracterizó la Batalla del Somme de 1916?",
+              "options": [
+                "Fue una victoria rápida y decisiva",
+                "Se avanzó mucho en pocos días",
+                "Fue la batalla más sangrienta de la guerra y hubo poco avance territorial",
+                "Fue la primera batalla naval importante"
+              ],
+              "correct": "Fue la batalla más sangrienta de la guerra y hubo poco avance territorial",
+              "explanation": "A pesar del enorme número de bajas, los avances fueron mínimos."
+            },
+            {
+              "question": "¿Qué arma se utilizó por primera vez en la Batalla del Somme?",
+              "options": [
+                "Gas mostaza",
+                "Aviones de combate",
+                "Tanques",
+                "Submarinos"
+              ],
+              "correct": "Tanques",
+              "explanation": "En el Somme se usaron tanques por primera vez en la historia."
+            }
+          ]
+        },
+        "importedAt": "2025-11-26T21:00:41.611Z"
+      },
+      {
+        "id": "1764191289268",
+        "title": "PGM: Acontecimientos (1917)",
+        "type": "flashcards",
+        "data": {
+          "type": "flashcards",
+          "title": "Flashcards: Acontecimientos de 1917 – Primera Guerra Mundial",
+          "subject": "Historia",
+          "description": "Flashcards sobre los sucesos clave de 1917 durante la Primera Guerra Mundial.",
+          "cards": [
+            {
+              "question": "¿Qué fue la Revolución Rusa de 1917?",
+              "answer": "La Revolución Rusa de 1917 fue una revolución marxista liderada por Vladímir Lenin. Provocó la caída del zarismo y la salida de Rusia de la Primera Guerra Mundial. Tras la revolución, Rusia firmó el Tratado de Brest-Litovsk (1918), abandonando la guerra y cediendo territorios a Alemania.",
+              "category": "1917",
+              "difficulty": "Alta"
+            },
+            {
+              "question": "¿Por qué Estados Unidos entró en la Primera Guerra Mundial en 1917?",
+              "answer": "Estados Unidos entró en la guerra tras interceptar el Telegrama Zimmerman, en el que Alemania ofrecía apoyo a México si atacaba a Estados Unidos. Este mensaje fue interceptado por espías británicos y entregado a EE.UU., lo que provocó su entrada en el conflicto.",
+              "category": "1917",
+              "difficulty": "Media"
+            }
+          ],
+          "totalCards": 2,
+          "categories": [
+            "1917"
+          ],
+          "difficultyLevels": [
+            "Fácil",
+            "Media",
+            "Alta"
+          ]
+        },
+        "importedAt": "2025-11-26T21:08:09.268Z"
+      },
+      {
+        "id": "1764191366515",
+        "title": "PGM: Acontecimientos (1918)",
+        "type": "flashcards",
+        "data": {
+          "type": "flashcards",
+          "title": "Flashcards: Acontecimientos de 1918 – Primera Guerra Mundial",
+          "subject": "Historia",
+          "description": "Flashcards completas sobre los sucesos clave del año 1918 en la Primera Guerra Mundial.",
+          "cards": [
+            {
+              "question": "¿Qué fue la revolución marxista en Alemania en 1918?",
+              "answer": "En 1918 estalló una revolución marxista en Alemania debido al agotamiento del país tras la guerra. La población estaba descontenta por las derrotas militares, el hambre y la crisis política. Este movimiento terminó provocando la caída del káiser Guillermo II.",
+              "category": "1918",
+              "difficulty": "Alta"
+            },
+            {
+              "question": "¿Qué hizo Alemania antes de la llegada de Estados Unidos al frente en 1918?",
+              "answer": "Alemania lanzó un fuerte ataque contra Francia intentando ganar la guerra antes de que llegaran las tropas estadounidenses. Aunque inicialmente avanzaron, los alemanes finalmente no pudieron resistir la respuesta aliada.",
+              "category": "1918",
+              "difficulty": "Media"
+            },
+            {
+              "question": "¿Por qué Alemania no pudo resistir en 1918?",
+              "answer": "Los aliados de Alemania (como Austria-Hungría) estaban colapsando y no podían continuar la guerra. Además, el ejército alemán estaba agotado y con pocos recursos, lo que provocó el derrumbe del frente.",
+              "category": "1918",
+              "difficulty": "Media"
+            },
+            {
+              "question": "¿Qué ocurrió con Guillermo II en 1918?",
+              "answer": "El káiser Guillermo II abdicó en 1918 debido a la revolución interna y al colapso militar alemán. Su caída permitió la proclamación de una república de carácter liberal, conocida como la República de Weimar.",
+              "category": "1918",
+              "difficulty": "Alta"
+            },
+            {
+              "question": "¿Qué significa que Alemania pidiera un armisticio en 1918?",
+              "answer": "Pedir un armisticio significa solicitar el fin de las hostilidades. Alemania lo pidió en noviembre de 1918, aceptando que había perdido la guerra debido al colapso militar y a la presión interna.",
+              "category": "1918",
+              "difficulty": "Fácil"
+            }
+          ],
+          "totalCards": 5,
+          "categories": [
+            "1918"
+          ],
+          "difficultyLevels": [
+            "Fácil",
+            "Media",
+            "Alta"
+          ]
+        },
+        "importedAt": "2025-11-26T21:09:26.515Z"
+      },
+      {
+        "id": "1764191413298",
+        "title": "PGM: Acontecimientos (1918)",
+        "type": "test",
+        "data": {
+          "type": "test",
+          "title": "Test: Acontecimientos de 1918 – Primera Guerra Mundial",
+          "subject": "Historia",
+          "description": "Test completo para repasar los sucesos clave del año 1918.",
+          "passingScore": 60,
+          "timeLimit": 0,
+          "questions": [
+            {
+              "question": "¿Qué provocó la revolución marxista en Alemania en 1918?",
+              "options": [
+                "El éxito militar alemán",
+                "El agotamiento del país, el hambre y el descontento por la guerra",
+                "La llegada de Estados Unidos al frente",
+                "La victoria alemana en el Somme"
+              ],
+              "correct": "El agotamiento del país, el hambre y el descontento por la guerra",
+              "explanation": "La población alemana estaba exhausta y la situación interna era insostenible."
+            },
+            {
+              "question": "¿Qué intentó hacer Alemania antes de la llegada masiva de tropas estadounidenses?",
+              "options": [
+                "Firmar la paz con Francia",
+                "Retirarse del frente occidental",
+                "Lanzar un gran ataque para intentar ganar la guerra",
+                "Unirse a la Triple Entente"
+              ],
+              "correct": "Lanzar un gran ataque para intentar ganar la guerra",
+              "explanation": "Alemania buscó una victoria rápida antes de que EE.UU. reforzara a los aliados."
+            },
+            {
+              "question": "¿Por qué Alemania no pudo resistir en 1918?",
+              "options": [
+                "Tenía el mejor ejército de la guerra",
+                "Sus aliados colapsaron y su ejército estaba agotado",
+                "Perdió el apoyo de Estados Unidos",
+                "Fue derrotada en el mar"
+              ],
+              "correct": "Sus aliados colapsaron y su ejército estaba agotado",
+              "explanation": "Austria‑Hungría y otros aliados se derrumbaron, dejando sola a Alemania."
+            },
+            {
+              "question": "¿Qué ocurrió con el káiser Guillermo II en 1918?",
+              "options": [
+                "Fue proclamado emperador de Francia",
+                "Abdicó y huyó por presión interna",
+                "Dirigió el armisticio personalmente",
+                "Fue elegido presidente de la República de Weimar"
+              ],
+              "correct": "Abdicó y huyó por presión interna",
+              "explanation": "La revolución alemana obligó al káiser a abandonar el poder."
+            },
+            {
+              "question": "¿Qué significó el armisticio solicitado por Alemania en 1918?",
+              "options": [
+                "La retirada temporal del ejército alemán",
+                "El fin de las hostilidades y la aceptación de la derrota",
+                "Un acuerdo comercial con Francia",
+                "El inicio de la guerra química"
+              ],
+              "correct": "El fin de las hostilidades y la aceptación de la derrota",
+              "explanation": "El armisticio puso fin oficialmente a los combates de la Primera Guerra Mundial."
+            }
+          ]
+        },
+        "importedAt": "2025-11-26T21:10:13.298Z"
+      },
+      {
+        "id": "1764191645685",
+        "title": "PGM: Acontecimientos (1914-1918)",
+        "type": "test",
+        "data": {
+          "type": "test",
+          "title": "Súper Test: Primera Guerra Mundial 1914-1918",
+          "subject": "Historia",
+          "description": "Test completo de repaso que cubre todos los acontecimientos entre 1914 y 1918.",
+          "passingScore": 60,
+          "timeLimit": 0,
+          "questions": [
+            {
+              "question": "¿Qué suceso desencadenó el inicio de la Primera Guerra Mundial en 1914?",
+              "options": [
+                "El hundimiento del Lusitania",
+                "El asesinato del archiduque Francisco Fernando",
+                "La Revolución Rusa",
+                "El ataque alemán a Verdún"
+              ],
+              "correct": "El asesinato del archiduque Francisco Fernando",
+              "explanation": "El atentado en Sarajevo provocó la cadena de declaraciones de guerra."
+            },
+            {
+              "question": "¿Qué establecía el Plan Schlieffen?",
+              "options": [
+                "Atacar primero a Rusia",
+                "Dividir el ejército alemán en dos frentes defensivos",
+                "Invadir primero Francia pasando por Bélgica y luego atacar a Rusia",
+                "Un pacto naval entre Reino Unido y Alemania"
+              ],
+              "correct": "Invadir primero Francia pasando por Bélgica y luego atacar a Rusia",
+              "explanation": "Alemania planeaba evitar una guerra en dos frentes."
+            },
+            {
+              "question": "¿Qué ocurrió en la Batalla del Marne en 1914?",
+              "options": [
+                "Alemania derrotó a Francia",
+                "Francia detuvo el avance alemán hacia París",
+                "Reino Unido se retiró del frente occidental",
+                "Rusia invadió Austria-Hungría"
+              ],
+              "correct": "Francia detuvo el avance alemán hacia París",
+              "explanation": "El avance alemán fue frenado, evitando la caída de París."
+            },
+            {
+              "question": "¿Qué sucedió en la Batalla de Tannenberg?",
+              "options": [
+                "Alemania derrotó decisivamente a Rusia",
+                "El ejército francés conquistó Berlín",
+                "Se firmó un armisticio temporal",
+                "Reino Unido entró en la guerra"
+              ],
+              "correct": "Alemania derrotó decisivamente a Rusia",
+              "explanation": "Fue una gran victoria alemana en el frente oriental."
+            },
+            {
+              "question": "¿Por qué Italia se unió a la Triple Entente en 1915?",
+              "options": [
+                "Por afinidad política",
+                "Porque buscaba territorios del Imperio Austrohúngaro",
+                "Porque Alemania la atacó",
+                "Por influencia rusa"
+              ],
+              "correct": "Porque buscaba territorios del Imperio Austrohúngaro",
+              "explanation": "Los aliados le prometieron territorios."
+            },
+            {
+              "question": "¿Qué marcó el inicio de la guerra química?",
+              "options": [
+                "El uso de cloro en Ypres",
+                "La creación de máscaras de gas",
+                "El hundimiento del Lusitania",
+                "La llegada de EE.UU. al frente"
+              ],
+              "correct": "El uso de cloro en Ypres",
+              "explanation": "Alemania empleó por primera vez gas tóxico."
+            },
+            {
+              "question": "¿Dónde se centró la guerra naval en 1915?",
+              "options": [
+                "Mar Mediterráneo",
+                "Mar Báltico",
+                "Mar del Norte",
+                "Océano Índico"
+              ],
+              "correct": "Mar del Norte",
+              "explanation": "Alemania y Reino Unido luchaban por el control marítimo."
+            },
+            {
+              "question": "¿Qué consecuencia tuvo el hundimiento del Lusitania?",
+              "options": [
+                "Provocó la entrada inmediata de EE.UU.",
+                "No tuvo impacto",
+                "Aumentó la tensión entre EE.UU. y Alemania",
+                "Provocó una revolución en Francia"
+              ],
+              "correct": "Aumentó la tensión entre EE.UU. y Alemania",
+              "explanation": "La muerte de civiles estadounidenses indignó al país."
+            },
+            {
+              "question": "¿Qué pretendía Alemania en la Batalla de Verdún?",
+              "options": [
+                "Acabar con el ejército ruso",
+                "Conquistar la ciudad de Verdún y desgastar a Francia",
+                "Forzar la entrada de Italia en la guerra",
+                "Destruir la flota británica"
+              ],
+              "correct": "Conquistar la ciudad de Verdún y desgastar a Francia",
+              "explanation": "Buscaban una victoria simbólica y desgaste enemigo."
+            },
+            {
+              "question": "¿Por qué es famosa la Batalla del Somme?",
+              "options": [
+                "Fue la primera batalla aérea",
+                "Fue la batalla más sangrienta de la guerra",
+                "Rusia ganó decisivamente",
+                "Terminó la guerra"
+              ],
+              "correct": "Fue la batalla más sangrienta de la guerra",
+              "explanation": "Murieron más de un millón de soldados."
+            },
+            {
+              "question": "¿Qué arma se usó por primera vez en el Somme?",
+              "options": [
+                "Gas mostaza",
+                "Submarinos",
+                "Tanques",
+                "Lanzallamas"
+              ],
+              "correct": "Tanques",
+              "explanation": "El ejército británico introdujo esta nueva tecnología."
+            },
+            {
+              "question": "¿Qué consecuencia tuvo la Revolución Rusa de 1917?",
+              "options": [
+                "Rusia reforzó su presencia en la guerra",
+                "Rusia firmó la paz con Alemania y salió de la guerra",
+                "Rusia invadió Francia",
+                "Rusia se unió a las Potencias Centrales"
+              ],
+              "correct": "Rusia firmó la paz con Alemania y salió de la guerra",
+              "explanation": "Mediante el Tratado de Brest-Litovsk."
+            },
+            {
+              "question": "¿Qué desencadenó la entrada de EE.UU. en la guerra?",
+              "options": [
+                "El telegrama Zimmerman",
+                "La Revolución Rusa",
+                "La creación de trincheras",
+                "La invasión de Serbia"
+              ],
+              "correct": "El telegrama Zimmerman",
+              "explanation": "Alemania ofrecía apoyo a México para atacar a EE.UU."
+            },
+            {
+              "question": "¿Qué provocó la revolución alemana de 1918?",
+              "options": [
+                "El triunfo alemán en Verdún",
+                "El cansancio social, derrotas y crisis interna",
+                "La invasión rusa",
+                "La firma del Tratado de Versalles"
+              ],
+              "correct": "El cansancio social, derrotas y crisis interna",
+              "explanation": "El país estaba agotado tras años de guerra."
+            },
+            {
+              "question": "¿Qué hizo Alemania en 1918 antes de la llegada de EE.UU.?",
+              "options": [
+                "Firmó un armisticio",
+                "Lanzó un ataque masivo contra Francia",
+                "Abandonó el frente occidental",
+                "Invadió Reino Unido"
+              ],
+              "correct": "Lanzó un ataque masivo contra Francia",
+              "explanation": "Buscaba una victoria rápida."
+            },
+            {
+              "question": "¿Qué ocurrió con Guillermo II en 1918?",
+              "options": [
+                "Se proclamó emperador de Europa",
+                "Abdicó y huyó del país",
+                "Fue asesinado",
+                "Dirigió el armisticio"
+              ],
+              "correct": "Abdicó y huyó del país",
+              "explanation": "La revolución alemana lo obligó a abandonar el poder."
+            },
+            {
+              "question": "¿Qué significó el armisticio alemán de 1918?",
+              "options": [
+                "El fin de la guerra",
+                "Una pausa temporal",
+                "Un tratado de comercio",
+                "La entrada de Italia en el conflicto"
+              ],
+              "correct": "El fin de la guerra",
+              "explanation": "El armisticio puso fin a los combates."
+            },
+            {
+              "question": "¿Cuál fue el frente más estable y estancado durante la guerra?",
+              "options": [
+                "Frente occidental",
+                "Frente oriental",
+                "Frente africano",
+                "Frente asiático"
+              ],
+              "correct": "Frente occidental",
+              "explanation": "La guerra de trincheras bloqueó los avances."
+            },
+            {
+              "question": "¿Qué país cambió de bando durante la guerra y se unió a la Triple Entente?",
+              "options": [
+                "Turquía",
+                "Italia",
+                "Serbia",
+                "Bulgaria"
+              ],
+              "correct": "Italia",
+              "explanation": "Buscaba obtener territorios del Imperio Austrohúngaro."
+            },
+            {
+              "question": "¿Qué detonó el colapso alemán final?",
+              "options": [
+                "La entrada de Japón",
+                "El colapso de sus aliados y el agotamiento interno",
+                "La muerte del zar ruso",
+                "Que EE.UU. se retirara"
+              ],
+              "correct": "El colapso de sus aliados y el agotamiento interno",
+              "explanation": "Austria-Hungría se derrumbó y Alemania no pudo continuar."
+            },
+            {
+              "question": "¿Qué caracterizó la guerra de trincheras?",
+              "options": [
+                "Avances rápidos",
+                "Batallas navales constantes",
+                "Estancamiento y guerra de desgaste",
+                "Guerras cortas y decisivas"
+              ],
+              "correct": "Estancamiento y guerra de desgaste",
+              "explanation": "Ambos bandos quedaron bloqueados durante años."
+            }
+          ]
+        },
+        "importedAt": "2025-11-26T21:14:05.685Z"
+      },
+      {
+        "id": "1764192125571",
+        "title": "PGM: Consecuencias de la guerra",
+        "type": "flashcards",
+        "data": {
+          "type": "flashcards",
+          "title": "Flashcards: Consecuencias de la Primera Guerra Mundial",
+          "subject": "Historia",
+          "description": "Flashcards sobre las consecuencias demográficas, económicas, geopolíticas y sociales de la Primera Guerra Mundial.",
+          "cards": [
+            {
+              "question": "¿Cuáles fueron las consecuencias demográficas de la Primera Guerra Mundial?",
+              "answer": "Hubo 10 millones de muertos y 20 millones de heridos. Además, se produjo una disminución de la población activa y un desequilibrio demográfico entre hombres y mujeres, lo que afectó a la estructura social y laboral.",
+              "category": "Consecuencias",
+              "difficulty": "Media"
+            },
+            {
+              "question": "¿Cuáles fueron las consecuencias económicas de la Primera Guerra Mundial?",
+              "answer": "Se produjo una destrucción masiva de infraestructuras, ciudades y fábricas. Muchos países quedaron endeudados y los bancos estadounidenses otorgaron créditos para la reconstrucción, lo que originó la dependencia económica de Europa respecto a EE.UU.",
+              "category": "Consecuencias",
+              "difficulty": "Alta"
+            },
+            {
+              "question": "¿Cuáles fueron las consecuencias geopolíticas de la Primera Guerra Mundial?",
+              "answer": "Europa entró en declive como centro del poder mundial y aumentaron las potencias no europeas, especialmente EE.UU. y Japón. Además, se disolvieron grandes imperios (alemán, austrohúngaro, ruso y otomano) dando lugar a nuevos estados como Austria, Hungría, Polonia, Finlandia, Estonia o Letonia.",
+              "category": "Consecuencias",
+              "difficulty": "Alta"
+            },
+            {
+              "question": "¿Cuáles fueron las consecuencias sociales de la Primera Guerra Mundial?",
+              "answer": "Hubo un fuerte empobrecimiento de la población y un aumento del descontento social. Se inició una crisis del sistema liberal y surgieron nuevas ideologías. Además, se produjo una gran presión política por la pobreza y la inestabilidad.",
+              "category": "Consecuencias",
+              "difficulty": "Media"
+            },
+            {
+              "question": "¿Por qué EE.UU. se convirtió en la primera potencia mundial tras la Primera Guerra Mundial?",
+              "answer": "Durante la posguerra, Europa quedó endeudada y dependiente económicamente de los créditos estadounidenses. EE.UU. salió fortalecido industrial y financieramente, convirtiéndose en la principal potencia del mundo.",
+              "category": "Consecuencias",
+              "difficulty": "Alta"
+            },
+            {
+              "question": "¿Qué implicó la disolución de los imperios tras la guerra?",
+              "answer": "Supuso la desaparición de los imperios alemán, austrohúngaro, ruso y otomano, lo que llevó a la creación de numerosos nuevos estados con tensiones nacionalistas y fronteras inestables.",
+              "category": "Consecuencias",
+              "difficulty": "Alta"
+            }
+          ],
+          "totalCards": 6,
+          "categories": [
+            "Consecuencias"
+          ],
+          "difficultyLevels": [
+            "Fácil",
+            "Media",
+            "Alta"
+          ]
+        },
+        "importedAt": "2025-11-26T21:22:05.571Z"
+      },
+      {
+        "id": "1764192306683",
+        "title": "PGM: Consecuencias de la guerra",
+        "type": "test",
+        "data": {
+          "type": "test",
+          "title": "Test: Consecuencias de la Primera Guerra Mundial",
+          "subject": "Historia",
+          "description": "Test completo sobre las consecuencias demográficas, económicas, geopolíticas y sociales de la Primera Guerra Mundial.",
+          "passingScore": 60,
+          "timeLimit": 0,
+          "questions": [
+            {
+              "question": "¿Cuál fue una de las principales consecuencias demográficas de la Primera Guerra Mundial?",
+              "options": [
+                "El aumento de la natalidad en Europa",
+                "10 millones de muertos y 20 millones de heridos",
+                "La desaparición de la población urbana",
+                "Un crecimiento acelerado de la población"
+              ],
+              "correct": "10 millones de muertos y 20 millones de heridos",
+              "explanation": "La guerra dejó enormes pérdidas humanas y un desequilibrio poblacional."
+            },
+            {
+              "question": "¿Qué ocurrió con las infraestructuras europeas tras la guerra?",
+              "options": [
+                "Fueron modernizadas inmediatamente",
+                "No sufrieron daños significativos",
+                "Sufrieron una gran destrucción: ciudades y fábricas arrasadas",
+                "Fueron reconstruidas durante la propia guerra"
+              ],
+              "correct": "Sufrieron una gran destrucción: ciudades y fábricas arrasadas",
+              "explanation": "La guerra devastó gran parte de las zonas industriales y urbanas."
+            },
+            {
+              "question": "¿Por qué Europa pasó a depender económicamente de EE.UU. tras la guerra?",
+              "options": [
+                "Porque Europa cerró sus bancos",
+                "Porque EE.UU. invadió Europa",
+                "Porque los bancos estadounidenses ofrecieron créditos para la reconstrucción",
+                "Porque Europa nacionalizó sus industrias"
+              ],
+              "correct": "Porque los bancos estadounidenses ofrecieron créditos para la reconstrucción",
+              "explanation": "Europa quedó endeudada y dependiente del capital estadounidense."
+            },
+            {
+              "question": "¿Qué país se convirtió en la primera potencia mundial tras la Primera Guerra Mundial?",
+              "options": [
+                "Alemania",
+                "Rusia",
+                "Estados Unidos",
+                "Japón"
+              ],
+              "correct": "Estados Unidos",
+              "explanation": "EE.UU. salió fortalecido industrial y financieramente."
+            },
+            {
+              "question": "¿Qué consecuencia geopolítica tuvo la Primera Guerra Mundial?",
+              "options": [
+                "El fortalecimiento definitivo de Europa",
+                "El declive de Europa y el auge de potencias no europeas",
+                "La desaparición de EE.UU. del panorama internacional",
+                "La expansión pacífica de Rusia"
+              ],
+              "correct": "El declive de Europa y el auge de potencias no europeas",
+              "explanation": "Europa dejó de ser el centro absoluto del poder mundial."
+            },
+            {
+              "question": "¿Qué grandes imperios desaparecieron tras la guerra?",
+              "options": [
+                "Británico, italiano y español",
+                "Alemán, austrohúngaro, ruso y otomano",
+                "Chino, japonés y persa",
+                "Francés, portugués y belga"
+              ],
+              "correct": "Alemán, austrohúngaro, ruso y otomano",
+              "explanation": "Su disolución provocó la creación de numerosos nuevos estados."
+            },
+            {
+              "question": "¿Qué característica tuvo la nueva situación política en Europa tras la guerra?",
+              "options": [
+                "Fortalecimiento del sistema liberal",
+                "Crisis del sistema liberal y surgimiento de nuevas ideologías",
+                "Desaparición de los partidos políticos",
+                "Estabilidad política duradera"
+              ],
+              "correct": "Crisis del sistema liberal y surgimiento de nuevas ideologías",
+              "explanation": "La pobreza y la inestabilidad favorecieron nuevas corrientes ideológicas."
+            },
+            {
+              "question": "¿Qué efecto social provocó la guerra en la población europea?",
+              "options": [
+                "Aumento general del nivel de vida",
+                "Empobrecimiento y descontento social",
+                "Desaparición del desempleo",
+                "Crecimiento de la clase media"
+              ],
+              "correct": "Empobrecimiento y descontento social",
+              "explanation": "La guerra dejó una sociedad empobrecida y políticamente inestable."
+            },
+            {
+              "question": "¿Qué fenómeno geopolítico ocurrió tras la disolución de los imperios?",
+              "options": [
+                "La unión europea inmediata",
+                "La creación de nuevos estados con tensiones nacionalistas",
+                "La desaparición de las fronteras",
+                "La creación de un único estado en Europa central"
+              ],
+              "correct": "La creación de nuevos estados con tensiones nacionalistas",
+              "explanation": "Las nuevas fronteras fueron inestables y generaron futuros conflictos."
+            },
+            {
+              "question": "¿Qué cambio global produjo la Primera Guerra Mundial?",
+              "options": [
+                "Europa se consolidó como única potencia mundial",
+                "Japón fue destruido por completo",
+                "EE.UU. emergió como la primera potencia mundial",
+                "Se disolvió la ONU"
+              ],
+              "correct": "EE.UU. emergió como la primera potencia mundial",
+              "explanation": "La guerra desplazó el liderazgo global desde Europa hacia Estados Unidos."
+            }
+          ]
+        },
+        "importedAt": "2025-11-26T21:25:06.683Z"
+      },
+      {
+        "id": "1764192504235",
+        "title": "Después de la guerra: La paz de París",
+        "type": "flashcards",
+        "data": {
+          "type": "flashcards",
+          "title": "Flashcards: El mundo tras la guerra – Paz de París",
+          "subject": "Historia",
+          "description": "Flashcards completas sobre la Paz de París y las posturas de Reino Unido, Francia y Estados Unidos.",
+          "cards": [
+            {
+              "question": "¿Qué fue la Paz de París?",
+              "answer": "La Paz de París fue la gran reunión de los vencedores de la Primera Guerra Mundial para decidir el futuro de Europa y establecer un nuevo orden internacional. En ella participaron Reino Unido, Francia y Estados Unidos como principales potencias negociadoras.",
+              "category": "El mundo tras la guerra",
+              "difficulty": "Media"
+            },
+            {
+              "question": "¿Cuál era la posición británica en la Paz de París?",
+              "answer": "El Reino Unido, representado por su primer ministro David Lloyd George, buscaba un equilibrio: no ceder demasiado a Francia para no humillar en exceso a Alemania. Consideraban que una Alemania debilitada podía desestabilizar Europa.",
+              "category": "El mundo tras la guerra",
+              "difficulty": "Media"
+            },
+            {
+              "question": "¿Cuál era la postura francesa en la Paz de París?",
+              "answer": "Francia, representada por Georges Clemenceau, defendía una postura claramente antigermana. Exigía la desmilitarización de Alemania, el pago de reparaciones de guerra y la recuperación de los territorios de Alsacia y Lorena.",
+              "category": "El mundo tras la guerra",
+              "difficulty": "Alta"
+            },
+            {
+              "question": "¿Qué defendía Estados Unidos en la Paz de París?",
+              "answer": "Estados Unidos, representado por el presidente Woodrow Wilson, defendía un nuevo 'orden mundial' basado en sus Catorce Puntos. Su objetivo era una paz justa y duradera, además de combatir la expansión del bolchevismo.",
+              "category": "El mundo tras la guerra",
+              "difficulty": "Alta"
+            },
+            {
+              "question": "¿Qué proponían los Catorce Puntos de Wilson?",
+              "answer": "Los Catorce Puntos de Wilson proponían: libertad de navegación y comercio, autodeterminación de los pueblos europeos, renuncia a la diplomacia secreta y creación de un organismo internacional para resolver pacíficamente los conflictos (Sociedad de Naciones).",
+              "category": "El mundo tras la guerra",
+              "difficulty": "Alta"
+            }
+          ],
+          "totalCards": 5,
+          "categories": [
+            "El mundo tras la guerra"
+          ],
+          "difficultyLevels": [
+            "Fácil",
+            "Media",
+            "Alta"
+          ]
+        },
+        "importedAt": "2025-11-26T21:28:24.235Z"
+      },
+      {
+        "id": "1764192604170",
+        "title": "Después de la guerra: La paz de París",
+        "type": "test",
+        "data": {
+          "type": "test",
+          "title": "Test: El mundo tras la guerra – Paz de París",
+          "subject": "Historia",
+          "description": "Test completo sobre la Paz de París y las posturas de las potencias vencedoras.",
+          "passingScore": 60,
+          "timeLimit": 0,
+          "questions": [
+            {
+              "question": "¿Qué fue la Paz de París?",
+              "options": [
+                "Una reunión para reconstruir Alemania",
+                "Una conferencia de los vencedores para decidir el futuro de Europa",
+                "Un tratado firmado únicamente por Francia y Alemania",
+                "Un acuerdo comercial entre las potencias vencedoras"
+              ],
+              "correct": "Una conferencia de los vencedores para decidir el futuro de Europa",
+              "explanation": "En la Paz de París se definió el nuevo orden tras la Primera Guerra Mundial."
+            },
+            {
+              "question": "¿Quién representó al Reino Unido en la Paz de París?",
+              "options": [
+                "Winston Churchill",
+                "David Lloyd George",
+                "Neville Chamberlain",
+                "George V"
+              ],
+              "correct": "David Lloyd George",
+              "explanation": "Era el primer ministro británico."
+            },
+            {
+              "question": "¿Qué postura defendía Reino Unido en la conferencia?",
+              "options": [
+                "Castigar a Alemania de forma extrema",
+                "No ceder demasiado a Francia para evitar una Alemania humillada",
+                "Fortalecer el imperio alemán",
+                "Aliarse con Rusia"
+              ],
+              "correct": "No ceder demasiado a Francia para evitar una Alemania humillada",
+              "explanation": "Temían que un castigo excesivo desestabilizara Europa."
+            },
+            {
+              "question": "¿Quién representó a Francia en la Paz de París?",
+              "options": [
+                "Charles de Gaulle",
+                "Georges Clemenceau",
+                "Napoleón III",
+                "Jules Ferry"
+              ],
+              "correct": "Georges Clemenceau",
+              "explanation": "Dirigió la postura más dura contra Alemania."
+            },
+            {
+              "question": "¿Cuál era la postura francesa en la Paz de París?",
+              "options": [
+                "Neutralidad",
+                "Reconciliación total con Alemania",
+                "Postura antigermana y exigencia de reparaciones",
+                "Retirada de la negociación"
+              ],
+              "correct": "Postura antigermana y exigencia de reparaciones",
+              "explanation": "Francia exigía desmilitarización y restituciones."
+            },
+            {
+              "question": "¿Qué territorios quería recuperar Francia en la Paz de París?",
+              "options": [
+                "Baviera",
+                "Alsacia y Lorena",
+                "Bohemia y Moravia",
+                "Flandes"
+              ],
+              "correct": "Alsacia y Lorena",
+              "explanation": "Habían sido arrebatados por Alemania en 1871."
+            },
+            {
+              "question": "¿Quién representó a Estados Unidos en la Paz de París?",
+              "options": [
+                "Theodore Roosevelt",
+                "Franklin Roosevelt",
+                "Woodrow Wilson",
+                "Harry Truman"
+              ],
+              "correct": "Woodrow Wilson",
+              "explanation": "Wilson propuso un nuevo orden mundial con sus Catorce Puntos."
+            },
+            {
+              "question": "¿Qué objetivo tenía Woodrow Wilson en la conferencia?",
+              "options": [
+                "Repartir el Imperio Otomano con Francia",
+                "Imponer un castigo ejemplar a Alemania",
+                "Promover un nuevo orden internacional y frenar el bolchevismo",
+                "Fortalecer al Imperio Austrohúngaro"
+              ],
+              "correct": "Promover un nuevo orden internacional y frenar el bolchevismo",
+              "explanation": "Wilson buscaba estabilidad mundial."
+            },
+            {
+              "question": "¿Cuál de estos es uno de los Catorce Puntos de Wilson?",
+              "options": [
+                "Prohibición del comercio europeo",
+                "Autodeterminación de los pueblos europeos",
+                "Creación del Imperio Franco-Británico",
+                "Disolución del Reino Unido"
+              ],
+              "correct": "Autodeterminación de los pueblos europeos",
+              "explanation": "Wilson defendía que cada pueblo eligiera su propio gobierno."
+            },
+            {
+              "question": "¿Qué organismo internacional propuso Wilson para garantizar la paz?",
+              "options": [
+                "La ONU",
+                "El FMI",
+                "La Sociedad de Naciones",
+                "La Unión Europea"
+              ],
+              "correct": "La Sociedad de Naciones",
+              "explanation": "Pretendía resolver conflictos pacíficamente."
+            }
+          ]
+        },
+        "importedAt": "2025-11-26T21:30:04.170Z"
+      },
+      {
+        "id": "1764192991718",
+        "title": "Después de la guerra: Tratados",
+        "type": "flashcards",
+        "data": {
+          "type": "flashcards",
+          "title": "Flashcards – Tratado de Versalles",
+          "subject": "Historia",
+          "flashcards": [
+            {
+              "front": "¿Qué es el Tratado de Versalles?",
+              "back": "Es el tratado de paz firmado en 1919 tras la Primera Guerra Mundial y se aplica **únicamente a Alemania**, imponiéndole duras condiciones territoriales, militares y económicas."
+            },
+            {
+              "front": "Recuperación francesa de Alsacia y Lorena",
+              "back": "Alemania debe devolver **Alsacia y Lorena** a Francia, territorios que había ocupado desde 1871. Esta devolución fue una de las principales exigencias francesas."
+            },
+            {
+              "front": "Pérdida de colonias (Alemania)",
+              "back": "Alemania pierde **todas sus colonias**, que pasan a estar administradas por la Sociedad de Naciones y repartidas entre Reino Unido, Francia, Japón, Bélgica y otros países."
+            },
+            {
+              "front": "Desmilitarización de Renania",
+              "back": "El tratado obliga a que la región fronteriza con Francia, **Renania**, quede totalmente desmilitarizada. Alemania no puede tener tropas, armas ni fortificaciones allí."
+            },
+            {
+              "front": "Reparaciones de guerra (Alemania)",
+              "back": "Alemania debe pagar **reparaciones económicas muy elevadas** a los países vencedores, lo que provoca una grave crisis económica en el país."
+            },
+            {
+              "front": "Límite del ejército alemán",
+              "back": "El ejército alemán queda limitado a **100.000 soldados**, sin servicio militar obligatorio, sin artillería pesada, sin aviación y sin tanques."
+            },
+            {
+              "front": "Pérdida de flota alemana",
+              "back": "Alemania pierde la mayor parte de su **flota militar**, que pasa a manos de los países vencedores o es destruida."
+            }
+          ]
+        },
+        "importedAt": "2025-11-26T21:36:31.718Z"
+      },
+      {
+        "id": "1764193019534",
+        "title": "Después de la guerra: Tratados",
+        "type": "test",
+        "data": {
+          "type": "test",
+          "title": "Test – Tratado de Versalles",
+          "subject": "Historia",
+          "description": "Preguntas clave para dominar el Tratado de Versalles.",
+          "passingScore": 60,
+          "timeLimit": 0,
+          "questions": [
+            {
+              "question": "¿A qué país se aplica exclusivamente el Tratado de Versalles?",
+              "options": [
+                "Austria",
+                "Rusia",
+                "Alemania",
+                "Imperio Otrohúngaro"
+              ],
+              "correct": "Alemania",
+              "explanation": "El Tratado de Versalles solo impone condiciones a Alemania."
+            },
+            {
+              "question": "¿Qué territorios recupera Francia según el Tratado de Versalles?",
+              "options": [
+                "Flandes",
+                "Baviera y Sajonia",
+                "Alsacia y Lorena",
+                "Renania"
+              ],
+              "correct": "Alsacia y Lorena",
+              "explanation": "Eran territorios arrebatados en 1871."
+            },
+            {
+              "question": "¿Qué ocurre con las colonias alemanas tras el Tratado?",
+              "options": [
+                "Alemania las mantiene",
+                "Se reparten entre los vencedores como mandatos",
+                "Se convierten en territorios independientes",
+                "Se devuelven a Rusia"
+              ],
+              "correct": "Se reparten entre los vencedores como mandatos",
+              "explanation": "Las administraba la Sociedad de Naciones."
+            },
+            {
+              "question": "¿Qué establece el tratado sobre Renania?",
+              "options": [
+                "Debe ser ocupada por Alemania",
+                "Debe militarizarse",
+                "Debe quedar desmilitarizada",
+                "Pasa a ser territorio francés"
+              ],
+              "correct": "Debe quedar desmilitarizada",
+              "explanation": "Alemania no podía desplegar tropas allí."
+            },
+            {
+              "question": "¿Qué límite se impone al ejército alemán?",
+              "options": [
+                "500.000 soldados",
+                "200.000 soldados",
+                "100.000 soldados",
+                "No se establece límite"
+              ],
+              "correct": "100.000 soldados",
+              "explanation": "El ejército se reduce drásticamente."
+            },
+            {
+              "question": "¿Qué tipo de material militar NO puede tener Alemania?",
+              "options": [
+                "Aviación y tanques",
+                "Infantería ligera",
+                "Material médico",
+                "Barcos mercantes"
+              ],
+              "correct": "Aviación y tanques",
+              "explanation": "El tratado prohíbe armas ofensivas modernas."
+            },
+            {
+              "question": "¿Qué sucede con la flota alemana tras el tratado?",
+              "options": [
+                "Se amplía",
+                "Se entrega o destruye",
+                "Se convierte en flota comercial",
+                "Queda intacta"
+              ],
+              "correct": "Se entrega o destruye",
+              "explanation": "Alemania pierde la mayor parte de su poder naval."
+            },
+            {
+              "question": "¿Qué impacto causaron las reparaciones impuestas a Alemania?",
+              "options": [
+                "Un auge económico",
+                "Fortalecimiento militar",
+                "Una grave crisis económica",
+                "Expansión territorial"
+              ],
+              "correct": "Una grave crisis económica",
+              "explanation": "Las reparaciones fueron muy elevadas."
+            }
+          ]
+        },
+        "importedAt": "2025-11-26T21:36:59.534Z"
+      }
+    ],
+    "createdAt": "2025-11-25T22:44:37.578Z"
+  },
+  "exportedAt": "2025-11-26T21:37:32.409Z"
+}
